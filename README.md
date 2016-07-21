@@ -1,10 +1,11 @@
-avelsieve
+# avelsieve2roundcube
 =========
 
-avelsieve patched to be usable with PHP 5.4
+Konvertierung von avelsieve Filtern zu Roundcube Sieve Filtern
 
-Imported avelsieve 1.9.9 from 
-http://code.uoa.gr/p/avelsieve/
+```
+cat phpscript.sieve | php avelsieve2roundcube.php
+```
 
-Integrated version 1.9.9-hps for PHP 5.3 from
-http://www.rfc3092.net/projects/avelsieve/
+** Wichtig :exclamation: Derzeit muss man sich im selben Ornder wie das PHP-Script befinden **
+** Auch Wichtig :exclamation: php5-imap oder php7.0-imap __muss__ installiert sein :bangbang: **
