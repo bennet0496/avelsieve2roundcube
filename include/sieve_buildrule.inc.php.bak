@@ -396,7 +396,7 @@ function makesinglerule($rule, $mode='rule') {
         $text .= "<strong>"._("If")."</strong> ";
     	if (isset($rule['disabled']) && $rule['disabled']==1) {
         	if ($mode=='rule') {
-			$out .= "if false # ";
+			$out .= "if false #";
 		}
 	}else{
         	$out .= "if ";
@@ -641,8 +641,8 @@ function makesinglerule($rule, $mode='rule') {
             $terse .= $clr;
         }
         $text .= sprintf( _("<em>file</em> it into the folder %s"),
-            ' <strong>' . htmlspecialchars(imap_utf7_decode($rule['folder'])) . '</strong>');
-        $terse .= sprintf( _("File into %s"), htmlspecialchars(imap_utf7_decode($rule['folder'])));
+            ' <strong>' . htmlspecialchars(imap_utf7_decode_local($rule['folder'])) . '</strong>');
+        $terse .= sprintf( _("File into %s"), htmlspecialchars(imap_utf7_decode_local($rule['folder'])));
         
         if(!empty($inconsistent_folders) && in_array($rule['folder'], $inconsistent_folders)) {
             $cls = '<em>' . _("(Warning: Folder not available)") . '</em></span>';
