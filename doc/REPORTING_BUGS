@@ -1,0 +1,15 @@
+Reporting Bugs
+
+   If you encounter any problems while using avelsieve, you would be much
+   appreciated to send a bug report.
+
+   Please follow these steps:
+    1. Edit your configuration file (config/config.php) and set
+       AVELSIEVE_DEBUG to 1.
+    2. Try to recreate the problem. If it has happened due to the
+       generated script being incorrect, then when avelsieve tries to
+       upload the script again, this will generate the error and the whole
+       SIEVE script will appear on the output.
+    3. Email a copy of this script, the error message and a description of
+       what you did to trigger it, to the email address avel @
+       users.sourceforge.net.

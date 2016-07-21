@@ -1,0 +1,2 @@
+#!/bin/sh
+msgfmt -c -v -o avelsieve.mo avelsieve.po

@@ -1,0 +1,14 @@
+How to grab the latest sources from the Public Subversion Code Repository:
+
+---
+
+svn co https://email.uoa.gr/repos/squirrelmail/avelsieve/main_plugin/trunk avelsieve
+
+----
+
+Note: The secure site https://email.uoa.gr is signed by the Certificate Authority
+of the Network Operations Centre of the National and Kapodistrian University of
+Athens. The certificate of the CA is located at the URL:
+http://www.noc.uoa.gr/uoa-ca.crt
+
+

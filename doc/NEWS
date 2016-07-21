@@ -1,0 +1,886 @@
+Devel Series (1.9.x)
+
+  1.9.9 ALPHA - Devel Branch
+
+     * New feature: Support for the Sieve Date Extension. This allows
+       conditions and tests against the message's date/time, or the date
+       and time during the execution of the Sieve script.
+     * New feature: Support for the Sieve Index Extension. This allows for
+       checks against a specific header index (for instance, the second
+       Received: header counting from the last one).
+     * New feature: Support for the Sieve IMAP4Flags Extension. This
+       allows additional Sieve actions that set specific IMAP flags or
+       labels to messages. Standard IMAP4 flags, Thunderbird labels and
+       even custom labels are supported.
+     * New User Interface: the condition of a rule is now dynamically
+       driven via Javascript. New conditions can be added or changed
+       on-the-fly via AJAX, without reloading the entire page. Also,
+       dynamic blocks within a single condition are supported.
+     * All Javascript functions are now under the AVELSIEVE namespace so
+       as not to pollute the global namespace.
+     * Vacation action has been renamed to "Vacation / Autoresponder",
+       since now it will be used more often for out-of-office- or
+       out-of-service- style notices because of the date-time feature.
+     * New Debug options in config.php, allow testing of avelsieve
+       features without the actual feature existing on the server.
+     * Eliminate PHP Notice in STARTTLS check in ManageSieve library.
+     * Bugfix: Rule actions icons should now be properly
+       vertically-aligned.
+     * This release is sponsored by Alexey Melnikov and by ellak.gr.
+
+  1.9.8 ALPHA - Devel Branch
+
+     * A large part of the code that is the part of the rule editing
+       procedure has been rewritten, in order to accomodate for a more
+       flexible way to add new types of rules. The special "SPAM rule" has
+       been rewritten to comply with this scheme.
+     * A new-style SPAM rule has been implemented. (Rule #11)
+     * Split custom SPAM Sieve rule building to its own file
+       (include/sieve_buildrule.10.inc.php); this allows for easier
+       defining of customized rules, too.
+     * A new, global Whitelist rule (Rule #12) has been implemented, for
+       the SPAM rules to take advantage of.
+     * New, "Custom Sieve Code" rule (Rule #13) has been implemented; this
+       allows users to enter directly Sieve code snippets as a rule. This
+       feature is still alpha / experimental, and needs a rework on the
+       error handling, when there are parse errors. Feature contributed by
+       Konstantinos Koukopoulos (kouk /at/ noc.uoa.gr)
+     * Miscellaneous code movement and restructuring. The processing of
+       user input has been moved to the rule classes; addspamrule.php has
+       been replaced with the class that extends the edit class; an
+       intermediate class for SPAM-rules has been implemented; better
+       object consistency is followed.
+     * UI: The "Add New Rule" buttons are now links, and are displayed
+       both at the top and at the bottom of the rule table.
+     * UI: Major rework in the UI of both the Rules Table and the Add New
+       Rule / Edit Rule pages. The buttons and links have been rearranged
+       for better usability, many messages have been changed, visual clues
+       have been introduced, options and help texts are hidden with
+       Javascript etc.
+     * UI: If a vacation rule is active, then display a notice in the
+       rules table page and upon logging in to Squirrelmail, that reminds
+       the user. (Idea inspired with help by Joel Davis)
+     * UI: Vacation options have been aligned properly; text has been
+       changed accordingly.
+     * Sieve: Vacation Subject is now supported.
+     * New functionality: "Insert New Rule Here"
+     * New functionality: "Move Rule to Position" (requires Javascript)
+     * Avelsieve now highly recommends the use of javascript_libs plugin
+       for some visual effects / UI improvements.
+     * UI: Added new icons and used different ones, to improve usability.
+       Icons are provided by Mark James' [1]famfamfam.com.
+     * UI: Added new icon "theme" based also on famfamfam.com. This theme
+       is the default from now on.
+     * UI: Removed unnecessary text / clutter from rules table page.
+     * UI: The notify action options have been aligned in a table.
+     * Added an LDAP Sieve storage backend, compatible with [2]Sun
+       Messaging Server's Sieve features. Kindly contributed by: Laurent
+       Buset, Pascal Maes and Boris Maroutaeff of [3]Universite catholique
+       de Louvain.
+     * The DO_Sieve_* backends should have a separate retrieve() method
+       for retrieving the raw Sieve script. Currently, only the
+       Managesieve backend has it.
+     * Various phpdocumentor fixes.
+     * Bugfix: When editing rule with redirect action, the 'keep' option
+       was always checked. (Thanks to Jonathan Lumpkin).
+     * Version check for Squirrelmail search integration is performed
+       outside of plugin registration. Ensures compatibility with
+       Squirrelmail CVS as of 2006-10-15 and Squirrelmail 1.5.2.
+     * Hook registrations have been updated to be Squirrelmail-compatible
+       (as of SM-1.5 SVN HEAD 2007-01-17). Thanks to Marc Groot Koerkamp!
+     * Initial "configtest" module for Squirrelmail's configuration test.
+     * Bugfix: The notify action is displayed only if the notify
+       capability exists.
+     * Bugfix: The notify method is displayed properly in the verbose
+       rules table.
+     * Bugfix: When displaying as "source", also display the disabled
+       status.
+     * Bugfix: Allow empty vacation :addresses field again. (Thanks to
+       Satadru Pramanik)
+     * Bugfix: Authorization login for Squirrelmail 1.5 CVS with authz
+       plugin now works.
+     * Moved Javascript logic to its own file, and cleaned up edit.php so
+       that it will load the javascript separately when it is a popup
+       window.
+     * Added new helper / javascript functions in
+       include/html_main.inc.php: js_toggle_display(), determineState(),
+       stateCheckbox(), stateVisibility(), to help with
+       javascript-enhanced UI.
+     * New concept of a "unique" rule: this type of Sieve rule can only
+       exist once in a Sieve script, because UI-wise it would not make
+       sense to have a lot of them. For example, the new junk mail rule
+       and the whitelist are such constructs.
+     * New concept for "undeletable" rule. This cannot be deleted from the
+       UI. The purpose is to allow more user-friendly junk mail or
+       predefined rules. The new junk mail rule is such a rule.
+     * The "tech" description of the rules was very similar to "terse",
+       did not offer anything UI-wise but clutter and therefore has been
+       removed completely.
+     * More appropriate style for the "source" display of rules.
+     * Gathered all CSS styles used, in include/styles.inc.php
+     * New functionality for returning back to another page, after editing
+       a rule. Useful for editing Junk Mail options, Whitelist, custom
+       rules made from messages etc.
+     * Junk Mail Options are accessible from folder "INBOX.Junk" or
+       "Junk", as well as from Options Page.
+     * Version and info functions have been adjusted for greater
+       Squirrelmail-guidelines compliance.
+     * Corrected header X-Mailing-List in the default select box for
+       header matching. (Thanks to Jan Hauke Rahm)
+     * Configuration files are now split on a per-customized-rule basis,
+       making it a bit easier to upgrade avelsieve.
+     * Minor comsetic changes in debug mode output, until a better error
+       handling is available for the Data Object classes.
+     * Remove unused / badly designed 'frontend' option from sieve actions
+       classes.
+     * Bugfix: When there are no capabilities to be "required", don't
+       output an empty require [] line. ( Stephan Bosch)
+     * Bugfix: in the ManageSieve library, ignore case for the available
+       capabilities. ( Stephan Bosch)
+     * Fixes in ManageSieve library with regard to deleting scripts and
+       making avelsieve operational with Dovecot IMAP server, tickets
+       #246, #247.
+     * TLS option in ManageSieve can be explicitly disabled.
+     * Allow the + (plus) character in email addresses field of forward
+       action so that subaddressing is possible; thanks to Philipp
+       Dreimann.
+     * Fixed typo (regural -> regular)
+     * Fixed typo in default config file (header X-MailingList became
+       X-Mailing-List). Thanks to Debian package maintainer Jan Hauke
+       Rahm.
+
+  1.9.7 - Devel Branch
+
+     * Compatible with Squirrelmail 1.5.2 (new init scheme).
+     * Add STARTTLS feature for ManageSieve class (thanks to Anish Mistry)
+     * All HTML markup is now valid HTML 4.01. Page display should work in
+       Konqueror properly.
+     * Small improvement in order to make the plugin usable for
+       non-javascript users.
+     * Bugfix: When adding a new rule and an error occurs, then do not
+       lose any changes applied so far.
+     * Bugfix: Typo in edit.php, prevented rule from being added
+       dynamically (e.g. from Search Results or from Message View) when
+       the Filters page had not been previously loaded.
+     * Bugfix: Due to a programming error, the wrong capabilities were
+       required in the Sieve script.
+     * Bugfix: Capabilities check is performed correctly.
+     * Bugfix: Body Sieve code lacked spaces: body :contains"foo" , which
+       resulted in syntax error.
+     * Bugfix: Now actually display link to create filter in search
+       integration feature, when Compose in new window is true.
+     * Bugfix: Search Integration: When no search criteria could be
+       expressed as sieve rules, then the Create Filter link is not
+       displayed.
+     * Bugfix: Create Folder when adding rule sometimes did not work.
+     * Bugfix: Nasty bug that only showed up with Opera and large (>200
+       chars) Vacation Addresses: field. The "Edit" form would not be
+       submitted correctly when Addresses was > 200 chars. Also submitted
+       bug #221983 to Opera.
+     * Cleaned up the skeleton file for new backends.
+
+  1.9.6 - Devel Branch
+
+     * Add support for multiple Sieve script "storage" backends. Sieve
+       scripts can be stored to and retrieved from a ManageSieve server,
+       the filesystem or a remote machine. Currently, only the ManageSieve
+       backend is implemented, but it is very easy to write other backends
+       as well.
+     * Add initial support for [4]Exim4 and [5]MFL Sieve scripts.
+     * Bugfix: The delete operations did not save the rules immediately in
+       "non-conservative" mode. (Simon Matter)
+     * Bugfix: Allow 1 day length between vacation messages, instead of
+       >1. (Simon Matter)
+     * Bugfix: Properly require "body" (thanks to Anthony).
+     * Workaround: Only enable Search Integration feature if in
+       Squirrelmail Devel branch (1.5.x) (Simon Matter)
+
+  1.9.5 - Devel Branch
+
+     * New Feature: In Squirrelmail Search page, a user can now easily add
+       a new server-side Sieve rule based on the criteria that are
+       described in the Search interface.
+     * Actually honor variable $translate_return_msgs. (Thanks to R. Welz)
+     * Bugfix: Capability of Envelope is now properly detected and the
+       proper Sieve require command is used. (Thanks to R. Welz)
+     * Bugfix: When no action has been selected, explicitly select 'keep'
+       as the default.
+     * Bugfix: IMAP Server to Sieve Server mapping.
+     * Improved error message printing. Properly translate error messages
+       that relate to connection errors to timsieved. PHP warnings are
+       suppressed during these connection errors.
+     * In deletion of rules: Redirection is performed so as to eliminate
+       the 'rm' GET parameter. (User could do "Reload Frame" in browser
+       and delete more rules by mistake).
+     * Internal: Changed all ManageSieve wrapper functions to have the
+       Sieve handler as the first function argument. Also changed all
+       script-related functions to have the script name as an argument.
+       This will allow for interface of management of multiple scripts in
+       a future version.
+     * Internal: Implemented avelsieve_initialize() which removes a lot of
+       duplicate code. Misc. other cleanups have been made as well.
+     * Better naming for various functions and configuration parameters,
+       so as to avoid collision with other functions or variables in
+       Squirrelmail.
+     * Updated German Translation (Karsten Behrens)
+     * Updated Greek Translation (Alexandros Vellis)
+     * Added Bulgarian Translation (Ognyan Kulev)
+     * Removed some left-over debug output from 1.9.4 release.
+
+  1.9.4 beta - Devel Branch (3/1/2006)
+
+     * Reorganized the internal structure of the rule condition. Now there
+       is a cond array, in which all conditions are stored. Different
+       types of conditions can be mixed in the same rule, for instance:
+       "envelope FROM contains foo or Address From: contains foo". Proper
+       migration from intrelnal structure of versions <= 1.9.3 is
+       (hopefully) performed.
+     * Envelope, Address and Body capabilities / extensions are now fully
+       supported.
+     * Implemented proper validation for some of the fields entered by the
+       user, such as in the 'redirect' and 'vacation' email addresses.
+     * The automatic creation of rules, invoked when reading a message,
+       now creates rules of type "address".
+     * Inserted squirrelmail plugin hooks, intended for new plugins that
+       extend avelsieve's functionality.
+     * Workaroune for a bug where avelsieve could not upload the script,
+       when only one rule was disabled. (Thanks to Bethke Peter)
+     * Processing of rules from user input (_POST etc.) is more robust.
+     * When a folder does not exist, or is not accessible, and this same
+       folder is refered to in a rule's fileinto action, then a warning
+       message is displayed to the user.
+     * Added new configuration options:
+
+     * $avelsieve_oldcyrus: In Cyrus 2.3+, the notification action is
+       fully supported, as opposed to older Cyrus versions. The oldcyrus
+       variable is for supporting the partially implemented notify
+       extension implementation of Cyrus < 2.3. If you have Cyrus < 2.3,
+       just set this to true. This only changes the informational / help
+       text displayed in avelsieve.
+     * $avelsieve_enable_envelope_auth: If you have Cyrus with an lmtpd
+       that can understand the "auth" argument to the :envelope test as
+       the SMTP/LMTP auth, or any other Sieve implementation than can
+       understand the authentication ID, then you can enable this to
+       provide this functionality to the user.
+       This was not clarified in the base spec of RFC 3028. It will be
+       done correctly in a new version of Cyrus, based on a new draft /
+       spec.
+     * $avelsieve_spam_highlight_enable: A boolean option that turns on
+       the creation of a highlight rule in the message highlight options
+       of Squirrelmail. (Note: needs a patch in Squirrelmail code, which
+       hasn't been released yet).
+
+     Updated ManageSieve class to 0.9.0 CVS. Notable changes from its
+   changelog:
+     * Applied REFERRAL fixes for Cyrus v2.2 / v2.3, by Duncan Gibb of
+       Sirius Corporation
+     * Fix curly braces '{' escaping, to work correctly in PHP 5.1.
+       (Thanks to Oded Arbel).
+
+     Debug option is now placed in configuration file (config/config.php).
+
+     A warning is entered in the script, that if it is edited manually,
+   the changes will not be reflected in the GUI.
+
+     Slightly modified dumpr (Licence: LGPL) is included in the
+   distribution for purposes of debugging.
+
+     In Squirrelmail 1.5.x, while editing a rule, the complete, sorted
+   folder listing is displayed in the select box. (Original patch by Simon
+   Matter).
+
+  1.9.3 beta - Devel Branch (27/6/2005)
+
+     * Fix for compatibility with PHP5.
+     * Corrected the handling of specified notification methods.
+     * Bugfix: Proper parsing of lines > 1024 characters. An unneeded
+       newline was being added to the stream while getting ther rule. Many
+       thanks to Jan Klepal.
+     * Bugfix: Don't print the values of the header match rules twice!
+     * Updated Spanish Locale (Eduardo Mayoral)
+     * Corrected Norwegian locale: updated moved existing norwegian
+       translation to Norwegian Bokmal directory. (Thanks to Hans F.
+       Nordhaug for correcting my mistakes).
+     * Added more AVELSIEVE_DEBUG hooks to help people report bugs. Added
+       REPORTING_BUGS help text.
+
+  1.9.2 beta - Devel Branch (15/3/2005)
+
+     * New functionality to Enable / Disable Rules, original patch by
+       Simon Matter. Rules can be disabled temporarily by the user and not
+       be deleted altogether. The GUI for the actions in the rules table
+       has been sorted out.
+     * Endoding and decoding of script, between UTF-8 and Squirrelmail's
+       charset, is now done more robustly; recode and iconv functions are
+       supported, aside from multibyte string functions.
+     * The terse description of the filtering rules has been updated with
+       more friendly strings, which are now i18n-able.
+     * There are two new display modes for the table of filtering rules, a
+       more terse ("techy-style" aka geeky) display and a SIEVE source
+       display.
+     * The display mode is saved in Squirrelmail Preferences instead of
+       the Session. Therefore, it can now stay persistent across Webmail
+       sessions.
+     * Squirrelmail's top links are now displayed again in the Rule
+       Editing window, when it is not a popup.
+     * Fixed bug introduced in Devel series, where notification action
+       could not be removed. (Thanks to Christos Soulios).
+     * While Editing a rule, this action has been reinstated: keepdeleted
+       ("keep a copy in INBOX, marked as deleted"). Also the 'disabled'
+       action is there, too.
+     * These actions, such as stop, notify, keepdeleted, disabled are now
+       in a separate section in the Edit Rule page.
+     * Avelsieve can now parse a redirect parameter with multiple space-
+       or comma-separated emails, and print out multiple redirect
+       statements in the SIEVE script.
+     * Descriptive text for Notify action (short version) now shows the
+       destination address.
+     * Added X-List-Name: to the default list of headers listbox, as it is
+       used by Majordomo. Suggested by Florin Andrei.
+     * Polish translation by Martin Przybylek.
+     * Dutch translation by Maxim Baars.
+
+  1.9.1 beta - Devel Branch (22/12/2004)
+
+     * Fix off-by-one serious error in MANAGESIEVE class. The bug could
+       DoS the Apache server by getting PHP into an endless loop.
+       [6](Sourceforge Bug Tracker Link)
+     * Corrected handling of Whitelist values in SPAM Rule. Previously, in
+       Advanced SPAM Rule Creation, a SPAM Rule that had no effect could
+       be created because a wrong whitelist value would be enabled. This
+       fix also improved the GUI behavior (Nikos Voutsinas).
+     * The [7]sieve-php(MANAGESIEVE) class can now handle REFERALS (patch
+       by Michael Loftis).
+     * Added Mailing-List to the default headers select box, as suggested
+       by Florin Andrei.
+     * Made some input textboxes handle larger text (changed maxlength).
+     * Enabled STOP by default in new SPAM rule.
+     * Do not use function call-time pass-by-reference, for better
+       compatibility with PHP4/5.
+
+  1.9.0 alpha - Devel Branch (22/11/2004)
+
+     * New feature: A mail filtering rule can be created on-the-fly while
+       reading a message in Squirrelmail. The algorithm is similar to
+       other MUAs: First a check is done if the mail belongs to a mailing
+       list, then a check on the sender and destination addresses, and
+       lastly the Subject is taken into account.
+     * The Edit Rule page has been redesigned. Specifically:
+
+     * The type of rule (size match, header match etc.) can be changed
+       on-the-fly.
+     * Action Options are displayed only when the relevant action has been
+       selected.
+     * On-the-fly new folder creation now works properly, with better
+       error handling.
+     * The page takes into account user's preferences on new popup windows
+       and javascript options.
+
+     The Edit Rule page can now add a new rule.
+
+     The Add new Rule Wizard has been obsoleted by the revamped Edit Rule
+   page.
+
+     Completely rewritten a lot of the code that handles the GUI parts of
+   avelsieve. The code is written in a way so that new GUI frontends can
+   be written a bit more easily.
+
+     The "More..." button in Spam Rule Whitelist now adds items properly.
+
+     As always, code cleanups all around.
+
+Stable Series (1.0.x)
+
+  1.0.1 - Stable (22/12/2004)
+
+     * Fix off-by-one serious error in MANAGESIEVE class. The bug could
+       DoS the Apache server by getting PHP into an endless loop.
+       [8](Sourceforge Bug Tracker Link)
+
+  1.0 Stable (22/11/2004)
+
+     * Fixed page header link to not specify target - makes avelsieve work
+       with multiple windows.
+     * French Locale update (Bachelier Vincent)
+     * German locale update (Ralf Hildebrandt)
+
+Pre-1.0 Series (0.x.y)
+
+  0.9.11 (17/5/2004)
+
+     * Fix whitelist functionality - previous attempt did not work
+       properly.
+     * Fix for 'not regex' rule building Sven Schaffranneck
+     * Fix for default_sub_of_inbox=false mode by Guido De Rosa
+     * If Trash Folder is not set or set to None, SPAM rule GUI will not
+       show the relevant option, and rule building will fall back to a
+       hypothetical Trash Folder (Eduardo Mayoral).
+     * Updated Finnish Translation (Veli Pirttila)
+
+  0.9.10 (20/4/2004)
+
+     * Czech Translation included (Jiri Demel)
+     * Fixed None string appearing many times in the folder listbox.
+     * Added To: or Cc: shortcut rule in header match.
+     * Added functionality to edit or duplicate a SPAM rule.
+     * Added whitelist functionality to SPAM rule.
+     * Corrected advanced rule display in regard to SPAM rule.
+
+  0.9.9
+
+     * Fixed Spam Rule building; the Spam Tests (RBLs) are now ORed
+       instead of ANDed. Comparison test is 'ge' (>=) instead of 'gt' (>).
+     * Spam Rule Functionality can be configured to get the RBLs from
+       Sendmail's configuration (from LDAP Server).
+     * Non-conservative mode has been made available again. Set
+       $conservative = false, to remove the "Save Changes" complexity and
+       to save any changes immediately to timsieved.
+     * Upgraded to new [9]sieve-php.lib class version 0.1.0.
+     * Fix folder listbox to work with Cyrus alternate namespace (Patrick
+       Welche)
+     * If useracl plugin is installed, folder listbox will only show the
+       folders where user has append permission.
+     * Added the option to keep a local copy together with the redirect
+       action.
+     * When duplicating (copying) a rule, new rule is placed below the
+       previous one. (Thanks to Stephan Wentz)
+     * Added confirmation dialog when deleting a rule. (Stephan Wentz)
+     * Javascript error in edit rule page fixed. (Kostas Tsimpanis)
+     * Added Italian Translation. (, Alessandro Dalvit, also translation
+       by Lorenzo Luconi Trombacchi available)
+     * Updated Spanish Translation. (Jacobo Tarrio Barreiro, Eduardo
+       Mayoral)
+
+  0.9.8
+
+     * Fixed bug wherre $sieve->response had the list of scripts as a
+       leftover, instead of the script itself. ("Rasputin", Ilya Pizik)
+     * Updated Russian Translation. Converted to UTF-8 from koi8-r. (Igor
+       Karpov)
+
+  0.9.7.1
+
+     * Corrected typo in table.php, which resulted in the Add a New Rule
+       page not to work.
+     * Added doc/INSTALL.
+
+  0.9.7
+
+     * New option for a special rule called "SPAM Rule". Allows for easy
+       addition of an Anti-SPAM rule. Advanced configuration allows for
+       setting the desired score, the SPAM lists to check against and the
+       desired action. Actions are: Move to Junk Folder (if [10]Junk
+       Folder plugin is enabled), Move to Trash, Discard. Administrator
+       Configuration options to define the SPAM headers, lists etc. used
+       in a particular site have been added.
+     * If vacation address does not exist, do not set the :addresses
+       argument (Marco Senft)
+     * Corrected multiple, nested forms in table.php (violates HTML4).
+     * sqimap_mb_convert_encoding() returns '' if mb_convert_encoding()
+       does not exist. Fixed. (Many thanks to Simon Matter)
+     * Added <label> tags in all texts next to radio and checkbox buttons,
+       so as to make selecting them easier.
+     * Notification ID has been commented since it's not in use currently.
+     * Added GIF images for Internet Explorer compatibility. IE cannot
+       handle PNG transparency normally.
+     * Removed $text$ and $text[n]$ from notification help, since it is
+       [11]not supported by Cyrus yet.
+     * Fixed tools URL so as not to end in &, since some proxys complain
+       for invalid URL (Simon Matter)
+     * Locale bug fixes (Karsten Behrens)
+     * Gettext template is now named correctly (avelsieve.pot). Gettext
+       with PHP mode is used.
+     * Ldapuserdata mode allows getting email addresses from LDAP
+       identities, provided by LDAP Prefs Backend plugin.
+     * If there is only one notification method available, don't display a
+       drop down widget.
+     * When editing a rule with notification action, the saved
+       notification parameters will be displayed correctly. (Chris
+       Winterrowd)
+     * Bugfix: If there is one rule left, it can be deleted normally
+       again. For good this time. (Hopefully).
+     * Small bugfix: Last modification date is displayed properly.
+     * Updated German Translation (Karsten Behrens)
+     * Updated Lithuanian Translation (Tomas Kuliavas)
+
+  0.9.6 (29/9/2003)
+
+     * Scripts are properly encoded in UTF-8. Backward compatibility with
+       previous versions is preserved -- if version < 0.9.6, no decoding
+       is done. (Thanks to Tomas Kuliavas for his help).
+     * Information about creation date and last modification date of the
+       script is displayed.
+     * Support for imapproxy; if you enable the new option imapproxymode
+       in config.php, you can also define a mapping from the imapproxy
+       server (usually localhost) to the real IMAP/SIEVE server, since
+       imapproxy cannot understand MANAGESIEVE.
+     * Bugfix: The last rule can be deleted normally again. (Broken in
+       0.9.5). Thanks to Joseph Tate.
+     * Supports the [12]different authentication & authorization patch,
+       i.e. displays the script of the authorized user.
+     * SASL PLAIN in sieve-php.lib.php has been fixed so as to correctly
+       pass the authorization identity.
+     * You can enable AVELSIEVE_DEBUG mode in table.php, for
+       troubleshooting and debugging avelsieve easily.
+
+  0.9.5 (12/9/2003)
+
+   Mostly a bugfix release.
+     * Now escaping of \ and " are done properly.
+     * Corrected some htmlspecialchars() declarations while building the
+       script.
+     * When wrong (non-parsable) script is created, the script can be
+       displayed for debugging purposes and to help send me a bug report
+       so as to fix it! Uncomment the relevant lines in sieve.php, line
+       #62, to enable this.
+     * Fixed "Move to bottom" functionality (Simon Matter)
+     * Some more minor bug fixes.
+     * Updated Spanish translation (Eduardo Mayoral)
+     * Updated Greek translation.
+
+  0.9.4 (1/9/2003)
+
+   Note: Since there are some changes in the configuration file, I suggest
+   that you use the supplied config.php file and import back any changes
+   you have made afterwards.
+     * XSS (Cross Site Scripting) Security Bug Fixed. Upgrading to version
+       0.9.4 is strongly encouraged. Thanks to "David F. Madrid" for
+       bringing the problem to my attention.
+     * Avelsieve version information is stored in the SIEVE script, for
+       backward compatibility reasons.
+     * If the user is using identities, all her email addresses are
+       displayed in the vacation input box. ([13]Pascal Schelcher)
+       [Previously this would work only when LDAP Prefs Backend was
+       enabled]
+     * Added configuration option to force-disable certain SIEVE
+       capabilities, so as not to be displayed in the GUI. For instance,
+       you can disable the display of notify or vacation options, even
+       though timsieved supports (& advertises) them. (Idea inspired by
+       Chris Winterrowd)
+     * Added config option for preferred SASL authentication mechanisms to
+       use.
+     * Added move to top / bottom functionality in the rules table, so as
+       to quickly reorder the rules.
+     * Removed obsolete and incomplete image themes; now there are two
+       complete themes: Plain-Bluecurve style (16x16) and GTK-BlueCurve
+       style (24x24), the latter being the default.
+     * Created interface for new "tools" (along with create, duplicate,
+       edit etc.) to be created easily: function
+       avelsieve_print_toolicon()
+     * Formalized code comments and brought them up to date; now using
+       Javadoc-style comments.
+     * When editing an existing rule, notify method is displayed
+       correctly.
+     * Added Romanian translation (Marius Onica)
+     * Lots of code cleanups.
+
+  0.9.3 (1/8/2003)
+
+     * GUI issue resolved; when choosing to create a new folder or when
+       selecting an existing folder, the corresponding radio button is
+       selected automatically.
+     * Added translation to Lithuanian, by Tomas Kuliavas
+     * Added translation to Brazilian Portuguese, by Gleydson Mazioli da
+       Silva
+     * Updated German translation (Karsten Behrens)
+     * Updated Finnish translation (Veli Pirttila)
+     * Added version information per Squirrelmail plugins guidelines.
+
+  0.9.2 (9/6/2003)
+
+     * Error handling in the creation of a new folder whilst adding a new
+       rule has been reenabled, and greatly enhanced with some pretty
+       error checking & handling.
+     * While editing a rule, the fileinto folder option looks nicer.
+     * Removed the dependancy of sieve-php.lib on extension mhash.so, if
+       DIGEST-MD5 is used. Many thanks to [14]Chris Hilts!
+     * Updated .po file problems, and merged them with the new strings
+       that have appeared around the code. Also introduced translation
+       statistics to keep track of the translations.
+
+  0.9.1 (30/5/2003)
+
+     * Buggy backward-compatibility code was removed. Now Squirrelmail 1.4
+       is a requirement.
+     * Bugfix release, moving to a stable and bug free (hopefully)
+       1.0-"final".
+     * At last, 100% register_globals=off compatible!
+     * At long last, 100% error_reporting=E_ALL compatible! (Or 99%, until
+       version 1.0).
+     * Alternative sieve-php.lib is provided, for the people who don't
+       want the dependancy on mhash.so. (Please provide a patch if you'd
+       like some nicer way).
+     * Problems with a table with no filters being displayed instead of
+       the introductory message were fixed once more.
+     * Localization issues for these messages have been taken care of.
+     * Now vacation email is always set by default. If user does not
+       specify email addresses, Squirrelmail's From: Address is used.
+       Handling of email addresses was fixed. If the LDAP prefs backend
+       (ldapuserdata plugin) is used, it can be configured to get all
+       addresses from the LDAP attributes mail and mailAlternateAddress.
+     * Creating a new folder when adding a new rule has been temporarily
+       disabled. Will be reenabled in 0.9.2.
+     * When editing an existing rule, notify parameters are displayed and
+       saved correctly.
+     * Switching between verbose and terse mode is now saved correctly
+       (for the session).
+     * Added Norwegian translation (Alexander Brill)
+     * Added Icelandic translation (THor Sigurässon)
+     * Updated Greek translation (Alexandros Vellis).
+
+  0.9 (23/4/2003)
+
+     * Made it Squirrelmail 1.4.x-compatible again! (My compatibility code
+       seems to break compatibility :-/ )
+     * Various small fixes and cleanups.
+     * This is the last "stable" version, and the last one to support
+       Squirrelmail 1.2.x. From now on, please either upgrade to
+       Squirrelmail 1.4.x or use the compatibility plugin.
+
+  0.9pre5 (25/2/2003)
+
+     * Made it Squirrelmail 1.2.x-compatible again; it now includes
+       Squirrelmail's function sqGetGlobalVar() for those who haven't
+       upgraded yet. Sorry for the inconvenience!
+
+  0.9pre4 (25/2/2003)
+
+     * Bug fix: When entering the Filters screen for the first time, a
+       table with an empty line was produced for the first time... (Daniel
+       Henninger)
+     * Renamed support.php so as to avoid conflicts with twc_weather
+       plugin (Ryan Press)
+     * Forgot to remove debugging code in 0.9pre3...
+     * Fixed session problems; now uses Squirrelmail's session functions
+       from global.php
+     * Simplified and deleted a lot of code by removing the option for
+       non-conservative connections
+     * Added partial greek translation.
+
+  0.9pre3 (21/1/2003)
+
+     * Supports [15]Sieve - notify extension
+     * Updated French Translation (John Cotter)
+
+  0.9pre2 (11/12/2002)
+
+     * Works with register_globals = Off!
+     * Works with Squirrelmail 1.3.2+ !. Uses SM_PATH and friends.
+     * Backward-compatible with Squirrelmail 1.2 (does version checking).
+     * New way to display the description of a rule: either verbose (as
+       previously) or terse. The display mode is saved in a session.
+     * Now supports [16]Sieve regexp extension.
+     * Delete Selected Rules now works correctly!
+     * Fixed the newlines in the vacation message (from \n to \r\n) and
+       made it support multi-line text as well. (Christian Schneider,
+       Martin Schipany).
+     * Translation of the messages returned by the Reject and Vacation
+       actions is now configurable in config.php, and turned off by
+       default (i.e. predefined messages are in English). You can turn it
+       back on, if you are on an intranet environment or somewhere you
+       know most communication is happening in the same language.
+     * A lot of small bug fixes, code cleanups, HTML cleanups.
+
+  0.9pre1 (19/11/2002)
+
+     * Supports the matches wildcard glob-style operator for header
+       matches (many thanks to [17]Christian Schneider for his code!).
+     * Also supports various [18]Sieve relational tests for the header
+       match, like greater than or equal to etc. Also added some headers
+       like X-Priority: and X-Spam-Flag: (credits to Mathias Homann for
+       this one ;))
+     * A new option to keep a message flagged as deleted in user's inbox.
+       ([19]Christian Schneider).
+     * sieve-php.lib was patched so that various SIEVE extensions are now
+       detected automatically. So, if an implementation does not support
+       vacation, this functionality will not appear to the user. The
+       capabilities supported so far are: fileinto, reject, vacation,
+       imapflags, relational. Also, body and regexp will be supported
+       soon!
+     * In the rules table, a "Delete Selected Rules" button together with
+       the checkboxes is now available (although a bit buggy!). Also the
+       code got much more simplified and cleaned up.
+     * Started implementing [20]SIEVE: Body Extension.
+     *
+
+  0.8 (6/11/2002)
+
+     * More superglobal arrays and register_globals=off fixes.
+     * Editing a rule should work now well, even for rules with header
+       matches et al.
+     * Added some more headers in the combo box, like X-Spam-Flag (through
+       config.php).
+
+  0.8pre7 (8/10/2002)
+
+     * Fix for $items handling - made that superglobal too. The header
+       match screen should display properly now. (Bjoern T Johansen)
+     * i18n fix for installations that use Squirrelmail's gettext hack
+       instead of PHP's gettext module (Stefan Rapp).
+
+  0.8pre6 (4/10/2002)
+
+     * Added translation to simplified Chinese, by [21]Jack Gao
+     * Locale and gettext fixes (Torsten Westermann).
+
+  0.8pre5 (30/9/2002)
+
+     * Major new feature: A rule can now be edited.
+     * Major rework on the appearance. Now all the pages look even better,
+       and more like the rest of the Squirrelmail interface.
+     * Added checkbox widgets, so that many rules can be deleted at once.
+     * Now uses superglobal arrays everywhere (e.g. _$SESSION instead of
+       the deprecated $HTTP_SESSION_VARS). Possibly works with
+       register_globals turned off (not yet tested).
+     * Renamed files from '.inc' to '.php', for security reasons and
+       consistency.
+     * User-interface cleanups, more friendly messages when a rule has
+       been deleted, added or updated.
+     * Fixed bugs with regard to gettext messages and including files.
+     * Added French translation by [22]Juan-Francisco Diez
+     * Code cleanup. Mailbox list printing is now a function; added other
+       files such as constants.php and process_input.php.
+     * Miscellaneous other code cleanups.
+
+  0.7 -- Skipped (6/2002)
+
+     * Fixed the style sheet in addrule.php. Now it looks just like the
+       rest of the Squirrelmail interface - it uses the same header. This
+       hopefully fixes the layout on some pages in konqueror (kde3.0.1)
+       and Netscape 6. (Torsten Westermann for the idea).
+     * Bugfix: spare quote in addrule_html.inc was deleted. Now the Clear
+       this form button works in konqueror. (Torsten Westermann)
+     * Added spanish translation by [23]Eduardo Mayoral .
+     * Translations and gettext bug fixes. Now the localization should
+       work normally, everywhere. Hopefully. Fixed the "The header"
+       string.
+     * More path and cwd fixes. Now everything is chdir'ed to plugins/ as
+       it should be.
+     * Bugfix: the locale .mo files need not be copied to the global
+       locale dir.
+     * Folders drop-down widgets have been changed to show a tabbed view
+       of the tree and to support modified-UTF-7-encoded folder names, for
+       international folder names.
+
+  0.6 (29/5/2002)
+
+     * New feature: When adding a new header rule, at step 2 a user can
+       define many if statements, which will all be ANDed or ORed. The GUI
+       was sorted out as well. Rows of statements can be added or removed
+       dynamically with submit buttons. The maximum number of statements
+       inside the rule, as well as the starting number of statements and
+       the headers to display in the listbox, are now all
+       administrator-definable, in config.php.
+     * Added i18n hooks and support for gettext.
+     * Added german translation by Torsten Westermann.
+     * Added russian translation by [24]Vadim Kozlov.
+     * Added Features, bugs sections in documentation.
+
+  0.5 (19/4/2002)
+
+     * Fixed a bug that triggered when a user decided to click somewhere
+       else (e.g. on a folder in the folder list frame) when adding a
+       rule, and then wanted to come back and add a rule.
+     * Fixed another bug having to do with strange chdir()s (again).
+       Strange that these don't occur in my PHP installation. Thanks to
+       Martin (no further info ;-)).
+     * Added GNOME themes for the icons.
+     * Changed status to beta. :)
+
+  0.4 (4/4/2002)
+
+     * Fixed the hook function name. Thanks to Nick Sayer for reporting
+       this.
+     * Fixed (hopefully) a bug that appeared when user deleted all the
+       rules. Apparently, a script with just a require line was created.
+       Again, thanks to Nick Sayer.
+     * Fixed a small chdir problem in table.php. Thanks to Stephane
+       Bonnell and Claus Nielsen.
+     * Changed the overall behaviour: no more if { ... } elseif {... }
+       else { ...}. Now, every rule is in its own if block. Also added the
+       option to stop processing any rules. This means that the default
+       rule stuff is now obsolete. So, now every rule is checked against,
+       until the end of the script or until a stop statement is found.
+       (David Mendenhall)
+     * Instead of a default rule (aka else statement), one can select "All
+       Messages" in the rule type (step 1), thus defining an "if (true)"
+       rule that will apply everywhere. (David Mendenhall)
+     * Added vacation functionality. (David Mendenhall)
+     * Added the options "does not contain" and "is not", along with their
+       positive counterparts, in the header match if clause. (David
+       Mendenhall)
+     * Eye candy: Added images for the move up / move down / delete
+       buttons. It is even themable (from an administrator's point of view
+       ANW).
+     * Add the option to create a new folder "on the fly", when adding a
+       new rule (in step 3). The error handling, though, is very poor.
+       Therefore, this feature is for testing only - and disabled by
+       default in config.php.
+     * The text at some places is nicer and more user-friendly. (David
+       Mendenhall)
+     * Prevent wrapping on the options column in table.php.
+     * Added a STOP icon in step 3 of addrule.php. ;)
+     * Removed obsolete files htmlprint.inc and htmlfunc2.inc. Somehow
+       they survived. :-)
+     * Added gray_plain theme. (David Mendenhall)
+
+  0.3
+
+     * Introduced an option to be conservative on the connections to SIEVE
+       daemon. Uses cached variables in the PHP session, but requires the
+       user to logout after she's done with her changes. This feature is
+       still under development.
+     * Move Up / Move Down functionality in the rules table.
+     * Added config.php for setting options.
+     * Fixed a bug that triggered when one pressed Cancel while adding a
+       rule, and then tried to add another rule.
+     * Some code cleanup in table.php. Debug messages that showed up are
+       now hidden. Made the function upload_script().
+     * The integration with SM is just a little better; the theme colors
+       are now taken into account, in both table.php and addrule.php. :-)
+
+  0.2
+
+     * Added "default rule" functionality, that is, the much anticipated
+       "else" clause. :-) If not used, the default remains SIEVE's
+       implicit keep, i.e. fileinto INBOX, accordingly to the SIEVE RFC.
+     * Miscellaneous code cleanup -- it's still pretty much a mess though.
+     * Added it to the official [25]Squirrelmail plugins site.
+
+  0.1
+
+     * First public release.
+     * Modified it to work as a squirrelmail plugin.
+
+  Pre 0.1
+
+     * It started as a standalone script, built on top of Dan Ellis' test
+       scripts that come with sieve-php.lib.
+
+References
+
+   1. http://www.famfamfam.com/
+   2. http://www.sun.com/software/products/messaging_srvr/index.xml
+   3. http://www.uclouvain.be/
+   4. http://www.exim.org/exim-html-4.40/doc/html/filter_2.html
+   5. http://www.mvmf.org/mfl/language.shtml#sieve
+   6. http://sourceforge.net/tracker/index.php?func=detail&aid=1000027&group_id=35727&atid=415051
+   7. http://sieve-php.sourceforge.net/
+   8. http://sourceforge.net/tracker/index.php?func=detail&aid=1000027&group_id=35727&atid=415051
+   9. http://sieve-php.sourceforge.net/
+  10. http://www.squirrelmail.org/plugin_view.php?id=212
+  11. https://bugzilla.andrew.cmu.edu/show_bug.cgi?id=2135
+  12. http://email.uoa.gr/projects/squirrelmail/authorization.php
+  13. mailto:pascal.schelcher%20@%20vecteurplus.com
+  14. mailto:tassium%20@%20squirrelmail%20org
+  15. http://www.cyrusoft.com/sieve/drafts/sieve-notify-01.txt
+  16. http://www.ietf.org/internet-drafts/draft-murchison-sieve-regex-06.txt
+  17. file://localhost/data/www/sm/squirrelmail-stable-uoa/plugins/avelsieve/doc/cschneid_at_cschneid.com
+  18. http://www.oceana.com/ftp/drafts/draft-segmuller-sieve-relation-01.txt
+  19. file://localhost/data/www/sm/squirrelmail-stable-uoa/plugins/avelsieve/doc/cschneid_at_cschneid.com
+  20. http://www.ietf.org/internet-drafts/draft-degener-sieve-body-00.txt
+  21. file://localhost/data/www/sm/squirrelmail-stable-uoa/plugins/avelsieve/doc/jack@gaofamily.org
+  22. mailto:jfdiez@sitejf.com
+  23. mailto:emayoral@arsys.es
+  24. mailto:vadATtomsknetDOTru
+  25. http://www.squirrelmail.org/plugins.php

@@ -1,0 +1,56 @@
+
+Installing for the first time
+-----------------------------
+
+1) Untar the plugin under the squirrelmail/plugins directory. You probably have
+already done this. :)
+
+2) Copy config/config_sample.php to config/config.php. Edit config.php to your
+preferences.  The file is self-documented with comments.
+
+The defaults are OK for most installations.
+
+3) Install Javascript Libraries plugin (Highly Recommended)
+
+For the development release 1.9.8, at the moment you will also need the
+javascript_libs squirrelmail "library" plugin. Just grab the following file:
+
+http://email.uoa.gr/download/squirrelmail/javascript_libs/javascript_libs-0.1.2.tar.gz
+
+Untar it under your squirrelmail/plugins/ directory and enable the plugin in
+Squirrelmail.
+
+Signature:
+http://email.uoa.gr/download/squirrelmail/javascript_libs/javascript_libs-0.1.2.tar.gz.sig
+
+
+
+Upgrading versions
+------------------
+
+1) Move the old avelsieve directory aside:
+   mv avelsieve avelsieve-prev
+
+2) Untar the new version.
+
+3) Check the documentation (doc/NEWS.html) if there are any new configuration
+   options.
+
+4) Copy your previous configuration file, e.g:
+   cp ../avelsieve-prev/config/config.php ./config/
+
+5) You can also try a diff with the sample configuration file, if there are any
+   changes:
+   
+   vim -d config_sample.php config.php
+   
+   Or even better, if you have the "meld" tool (http://meld.sourceforge.net/), you
+   can bring your configuration file up to date with just a few clicks:
+   
+   meld config_sample.php config.php
+
+   
+If and only if you are positive that things work as before (or, even, better),
+then delete the old directory!
+
+

@@ -1,0 +1,17 @@
+#!/bin/sh
+for dir in `ls -1d ../locale/?????`
+do
+	echo "Deleting $dir/LC_MESSAGES/avelsieve.po.bak"
+	rm -f $dir/LC_MESSAGES/avelsieve.po.bak
+
+    for i in `seq 10 15`
+    do
+        if test -f $dir/LC_MESSAGES/avelsieve_rule_$i.po.bak ; then
+	        echo "Deleting $dir/LC_MESSAGES/avelsieve_rule_$i.po.bak"
+	        rm -f $dir/LC_MESSAGES/avelsieve_rule_$i.po.bak
+        fi
+    done
+done
+
+     
+     

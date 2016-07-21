@@ -1,0 +1,156 @@
+  Introduction
+
+   Avelsieve or, verbosely, "Sieve Mail Filters Plugin for Squirrelmail"
+   is a [1]Squirrelmail [2]plugin for creating [3]Sieve scripts on a
+   Sieve-compliant mail server.
+
+   Sieve is a mail filtering language, intended for server-side filtering
+   of emails. For more information, please visit [4]http://sieve.info or
+   read [5]RFC 3028.
+
+   Avelsieve can either run using different backends, with regard to the
+   storage of the Sieve scripts. Currently, three backends are available:
+    1. ManageSieve: This is the transport protocol for uploading, editing,
+       deleting and verifying Sieve scripts on a mail server. A daemon
+       usually listens to port 2000, where clients such as avelsieve can
+       connect and manage the scripts.
+       Examples of server implementations that support ManageSieve:
+          + [6]Cyrus IMAPd running timsieved
+          + [7]DBMail
+          + [8]Isode M-Box
+    2. File Backend: For simple storage of scripts in the filesystem. (For
+       instance, the Exim MTA supports such scripts).
+    3. LDAP Backend: This is a specialized, contributed backend for users
+       of Sun Messaging Server.
+
+   More implementations can be found at
+   [9]http://sieve.info/implementations.
+
+   In the future, Avelsieve will also be a part of [10]Cyrusmaster, a
+   web-based Cyrus administration tool. It should provide the same
+   interface of the user's filters to administrators and/or helpdesk
+   staff.
+
+  About this implementation
+
+   The web interface provides a wizard-like interface that, in the end,
+   creates part of a Sieve script, a so called rule. It then assembles all
+   the rules to form a Sieve script.
+
+   For the sake of user-friendliness, it provides only a subset of Sieve's
+   functionality; the main goal was to provide a simple interface for Joe
+   User to create server-side filters without knowing anything about the
+   language itself.
+
+   The plugin does not provide a parser; instead, it saves PHP meta-data
+   in the script itself, in order to continue editing and manipulation of
+   the filters. The only thing that is supported is a script called
+   "phpscript" on the Cyrus server. Multiple scripts are not supported
+   yet. I've tried to make it sane enough that it won't break a lot. Some
+   more testing is needed - hence the beta status.
+
+  Status
+
+     * Devel Branch (1.9): Considered beta quality.> This release should
+       be considered 'beta quality'. At the moment it works for me without
+       any major glitches, but who knows, there might be a bug that DoS'es
+       the Apache Server by eating all of its memory in there.
+     * Stable Branch (1.0):
+       This plugin has been out for a while and is known to work pretty
+       well. You'll have to check for yourselves if it is for a production
+       environment. Insert standard GPL_Disclaimer(); here.
+
+  Features
+
+   This plugin provides:
+     * Simple HTML interface.
+     * Javascript functionality that enhances the user interaction,
+       however there is HTML-only fallback for accessibility.
+     * Match messages based on email headers, size, or apply to all
+       messages.
+     * Configurable number of header matches.
+     * Support of keeping a message, move to an existing or new folder,
+       email redirection.
+     * Supports Sieve Vacation.
+     * Supports Sieve Notification action.
+     * Create a rule on-the-fly, while reading a message in Squirrelmail.
+       This function will auto-detect List-Id: headers for mailing lists.
+     * Runs through all the rules, but supports a stop command when a rule
+       matches.
+     * Change the order of rules - or delete them altogether.
+     * Enable / Disable rules on the fly, without deleting them.
+     * Make a textual description of the rule.
+     * Localizable.
+     * Automatic adaption to the capabilities of each site's Sieve.
+
+   ..but does not provide:
+     * A Sieve parser. Yet.
+
+  Screenshots
+
+   If you'd like to take some quick look before installing, you can check
+   out some [11]screenshots of avelsieve in action.
+
+  Demo
+
+   You can see the plugin in action, if you wish. Check the [12]Live Demo
+   page for more information.
+
+  Requirements
+
+     * A Sieve management daemon (ManageSieve-compatible). It has been
+       tested with [13]Cyrus IMAP server and its timsieved Sieve parser.
+       There have been reports about it working with [14]DBMail, too.
+     * [15]Squirrelmail version 1.4.9 or greater.
+     * The [16]multibyte string (mbstring) PHP extension is very much
+       recommended. It provides very robust conversion between character
+       sets. Otherwise, recode or iconv will also do the job.
+     * [17]sieve-php.lib, a PHP class for transporting Sieve scripts,
+       originally by [18]Dan Ellis. Included.
+
+  License
+
+   This program is free software; you can redistribute it and/or modify it
+   under the terms of the [19]GNU General Public License as published by
+   the [20]Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful, but
+   WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. [21]See the GNU
+   General Public License for more details.
+
+  Author
+
+
+    [22]Alexandros Vellis, [23]Network Operations Centre, [24]University
+    of Athens
+    ([25]Personal home page).
+
+References
+
+   1. http://www.squirrelmail.org/
+   2. http://www.squirrelmail.org/plugins.php
+   3. http://sieve.info/
+   4. http://sieve.info/
+   5. http://www.ietf.org/rfc/rfc3028.txt
+   6. http://cyrusimap.web.cmu.edu/
+   7. http://www.dbmail.org/
+   8. http://www.isode.com/products/m-box.html
+   9. http://sieve.info/implementations
+  10. http://email.uoa.gr/projects/cyrusmaster/
+  11. file://localhost/data/www/sm/squirrelmail-stable-uoa/plugins/avelsieve/doc/avelsieve_screenshots.php
+  12. file://localhost/data/www/sm/squirrelmail-stable-uoa/plugins/avelsieve/doc/demo.php
+  13. http://asg.web.cmu.edu/cyrus/
+  14. http://www.dbmail.org/
+  15. http://www.squirrelmail.org/
+  16. http://www.php.net/manual/en/ref.mbstring.php
+  17. http://sieve-php.sourceforge.net/
+  18. mailto:danellis__@.com
+  19. http://www.gnu.org/licenses/gpl.html
+  20. http://www.fsf.org/
+  21. http://www.gnu.org/licenses/gpl.html
+  22. mailto:%20avel%20@%20users.sourceforge.net
+  23. http://www.noc.uoa.gr/
+  24. http://www.uoa.gr/
+  25. http://users.uoa.gr/~avel/

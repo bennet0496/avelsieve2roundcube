@@ -1,0 +1,18 @@
+#!/bin/sh
+
+echo -n "Building template for avelsieve..."
+xgettext -L PHP --keyword=_ --no-location --default-domain=avelsieve \
+	../*.php \
+	../include/*.php \
+	-o avelsieve.pot
+echo "Done."
+
+for i in `seq 10 15`
+do
+    if test -f ../config/rule.$i.php ; then
+        echo -n "Building template for rule $i..."
+        xgettext -L PHP --keyword=_ --no-location --default-domain=avelsieve_rule_10 ../config/rule.$i.php -o avelsieve_rule_$i.pot
+        echo "Done."
+    fi
+done
+

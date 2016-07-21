@@ -1,0 +1,1688 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: avelsieve 1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-05-29 11:16+0300\n"
+"PO-Revision-Date: 2005-02-09 12:44+0100\n"
+"Last-Translator: Maxim Baars <mmbaars@bccs.nl>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=iso-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Dutch\n"
+
+msgid "You have to define at least one header match text."
+msgstr ""
+"U dient minstens één tekst op te geven die in de berichtkop moet voorkomen."
+
+msgid "Add New Rule"
+msgstr "Een nieuwe regel toevoegen"
+
+msgid "New Rule Wizard - Step"
+msgstr "Nieuwe regel wizard - Stap"
+
+msgid "of"
+msgstr "van"
+
+msgid "Rule Type"
+msgstr "Regeltype"
+
+msgid "Condition"
+msgstr "Conditie"
+
+msgid "Action"
+msgstr "Aktie"
+
+msgid "Confirmation"
+msgstr "Bevestiging"
+
+msgid ""
+"<p>You have chosen to keep every mail. This is the default action anyway, so "
+"you might want to start over with a rule that makes more sense. Select &quot;"
+"finished&quot; to save this rule nonetheless.</p>"
+msgstr ""
+"<p>U heeft ervoor gekozen alle post te behouden. Dit is hoe dan ook de "
+"standaard actie dus wellicht wilt u opnieuw beginnen met een regel die "
+"zinvoller is. Kies &quot;Klaar&quot; om deze regel toch te bewaren.</p>"
+
+msgid ""
+"Please use the buttons on the bottom instead of your browser's reload, back "
+"and forward buttons, to build a rule."
+msgstr ""
+"Gebruik bij het opstellen van een regel de knoppen onderaan deze pagina in "
+"plaats van die van de browser."
+
+#, fuzzy
+msgid "Display and Edit"
+msgstr "Toon:"
+
+msgid ""
+"Shows a table of the mail filtering rules of this script and allows editing "
+"of them."
+msgstr ""
+
+msgid "Save Locally / Backup"
+msgstr ""
+
+msgid ""
+"Retrieve the mail filtering script from the Sieve server to your computer."
+msgstr ""
+
+msgid "Set as Filtering script for a Shared Folder"
+msgstr ""
+
+msgid ""
+"Activates this script, for all email received directly to a shared folder."
+msgstr ""
+
+#, fuzzy
+msgid "Mail Filtering Scripts"
+msgstr "Huidige regels"
+
+msgid "Script Name"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+#, fuzzy
+msgid "Actions"
+msgstr "Aktie"
+
+msgid "Initial / Predefined script"
+msgstr ""
+
+msgid "Message Filters"
+msgstr "Berichtfilters"
+
+msgid ""
+"Server-Side mail filtering enables you to add criteria in order to "
+"automatically forward, delete or place a given message into a folder."
+msgstr ""
+"Berichtfilters maken het mogelijk criteria op te geven voor het automatisch "
+"doorsturen, verwijderen of verplaatsen van berichten op het moment dat ze "
+"binnenkomen."
+
+msgid "Junk Mail Options"
+msgstr ""
+
+msgid ""
+"The Junk Mail Filter gathers all unwanted SPAM / Junk messages in your Junk "
+"folder."
+msgstr ""
+
+msgid "Filters"
+msgstr "Filters"
+
+msgid "Could not set active script on your IMAP server"
+msgstr "Kon script niet activeren op de IMAP server"
+
+msgid "Please contact your administrator."
+msgstr "Neem contact op met de beheerder."
+
+#, php-format
+msgid "Could not delete rule #%s: This type of rule cannot be deleted."
+msgstr ""
+
+#, php-format
+msgid "Could not delete rules #%s: This type of rule cannot be deleted."
+msgstr ""
+
+#, php-format
+msgid "The entered position, %s, is not valid."
+msgstr ""
+
+#, php-format
+msgid "The entered position, %s, is greater than the current number of rules."
+msgstr ""
+
+msgid "Message"
+msgstr "Bericht:"
+
+msgid "Current Date / Time"
+msgstr ""
+
+#, fuzzy
+msgid "Always"
+msgstr "dag(en)."
+
+msgid "Could not get SIEVE script from your IMAP server"
+msgstr "Kon SIEVE script niet ophalen van de IMAP server"
+
+#, fuzzy
+msgid "Error Encountered:"
+msgstr "Fout geconstateerd"
+
+msgid "Unable to load script to server."
+msgstr "Script kan niet naar de server verzonden worden."
+
+#, fuzzy, php-format
+msgid "Could not delete script from server %s."
+msgstr "Kon SIEVE script niet ophalen van de IMAP server"
+
+#, fuzzy
+msgid "Could not set active script on your IMAP server "
+msgstr "Kon script niet activeren op de IMAP server"
+
+#, fuzzy
+msgid "Could not delete script from server "
+msgstr "Kon SIEVE script niet ophalen van de IMAP server"
+
+msgid "Could not log on to timsieved daemon on your IMAP server"
+msgstr "Kon niet inloggen op de timeseived daemon op de IMAP server"
+
+msgid "Server responded with:"
+msgstr "Server reageerde met:"
+
+msgid "Disable"
+msgstr ""
+
+msgid "The rule will have no effect for as long as it is disabled."
+msgstr ""
+
+msgid "Discard"
+msgstr "Negeer"
+
+msgid "Silently discards the message; use with caution."
+msgstr ""
+
+#, fuzzy
+msgid "Move to Folder"
+msgstr "Verplaats naar boven"
+
+#, php-format
+msgid "Or specify a new folder: %s to be created under %s"
+msgstr ""
+
+msgid "Flag"
+msgstr ""
+
+msgid "Set message flags"
+msgstr ""
+
+msgid "Standard Flags"
+msgstr ""
+
+#, fuzzy
+msgid "Message Labels"
+msgstr "Berichtfilters"
+
+msgid "Custom Flags"
+msgstr ""
+
+msgid "Seen"
+msgstr ""
+
+msgid "Answered"
+msgstr ""
+
+msgid "Flagged"
+msgstr ""
+
+#, fuzzy
+msgid "Deleted"
+msgstr "Verwijder"
+
+msgid "Draft"
+msgstr ""
+
+msgid "Important"
+msgstr ""
+
+#, fuzzy
+msgid "Work"
+msgstr "of"
+
+msgid "Personal"
+msgstr ""
+
+#, fuzzy
+msgid "To Do"
+msgstr "To: of CC"
+
+#, fuzzy
+msgid "Later"
+msgstr "beknopt"
+
+msgid "Junk"
+msgstr ""
+
+#, fuzzy
+msgid "Not Junk"
+msgstr "Verplaats naar boven"
+
+#, php-format
+msgid "Also, set message flag %s"
+msgstr ""
+
+#, php-format
+msgid "Also, set message flags: %s"
+msgstr ""
+
+#, php-format
+msgid "Flags: %s"
+msgstr ""
+
+#, php-format
+msgid "Set (replace) flags as the current set: %s"
+msgstr ""
+
+#, php-format
+msgid "Set (replace) flags: %s"
+msgstr ""
+
+#, php-format
+msgid "Add flags to current set: %s"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Add flags: %s"
+msgstr "Voeg een nieuwe regel toe"
+
+#, php-format
+msgid "Remove flags from current set: %s"
+msgstr ""
+
+#, php-format
+msgid "Remove flags: %s"
+msgstr ""
+
+msgid ""
+"Enter here a list of flags separated by spaces. Example: <tt>$MyFlag "
+"$Special</tt>"
+msgstr ""
+
+#, fuzzy
+msgid "Move to Junk"
+msgstr "Verplaats naar boven"
+
+#, fuzzy, php-format
+msgid ""
+"Store message in your Junk Folder. Messages older than %s days will be "
+"deleted automatically."
+msgstr ""
+"Verplaats SPAM-berichten naar uw map voor ongewenste e-mail. Berichten ouder "
+"dan %s dag(en) worden automatisch verwijderd."
+
+msgid "Note that you can set the number of days in Folder Preferences."
+msgstr "U kunt het aantal dagen opgeven in mapopties."
+
+#, fuzzy
+msgid "Keep Message"
+msgstr "Bericht:"
+
+msgid "Save the message in your INBOX."
+msgstr ""
+
+msgid "Also keep copy in INBOX, marked as deleted."
+msgstr "Laat ook een kopie achter in INBOX, gemarkeerd als verwijderd."
+
+msgid "Notify"
+msgstr ""
+
+#, fuzzy
+msgid "Send a notification "
+msgstr "E-mailnotificatie"
+
+msgid "Mobile Phone Message (SMS)"
+msgstr "Mobiele telefoon (SMS)"
+
+msgid "Email notification"
+msgstr "E-mailnotificatie"
+
+msgid "Notification via Zephyr"
+msgstr "Kennisgeving via Zephyr"
+
+msgid "Notification via ICQ"
+msgstr "Kennisgeving via ICQ"
+
+msgid "Method"
+msgstr ""
+
+msgid "Notification ID"
+msgstr "Kennisgevings-ID"
+
+msgid "Destination"
+msgstr "Bestemming"
+
+msgid "Priority"
+msgstr ""
+
+msgid "Help: Valid variables are:"
+msgstr "Help: Geldige variabelen zijn:"
+
+msgid "Redirect"
+msgstr ""
+
+msgid "Automatically redirect the message to a different email address"
+msgstr ""
+
+msgid "someone@example.org"
+msgstr "someone@example.org"
+
+msgid "Keep a local copy as well."
+msgstr "Bewaar tevens een lokale kopie."
+
+msgid ""
+"Incorrect email address(es). You must enter one or more valid email "
+"addresses, separated by comma."
+msgstr ""
+
+msgid "Reject"
+msgstr ""
+
+msgid "Send the message back to the sender, along with an excuse"
+msgstr ""
+
+msgid "Please do not send me large attachments."
+msgstr "Zend me alstublieft geen grote bijlagen."
+
+msgid "If this rule matches, do not check any rules after it."
+msgstr ""
+"Als deze regel van toepassing is, stop dan met controleren van alle volgende "
+"regels."
+
+msgid "STOP"
+msgstr "STOP"
+
+#, fuzzy
+msgid "Move to Trash"
+msgstr "Verplaats naar boven"
+
+#, fuzzy
+msgid ""
+"Store message in your Trash Folder. You will have to purge the folder "
+"yourself."
+msgstr ""
+"Verplaats SPAM-berichten naar uw map voor verwijderde items. U dient de map "
+"zelf te legen."
+
+#, fuzzy
+msgid "Vacation / Autoresponder"
+msgstr "Vakantie"
+
+msgid ""
+"This is an automated reply; I am away and will not be able to reply to you "
+"immediately."
+msgstr ""
+"Dit is een automatisch verzonden antwoord. Ik ben afwezig en niet in staat u "
+"direct te antwoorden."
+
+msgid "I will get back to you as soon as I return."
+msgstr "Ik neem contact met u op zodra ik terug ben."
+
+msgid ""
+"The notice will be sent only once to each person that sends you mail, and "
+"will not be sent to a mailing list address."
+msgstr ""
+"De kennisgeving wordt uitsluitend verzonden aan personen die u post sturen "
+"en niet aan een verzendlijstadres."
+
+msgid "Subject:"
+msgstr ""
+
+#, fuzzy
+msgid "Optional subject of the vacation message."
+msgstr "antwoord met deze vakantiemelding:"
+
+#, fuzzy
+msgid "Your Addresses:"
+msgstr "Adresconditie"
+
+msgid ""
+"A vacation / autorespond message will be sent only if an email is sent "
+"explicitly to one of these addresses."
+msgstr ""
+
+#, fuzzy
+msgid "Days:"
+msgstr "dag(en)."
+
+msgid "days"
+msgstr "dag(en)."
+
+msgid ""
+"A vacation / autorespond message will not be resent to the same address, "
+"within this number of days."
+msgstr ""
+
+#, fuzzy
+msgid "Message:"
+msgstr "Bericht:"
+
+msgid "The number of days between vacation messages must be a positive number."
+msgstr ""
+
+#, fuzzy
+msgid "Date"
+msgstr "Kopieer"
+
+msgid "Received"
+msgstr ""
+
+#, fuzzy
+msgid "Year"
+msgstr "Berichtkop"
+
+msgid "Month"
+msgstr ""
+
+#, fuzzy
+msgid "Day"
+msgstr "dag(en)."
+
+msgid "Weekday"
+msgstr ""
+
+#, fuzzy
+msgid "Hour"
+msgstr "of"
+
+msgid "Minute"
+msgstr ""
+
+msgid "Second"
+msgstr ""
+
+#, fuzzy
+msgid "Sunday"
+msgstr "dag(en)."
+
+#, fuzzy
+msgid "Monday"
+msgstr "dag(en)."
+
+msgid "Tuesday"
+msgstr ""
+
+msgid "Wednesday"
+msgstr ""
+
+msgid "Thursday"
+msgstr ""
+
+#, fuzzy
+msgid "Friday"
+msgstr "dag(en)."
+
+msgid "Saturday"
+msgstr ""
+
+msgid "Is"
+msgstr ""
+
+msgid "Before (&lt;=)"
+msgstr ""
+
+msgid "After (=&gt;)"
+msgstr ""
+
+msgid "Before (&lt;)"
+msgstr ""
+
+msgid "After (&gt;)"
+msgstr ""
+
+msgid "January"
+msgstr ""
+
+msgid "February"
+msgstr ""
+
+msgid "March"
+msgstr ""
+
+msgid "April"
+msgstr ""
+
+msgid "May"
+msgstr ""
+
+#, fuzzy
+msgid "June"
+msgstr "tenzij"
+
+msgid "July"
+msgstr ""
+
+msgid "August"
+msgstr ""
+
+msgid "September"
+msgstr ""
+
+msgid "October"
+msgstr ""
+
+msgid "November"
+msgstr ""
+
+msgid "December"
+msgstr ""
+
+msgid "Occurence"
+msgstr ""
+
+msgid "Specific Date"
+msgstr ""
+
+msgid "Specific Time"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "of header %s"
+msgstr "berichtkop"
+
+msgid "Current date / time:"
+msgstr ""
+
+#, fuzzy
+msgid "Current date:"
+msgstr "Gemaakt:"
+
+#, fuzzy
+msgid "message header"
+msgstr "Bericht:"
+
+#, fuzzy
+msgid "Message header"
+msgstr "Berichtfilters"
+
+#, fuzzy, php-format
+msgid "is %s"
+msgstr "Wijzig"
+
+msgid "is"
+msgstr "is"
+
+#, php-format
+msgid "is before than %s (inclusive)"
+msgstr ""
+
+#, php-format
+msgid "is after than %s (inclusive)"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "is before than %s"
+msgstr "is kleiner dan"
+
+#, fuzzy, php-format
+msgid "is after than %s"
+msgstr "is groter dan"
+
+#, php-format
+msgid "&quot;%s&quot;"
+msgstr ""
+
+#, php-format
+msgid "&quot;<tt>%s:</tt>&quot;"
+msgstr ""
+
+msgid "AND (Every item must match)"
+msgstr "EN (elke conditie moet waar zijn)"
+
+msgid "OR (Either item will match)"
+msgstr "OF (minstens één conditie moet waar zijn)"
+
+#, fuzzy
+msgid "Rule"
+msgstr "Regeltype"
+
+#, fuzzy, php-format
+msgid "Add a new %s"
+msgstr "Voeg een nieuwe regel toe"
+
+#, fuzzy
+msgid "SPAM Rule"
+msgstr "Een SPAM-regel toevoegen"
+
+msgid "Junk Mail Rule"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Edit %s"
+msgstr "Wijzig"
+
+msgid "Whitelist"
+msgstr "Veilige afzenders"
+
+#, fuzzy, php-format
+msgid "Add new %s"
+msgstr "Adresconditie"
+
+msgid "Sieve Code"
+msgstr ""
+
+#, fuzzy
+msgid "Address"
+msgstr "Adresconditie"
+
+msgid ""
+"Perform an action depending on email addresses appearing in message headers."
+msgstr "Voer een aktie uit op basis van een e-mailadres in de berichtkop."
+
+#, fuzzy
+msgid "Header"
+msgstr "Berichtkop"
+
+msgid ""
+"Perform an action on messages matching a specified header (From, To etc.)."
+msgstr ""
+"Voer een aktie uit op basis van een specifieke regel in de berichtkop (Van, "
+"Aan etc.)."
+
+msgid "Envelope"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Perform an action on messages matching a specified envelope header (Envelope "
+"FROM, TO)."
+msgstr ""
+"Voer een aktie uit op basis van een specifieke regel in de berichtkop (Van, "
+"Aan etc.)."
+
+msgid "Size"
+msgstr "Grootte"
+
+msgid "Perform an action on messages depending on their size."
+msgstr "Voer een aktie uit op basis van de berichtgrootte."
+
+msgid "Body"
+msgstr ""
+
+msgid "Perform an action on messages depending on their content (body text)."
+msgstr "Voer een aktie uit op basis van de inhoud (hoofdtekst)."
+
+#, fuzzy
+msgid ""
+"Perform an action on messages depending on date or time related to the "
+"message."
+msgstr "Voer een aktie uit op basis van de berichtgrootte."
+
+msgid "All"
+msgstr ""
+
+msgid "Perform an action on <strong>all</strong> incoming messages."
+msgstr "Voer een aktie uit voor <strong>alle</strong> inkomende berichten."
+
+msgid "contains"
+msgstr "bevat"
+
+msgid "does not contain"
+msgstr "bevat niet"
+
+msgid "is not"
+msgstr "is niet"
+
+msgid "matches"
+msgstr "overeenkomt met"
+
+msgid "wildcard"
+msgstr "jokerteken"
+
+msgid "does not match"
+msgstr "niet overeenkomt met"
+
+msgid "regexp"
+msgstr "regexp"
+
+msgid "is greater than"
+msgstr "is groter dan"
+
+msgid "is greater or equal to"
+msgstr "is groter of gelijk aan"
+
+msgid "is lower than"
+msgstr "is kleiner dan"
+
+msgid "is lower or equal to"
+msgstr "is kleiner of gelijk aan"
+
+msgid "is equal to"
+msgstr "is gelijk aan"
+
+msgid "is not equal to"
+msgstr "is ongelijk aan"
+
+msgid "verbose"
+msgstr "uitgebreid"
+
+#, fuzzy
+msgid "Textual descriptions of the rules"
+msgstr "Omschrijving"
+
+msgid "terse"
+msgstr "beknopt"
+
+msgid "More suitable for viewing the table of rules at once"
+msgstr ""
+
+msgid "source"
+msgstr ""
+
+msgid "Display SIEVE source"
+msgstr ""
+
+msgid "Low"
+msgstr "Laag"
+
+msgid "Normal"
+msgstr "Normaal"
+
+msgid "High"
+msgstr "Hoog"
+
+msgid "Delete"
+msgstr "Verwijder"
+
+msgid "Edit"
+msgstr "Wijzig"
+
+msgid "Duplicate"
+msgstr "Kopieer"
+
+msgid "Move Up"
+msgstr "Omhoog"
+
+msgid "Move to Top"
+msgstr "Verplaats naar boven"
+
+msgid "Move Down"
+msgstr "Omlaag"
+
+msgid "Move to Bottom"
+msgstr "Verplaats naar beneden"
+
+msgid "Junk Folder"
+msgstr "Map Ongewenste e-mail"
+
+#, php-format
+msgid ""
+"Store SPAM message in your Junk Folder. Messages older than %s days will be "
+"deleted automatically."
+msgstr ""
+"Verplaats SPAM-berichten naar uw map voor ongewenste e-mail. Berichten ouder "
+"dan %s dag(en) worden automatisch verwijderd."
+
+msgid "Trash Folder"
+msgstr "Map Verwijderde Items"
+
+msgid ""
+"Store SPAM message in your Trash Folder. You will have to purge the folder "
+"yourself."
+msgstr ""
+"Verplaats SPAM-berichten naar uw map voor verwijderde items. U dient de map "
+"zelf te legen."
+
+msgid ""
+"Discard SPAM message. You will get no indication that the message ever "
+"arrived."
+msgstr ""
+"Negeer SPAM-bericht. U krijgt geen enkele indicatie dat een bericht is "
+"aangekomen."
+
+msgid "Server-Side Mail Filtering"
+msgstr "Berichtfilters"
+
+msgid "Successfully added new rule."
+msgstr "Nieuwe regel is toegevoegd."
+
+#, fuzzy, php-format
+msgid "Successfully updated rule #%s"
+msgstr "Gewijzigde regel #"
+
+#, fuzzy, php-format
+msgid "Successfully deleted rules #%s"
+msgstr "Verwijderde regels #"
+
+#, fuzzy, php-format
+msgid "Successfully deleted rule #%s"
+msgstr "Verwijderde regel #"
+
+msgid "You must correct the above errors before continuing."
+msgstr ""
+
+msgid "No check"
+msgstr ""
+
+#, php-format
+msgid "Editing %s"
+msgstr ""
+
+#, php-format
+msgid "(Rule #%s)"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Add a new %s "
+msgstr "Voeg een nieuwe regel toe"
+
+msgid "Configure Anti-SPAM Protection"
+msgstr "Anti-SPAM-beveiliging instellen"
+
+msgid ""
+"All incoming mail is checked for unsolicited commercial content (SPAM) and "
+"marked accordingly. This special rule allows you to configure what to do "
+"with such messages once they arrive to your Inbox."
+msgstr ""
+"Alle inkomende post wordt gecontroleerd op ongewenste commerciële inhoud "
+"(SPAM) en overeenkomstig gemarkeerd. Deze speciale regel geeft aan wat er "
+"gedaan moet worden met dergelijke berichten zodra ze in uw Inbox komen."
+
+#, php-format
+msgid ""
+"Select %s to add the predefined rule, or select the advanced SPAM filter to "
+"customize the rule."
+msgstr ""
+"Kies %s om de voorgedefinieerde regel toe te voegen of kies het geavanceerde "
+"SPAM-filter om de regel aan te passen."
+
+msgid "Add Spam Rule"
+msgstr "Een Spam-regel toevoegen"
+
+msgid "Advanced Spam Filter..."
+msgstr "Geavanceerd Spam Filter"
+
+msgid "Target Score"
+msgstr "Doelscore"
+
+#, php-format
+msgid ""
+"Messages with SPAM-Score higher than the target value, the maximum value "
+"being %s, will be considered SPAM."
+msgstr ""
+"Berichten met een SPAM-score die hoger is dan de grenswaarde, de maximum "
+"waarde is %s, zullen worden beschouwd als SPAM."
+
+msgid "SPAM Lists to check against"
+msgstr "SPAM-lijsten waartegen gecontroleerd wordt"
+
+msgid ""
+"Messages that match any of these header rules will never end up in Junk "
+"Folders or regarded as SPAM."
+msgstr ""
+"Berichten die voldoen aan één van deze berichtkopregels worden nooit in de "
+"map Ongewenste e-mail geplaatst of beschouwd als SPAM."
+
+msgid "Apply Changes"
+msgstr "Wijzigingen toepassen"
+
+msgid "Cancel"
+msgstr "Annuleer"
+
+#, fuzzy
+msgid "Information..."
+msgstr "Bevestiging"
+
+#, php-format
+msgid ""
+"There is currently no Junk Mail Filter, so we are suggesting the following "
+"default settings. To add the Junk Mail Filter, simply choose <em>&quot;%"
+"s&quot;</em>."
+msgstr ""
+
+#, fuzzy
+msgid "Enable Junk Mail Filtering"
+msgstr "Huidige regels"
+
+msgid "Automatically delete Junk Messages"
+msgstr ""
+
+#, php-format
+msgid "when they are older than %s days"
+msgstr ""
+
+#, fuzzy
+msgid "Enable Whitelist"
+msgstr "Veilige afzenders"
+
+#, fuzzy
+msgid ""
+"Messages sent from the addresses in your Whitelist will never end up in your "
+"Junk Mail folder, or considered as SPAM."
+msgstr ""
+"Berichten die voldoen aan één van deze berichtkopregels worden nooit in de "
+"map Ongewenste e-mail geplaatst of beschouwd als SPAM."
+
+#, fuzzy
+msgid "Edit Whitelist...."
+msgstr "Veilige afzenders"
+
+msgid "Automatically add all your Address Book Contacts in the Whitelist"
+msgstr ""
+
+msgid "Configure Advanced Junk Mail Tests"
+msgstr ""
+
+#, fuzzy
+msgid "You have to enable at least one Junk Mail Test."
+msgstr ""
+"U dient minstens één tekst op te geven die in de berichtkop moet voorkomen."
+
+msgid "Junk Mail Options have been saved."
+msgstr ""
+
+#, fuzzy
+msgid "Editing Whitelist"
+msgstr "Veilige afzenders"
+
+#, fuzzy
+msgid ""
+"Messages coming from the email addresses that you enter here will never end "
+"up in your Junk folder or be considered as SPAM."
+msgstr ""
+"Berichten die voldoen aan één van deze berichtkopregels worden nooit in de "
+"map Ongewenste e-mail geplaatst of beschouwd als SPAM."
+
+msgid ""
+"Enter <strong>one (1) email address per line</strong>. Note that you can "
+"also enter an incomplete address or a mail domain."
+msgstr ""
+
+msgid "Example:"
+msgstr ""
+
+msgid "Whitelist has been updated."
+msgstr ""
+
+#, php-format
+msgid "Editing Sieve Code (Rule #%s)"
+msgstr ""
+
+#, fuzzy
+msgid "Create New Custom Sieve Rule"
+msgstr "Huidige regels"
+
+msgid "Custom Rule"
+msgstr ""
+
+msgid "Please enter valid Sieve code in the textbox below."
+msgstr ""
+
+msgid ""
+"Note: The <tt>require</tt> command is not needed; it will be added "
+"automatically at the start of the script."
+msgstr ""
+
+#, php-format
+msgid "Sieve Capabilities supported: %s"
+msgstr ""
+
+msgid "Please enter a valid Sieve code snippet."
+msgstr ""
+
+msgid "To: or Cc"
+msgstr "To: of CC"
+
+msgid "The condition for the following rules is:"
+msgstr "De conditie voor elke volgende regel is:"
+
+msgid "Less..."
+msgstr "Minder..."
+
+msgid "More..."
+msgstr "Meer..."
+
+msgid "bigger"
+msgstr "groter"
+
+msgid "smaller"
+msgstr "kleiner"
+
+msgid "than"
+msgstr " is dan "
+
+msgid "KB (kilobytes)"
+msgstr "KB (kilobytes)"
+
+msgid "MB (megabytes)"
+msgstr "MB (megabytes)"
+
+msgid "All Messages"
+msgstr "Alle berichten"
+
+msgid ""
+"The following action will be applied to <strong>all</strong> incoming "
+"messages that do not match any of the previous rules."
+msgstr ""
+"De volgende aktie zal worden toegepast op <strong>alle</strong> inkomende "
+"berichten waarvoor geen enkele van de voorgaande condities opging."
+
+msgid "1st"
+msgstr ""
+
+msgid "2nd"
+msgstr ""
+
+msgid "3rd"
+msgstr ""
+
+msgid "4th"
+msgstr ""
+
+msgid "5th"
+msgstr ""
+
+msgid "6th"
+msgstr ""
+
+msgid "7th"
+msgstr ""
+
+msgid "8th"
+msgstr ""
+
+msgid "9th"
+msgstr ""
+
+msgid "from the end"
+msgstr ""
+
+msgid "Choose what to do when this rule triggers, from one of the following:"
+msgstr ""
+"Kies uit één van de volgende mogelijkheden wat er moet gebeuren als deze "
+"regel geactiveerd wordt."
+
+msgid "Add SPAM Rule"
+msgstr "Een SPAM-regel toevoegen"
+
+msgid "Editing Mail Filtering Rule"
+msgstr "Wijzigen Mail Filter Regel"
+
+#, fuzzy
+msgid "Create New Mail Filtering Rule"
+msgstr "Huidige regels"
+
+msgid "Additional Actions"
+msgstr "Extra akties"
+
+#, fuzzy
+msgid "You have to define at least one condition."
+msgstr ""
+"U dient minstens één tekst op te geven die in de berichtkop moet voorkomen."
+
+msgid "Clear this Form"
+msgstr "Wis deze pagina"
+
+msgid "Start Over"
+msgstr "Opnieuw"
+
+msgid "Move back to step"
+msgstr "Ga terug naar stap"
+
+msgid "Finished"
+msgstr "Klaar"
+
+msgid "Move on to step"
+msgstr "Ga verder naar stap"
+
+msgid "Your new rule states:"
+msgstr "Uw nieuwe regel luidt:"
+
+msgid ""
+"If this is what you wanted, select Finished. You can also start over or "
+"cancel adding a rule altogether."
+msgstr ""
+"Als dit is wat u wilde, kies dan Klaar. U kunt ook opnieuw beginnen of het "
+"toevoegen van een regel geheel annuleren."
+
+msgid ""
+"Here you can add or delete filtering rules for your email account. These "
+"filters will always apply to your incoming mail, wherever you check your "
+"email."
+msgstr ""
+"Hier kunt u filterregels voor uw e-mailaccount toevoegen of verwijderen. "
+"Deze regels zullen altijd op uw inkomende post toegepast worden, waar u uw e-"
+"mail ook leest."
+
+msgid ""
+"You don't have any rules yet. Feel free to add any with the button &quot;Add "
+"a New Rule&quot;. When you are done, please select &quot;Save Changes&quot; "
+"to get back to the main options screen."
+msgstr ""
+"U heeft nog geen regels gedefinieerd. Voeg regels toe met de knop &quot;Voeg "
+"een nieuwe regel toe&quot;. Druk op &quot;Verstuur&quot; als u klaar bent om "
+"terug te keren naar de optiepagina."
+
+msgid ""
+"When you are done with editing, <strong>remember to select &quot;Save "
+"Changes&quot;</strong> to activate your changes!"
+msgstr ""
+"<strong>Kies &quot;Verstuur&quot;</strong> om uw wijzigingen te activeren!"
+
+msgid "The following table summarizes your current mail filtering rules."
+msgstr "De volgende tabel geeft een overzicht van uw huidige filterregels."
+
+msgid ""
+"Warning: In your rules, you have defined an action that refers to a folder "
+"that does not exist or a folder where you do not have permission to append "
+"to."
+msgstr ""
+
+#, php-format
+msgid ""
+"Note: A <a href=\"%s\">Vacation Autoresponder</a> is active (<a href=\"%s"
+"\">Rule #%s</a> in your current Mail Filtering Rules).<br/>Don't forget to "
+"disable it or delete it when you are back."
+msgstr ""
+
+msgid "No"
+msgstr "Nr"
+
+msgid "Options"
+msgstr "Opties"
+
+msgid "Description of Rule"
+msgstr "Omschrijving"
+
+msgid "Display as:"
+msgstr "Toon:"
+
+#, fuzzy
+msgid "Position"
+msgstr "Conditie"
+
+#, fuzzy
+msgid "Add a new Rule"
+msgstr "Voeg een nieuwe regel toe"
+
+#, fuzzy
+msgid "Really delete selected rules?"
+msgstr "Wilt u deze regel echt verwijderen?"
+
+msgid "Enable"
+msgstr ""
+
+msgid ""
+"When you are done, please click the button below to return to your webmail."
+msgstr ""
+"Als u klaar bent, druk dan op de onderstaande knop om terug te keren naar de "
+"optiepagina."
+
+msgid "Save Changes"
+msgstr "Verstuur"
+
+msgid "Created:"
+msgstr "Gemaakt:"
+
+msgid "Last modified:"
+msgstr "Laatst gewijzigd:"
+
+msgid "Current Mail Filtering Rules"
+msgstr "Huidige regels"
+
+msgid "Close"
+msgstr ""
+
+msgid "No Filtering Rules Defined Yet"
+msgstr "Nog geen filterregels gedefinieerd"
+
+msgid "Really delete this rule?"
+msgstr "Wilt u deze regel echt verwijderen?"
+
+#, fuzzy
+msgid "More Options..."
+msgstr "Meer..."
+
+#, fuzzy
+msgid "Move to Position..."
+msgstr "Verplaats naar beneden"
+
+msgid "--------"
+msgstr ""
+
+#, fuzzy
+msgid "Duplicate this Rule"
+msgstr "Wilt u deze regel echt verwijderen?"
+
+#, fuzzy
+msgid "Insert a New Rule here"
+msgstr "Voeg een nieuwe regel toe"
+
+msgid "Send this Rule by Email"
+msgstr ""
+
+msgid "Go"
+msgstr ""
+
+msgid "Action for Selected Rules:"
+msgstr ""
+
+#, fuzzy
+msgid "Junk Folder Information"
+msgstr "Map Ongewenste e-mail"
+
+msgid "Messages in this folder have been identified as SPAM / Junk."
+msgstr ""
+
+#, php-format
+msgid ""
+"Note: Junk Mail is currently not enabled. Select &quot;%s&quot; to enable it."
+msgstr ""
+
+msgid "Edit Junk Mail Options..."
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Any messages older than %s days are automatically deleted."
+msgstr ""
+"Verplaats SPAM-berichten naar uw map voor ongewenste e-mail. Berichten ouder "
+"dan %s dag(en) worden automatisch verwijderd."
+
+msgid "Test for Forged Header"
+msgstr "Controleer op vervalste berichtkop"
+
+msgid "Automatically"
+msgstr ""
+
+msgid "Sender"
+msgstr ""
+
+msgid "From"
+msgstr ""
+
+msgid "To"
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+#, fuzzy
+msgid "Create Filter"
+msgstr "Berichtfilters"
+
+msgid "Vacation Filter Reminder"
+msgstr ""
+
+msgid "(Creates a new server-side filtering rule, based on the above criteria)"
+msgstr ""
+
+msgid ""
+"Notice: The following criteria cannot be expressed as server-side filtering "
+"rules:"
+msgstr ""
+
+msgid "Reason:"
+msgstr ""
+
+msgid "The Body extension is not supported in this server."
+msgstr ""
+
+msgid ""
+"Note that Only From:, To:, Cc: and Subject: headers will be checked in the "
+"server filter."
+msgstr ""
+
+msgid "These search expressions are not applicable during message delivery."
+msgstr ""
+
+msgid ""
+"All messages considered as <strong>SPAM</strong> (unsolicited commercial "
+"messages)"
+msgstr ""
+"Alle berichten die beschouwd worden als <strong>SPAM</strong> (ongewenste "
+"commerciële berichten)"
+
+msgid "SPAM"
+msgstr ""
+
+msgid "unless"
+msgstr "tenzij"
+
+#, fuzzy
+msgid "Whitelist:"
+msgstr "Veilige afzenders"
+
+msgid "or"
+msgstr "of"
+
+msgid "matching the Spam List(s):"
+msgstr "voorkomt in de Spam-lijst(en):"
+
+#, fuzzy
+msgid "Spam List(s):"
+msgstr "voorkomt in de Spam-lijst(en):"
+
+#, php-format
+msgid "and with score greater than %s"
+msgstr "en met een score groter dan %s"
+
+#, php-format
+msgid "Score > %s"
+msgstr ""
+
+msgid "will be"
+msgstr "zal zijn"
+
+msgid "stored in the Junk Folder."
+msgstr "opgeslagen in de map Ongewenste e-mail"
+
+msgid "stored in the Trash Folder."
+msgstr "opgeslagen in de map Verwijderde items"
+
+msgid "Trash"
+msgstr ""
+
+msgid "discarded."
+msgstr "genegeerd."
+
+msgid "Junk Mail Rule is Disabled"
+msgstr ""
+
+msgid "<s></s>"
+msgstr ""
+
+#, fuzzy
+msgid "Junk Mail"
+msgstr "Map Ongewenste e-mail"
+
+#, fuzzy
+msgid "matching any one of the Spam tests as follows:"
+msgstr "voorkomt in de Spam-lijst(en):"
+
+#, fuzzy
+msgid "Spam Tests:"
+msgstr "voorkomt in de Spam-lijst(en):"
+
+msgid ""
+"and where the sender does <em>not</em> match any of the addresses / "
+"expressions in your <strong>Whitelist</strong>"
+msgstr ""
+
+msgid ""
+"The messages that match the system's default <strong>SPAM</strong> checks"
+msgstr ""
+
+#, fuzzy
+msgid "stored in the <strong>Junk</strong> Folder."
+msgstr "opgeslagen in de map Ongewenste e-mail"
+
+#, fuzzy
+msgid "stored in the <strong>Trash</strong> Folder."
+msgstr "opgeslagen in de map Verwijderde items"
+
+msgid ""
+"<strong>Whitelist</strong> - The following email addresses are whitelisted "
+"and will not end up in Junk folders or considered as SPAM:"
+msgstr ""
+
+#, php-format
+msgid "and %s more email addresses / expressions."
+msgstr ""
+
+#, php-format
+msgid "%s more entries..."
+msgstr ""
+
+#, fuzzy
+msgid "Custom Sieve Code"
+msgstr "Huidige regels"
+
+msgid "View Source"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "the header %s"
+msgstr "berichtkop"
+
+#, fuzzy, php-format
+msgid "Header %s"
+msgstr "Berichtkop"
+
+#, fuzzy
+msgid "To or Cc"
+msgstr "To: of CC"
+
+#, php-format
+msgid "the envelope %s"
+msgstr ""
+
+#, php-format
+msgid "Envelope %s"
+msgstr ""
+
+#, php-format
+msgid "the address %s"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Address %s"
+msgstr "Adresconditie"
+
+#, fuzzy
+msgid "message body"
+msgstr "Bericht:"
+
+#, php-format
+msgid "index number %s"
+msgstr ""
+
+#, php-format
+msgid "index #%s"
+msgstr ""
+
+msgid "(counting from last header)"
+msgstr ""
+
+msgid "(from end)"
+msgstr ""
+
+#, fuzzy
+msgid "matches the regular expression"
+msgstr "overeenkomt met uitdrukking (regex)"
+
+#, fuzzy
+msgid "does not match the regular expression"
+msgstr "niet voldoet aan uitdrukking"
+
+msgid "exists"
+msgstr "bestaat"
+
+msgid "does not exist"
+msgstr "niet bestaat"
+
+msgid "This rule is currently <strong>DISABLED</strong>:"
+msgstr ""
+
+msgid "DISABLED"
+msgstr ""
+
+msgid "If"
+msgstr "Als"
+
+msgid "<em>any</em> of the following mail headers match: "
+msgstr ""
+"aan <em>minstens één</em> van de hierna genoemde berichtkopcondities voldaan "
+"wordt: "
+
+msgid "<em>all</em> of the following mail headers match: "
+msgstr "aan <em>alle</em> hierna genoemde berichtkopcondities voldaan wordt: "
+
+msgid "the size of the message is"
+msgstr "de grootte van het bericht"
+
+msgid " bigger"
+msgstr " groter"
+
+msgid " smaller"
+msgstr " kleiner"
+
+msgid "For <strong>ALL</strong> incoming messages; "
+msgstr "Voor <strong>ALLE</strong> inkomende berichten; "
+
+msgid "ALL"
+msgstr ""
+
+#, fuzzy
+msgid "always"
+msgstr "dag(en)."
+
+msgid "and"
+msgstr ""
+
+msgid "then"
+msgstr "dan"
+
+#, fuzzy
+msgid "<em>keep</em> the message."
+msgstr "bericht <em>bewaren</em>."
+
+#, fuzzy
+msgid "Keep"
+msgstr "regexp"
+
+#, fuzzy
+msgid "<em>discard</em> the message."
+msgstr "bericht <em>negeren</em>."
+
+msgid "<em>reject</em> it, sending this excuse back to the sender:"
+msgstr "bericht <em>weigeren</em> en zend deze reden terug naar de afzender:"
+
+msgid "Redirect to"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "<em>redirect</em> it to the email addresses: %s."
+msgstr "bericht <em>doorsturen</em> naar e-mailadres"
+
+msgid "<em>redirect</em> it to the email address"
+msgstr "bericht <em>doorsturen</em> naar e-mailadres"
+
+#, fuzzy, php-format
+msgid "<em>file</em> it into the folder %s"
+msgstr "bericht <em>opslaan</em> in de map <strong>"
+
+#, php-format
+msgid "File into %s"
+msgstr ""
+
+msgid "(Warning: Folder not available)"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "reply with a vacation / autoresponder message: "
+msgstr "antwoord met deze vakantiemelding:"
+
+msgid "Also keep a local copy."
+msgstr "Bewaar ook een lokale kopie."
+
+msgid " Also keep a copy in INBOX, marked as deleted."
+msgstr " Laat ook een kopie, gemarkeerd als verwijderd, achter in INBOX."
+
+#, fuzzy
+msgid "Keep Deleted"
+msgstr "Verwijder selectie"
+
+msgid " Also notify using the method"
+msgstr " Geef ook een melding via de methode"
+
+msgid "with"
+msgstr "met"
+
+msgid "priority and the message"
+msgstr "als prioriteit en het bericht"
+
+#, php-format
+msgid "Notify %s"
+msgstr ""
+
+#, fuzzy
+msgid "Then <strong>STOP</strong> processing rules."
+msgstr " <strong>STOP</strong> vervolgens met verdere verwerking van regels."
+
+msgid "Stop"
+msgstr ""
+
+msgid "You have not defined the name for the new folder."
+msgstr "U heeft de naam van de nieuwe map niet opgegeven."
+
+msgid "Please try again."
+msgstr "Probeer opnieuw."
+
+msgid "Illegal folder name.  Please select a different name"
+msgstr "Onjuiste mapnaam. Kies een andere naam."
+
+msgid "None"
+msgstr "Geen"
+
+#~ msgid "Vacation"
+#~ msgstr "Vakantie"
+
+#~ msgid "Addresses: Only reply if sent to these addresses:"
+#~ msgstr "Adressen: Alleen beantwoorden als naar deze adressen gezonden is:"
+
+#~ msgid "Days: Reply message will be resent after"
+#~ msgstr "Dagen: Antwoord wordt opnieuw gestuurd na"
+
+#~ msgid "Use the following message:"
+#~ msgstr "Gebruik de volgende mededeling."
+
+#~ msgid "Keep (Default action)"
+#~ msgstr "Bewaar (standaard aktie)"
+
+#~ msgid "Discard Silently"
+#~ msgstr "Negeer zwijgend"
+
+#~ msgid "Reject, sending this excuse to the sender:"
+#~ msgstr "Weiger onder vermelding van de volgende reden."
+
+#~ msgid "Redirect to the following email address:"
+#~ msgstr "Stuur door naar het volgende e-mailadres."
+
+#~ msgid "Move message into"
+#~ msgstr "Verplaats naar"
+
+#~ msgid "the existing folder"
+#~ msgstr "de bestaande map"
+
+#~ msgid "a new folder, named"
+#~ msgstr "een nieuwe map, genaamd "
+
+#~ msgid "created as a subfolder of"
+#~ msgstr "aangemaakt als een submap van "
+
+#~ msgid "Notify me, using the following method:"
+#~ msgstr "Breng me op de hoogte op de volgende manier."
+
+#~ msgid "(Probably the script is size null)."
+#~ msgstr "(Waarschijnlijk is het script leeg)."
+
+#~ msgid "Body Match"
+#~ msgstr "Hoofdtekstconditie"
+
+#~ msgid "What kind of rule would you like to add?"
+#~ msgstr "Welk type regel wilt u toevoegen?"
+
+#, fuzzy
+#~ msgid "Change Type"
+#~ msgstr "Regeltype"
+
+#~ msgid ""
+#~ "The rule will trigger if the following addresses appear anywhere in the "
+#~ "message's headers:"
+#~ msgstr ""
+#~ "Deze regel zal van toepassing zijn als de volgende adressen ergens in de "
+#~ "berichtkop voorkomen."
+
+#~ msgid "The header "
+#~ msgstr "Berichtkop "
+
+#~ msgid "This rule will trigger if message is"
+#~ msgstr "Deze regel zal van toepassing zijn als het bericht "
+
+#~ msgid ""
+#~ "This rule will trigger upon the occurrence of one or more strings in the "
+#~ "body of an e-mail message. "
+#~ msgstr ""
+#~ "Deze regel zal van toepassing zijn zodra één of meer woorden voorkomen in "
+#~ "de hoofdtekst."
+
+#~ msgid "All your rules have been deleted"
+#~ msgstr "Al uw regels zijn verwijderd"

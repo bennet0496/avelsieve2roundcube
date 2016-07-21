@@ -1,0 +1,15 @@
+#!/bin/sh
+for dir in `ls -1d ../locale/?????`
+do
+    echo "Running msgfmt -o $dir/LC_MESSAGES/avelsieve.mo $dir/LC_MESSAGES/avelsieve.po"
+    msgfmt -c -v -o $dir/LC_MESSAGES/avelsieve.mo $dir/LC_MESSAGES/avelsieve.po
+    
+    for i in `seq 10 15`
+    do
+        if test -f $dir/LC_MESSAGES/avelsieve_rule_$i.po ; then
+	        echo "Running msgfmt -o $dir/LC_MESSAGES/avelsieve_rule_$i.mo $dir/LC_MESSAGES/avelsieve_rule_$i.po";
+	        msgfmt -c -v -o $dir/LC_MESSAGES/avelsieve_rule_$i.mo $dir/LC_MESSAGES/avelsieve_rule_$i.po
+        fi
+    done
+
+done

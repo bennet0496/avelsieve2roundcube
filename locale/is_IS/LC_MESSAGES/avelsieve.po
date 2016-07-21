@@ -1,0 +1,1650 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: avelsieve 0.9\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-05-29 11:16+0300\n"
+"PO-Revision-Date: 2003-06-01 13:15+0300\n"
+"Last-Translator: Þór Sigurðsson <tosi@hi.is>\n"
+"Language-Team: Norwegian <no@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "You have to define at least one header match text."
+msgstr "Þú þarft að skilgreina að minnsta kosti eina reglu fyrir hausa skeytis"
+
+#, fuzzy
+msgid "Add New Rule"
+msgstr "Bæta við reglu"
+
+msgid "New Rule Wizard - Step"
+msgstr "Ný Regla (Með hjálp) - Skref"
+
+msgid "of"
+msgstr "af"
+
+msgid "Rule Type"
+msgstr "Tegund Reglu"
+
+msgid "Condition"
+msgstr "Skilyrði"
+
+msgid "Action"
+msgstr "Aðgerð"
+
+msgid "Confirmation"
+msgstr "Staðfesting"
+
+msgid ""
+"<p>You have chosen to keep every mail. This is the default action anyway, so "
+"you might want to start over with a rule that makes more sense. Select &quot;"
+"finished&quot; to save this rule nonetheless.</p>"
+msgstr ""
+"<p>Þú hefur kosið að halda eftir öllum tölvupósti. Þetta er sjálfgefin regla "
+"hvort eð er, svo þú kynnir að vilja byrja upp á nýtt, með reglu sem er meira "
+"vit í. Veldu &quot;búið&quot; til að vista þessarri reglu engu að síður.</p>"
+
+msgid ""
+"Please use the buttons on the bottom instead of your browser's reload, back "
+"and forward buttons, to build a rule."
+msgstr ""
+"Vinsamlegast notaðu takkana að neðan í staðinn fyrir takkana sem eru á "
+"vafranum ( þeas. endurhlaða, til baka og áfram ) til þess að búa til reglu."
+
+#, fuzzy
+msgid "Display and Edit"
+msgstr "Sýna sem:"
+
+msgid ""
+"Shows a table of the mail filtering rules of this script and allows editing "
+"of them."
+msgstr ""
+
+msgid "Save Locally / Backup"
+msgstr ""
+
+msgid ""
+"Retrieve the mail filtering script from the Sieve server to your computer."
+msgstr ""
+
+msgid "Set as Filtering script for a Shared Folder"
+msgstr ""
+
+msgid ""
+"Activates this script, for all email received directly to a shared folder."
+msgstr ""
+
+#, fuzzy
+msgid "Mail Filtering Scripts"
+msgstr "Núverandi Síur Tölvupóstskeyta"
+
+msgid "Script Name"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+#, fuzzy
+msgid "Actions"
+msgstr "Aðgerð"
+
+msgid "Initial / Predefined script"
+msgstr ""
+
+msgid "Message Filters"
+msgstr "Skeytasíur"
+
+msgid ""
+"Server-Side mail filtering enables you to add criteria in order to "
+"automatically forward, delete or place a given message into a folder."
+msgstr ""
+"Síun pósts á þjóni gerir þér kleift að bæta við reglum til þess að "
+"sjálfvirkt áframsenda, eyða eða færa skeyti í möppu."
+
+msgid "Junk Mail Options"
+msgstr ""
+
+msgid ""
+"The Junk Mail Filter gathers all unwanted SPAM / Junk messages in your Junk "
+"folder."
+msgstr ""
+
+msgid "Filters"
+msgstr "Síur"
+
+msgid "Could not set active script on your IMAP server"
+msgstr "Gat ekki virkjað síusafn á IMAP þjóni"
+
+msgid "Please contact your administrator."
+msgstr "Vinsamlegast hafðu samband við kerfisstjóra."
+
+#, php-format
+msgid "Could not delete rule #%s: This type of rule cannot be deleted."
+msgstr ""
+
+#, php-format
+msgid "Could not delete rules #%s: This type of rule cannot be deleted."
+msgstr ""
+
+#, php-format
+msgid "The entered position, %s, is not valid."
+msgstr ""
+
+#, php-format
+msgid "The entered position, %s, is greater than the current number of rules."
+msgstr ""
+
+msgid "Message"
+msgstr "Skilaboð"
+
+msgid "Current Date / Time"
+msgstr ""
+
+#, fuzzy
+msgid "Always"
+msgstr "daga"
+
+msgid "Could not get SIEVE script from your IMAP server"
+msgstr "Gat ekki nálgast SIEVE síusafn af IMAP þjóni"
+
+#, fuzzy
+msgid "Error Encountered:"
+msgstr "Villa kom fyrir"
+
+msgid "Unable to load script to server."
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Could not delete script from server %s."
+msgstr "Gat ekki nálgast SIEVE síusafn af IMAP þjóni"
+
+#, fuzzy
+msgid "Could not set active script on your IMAP server "
+msgstr "Gat ekki virkjað síusafn á IMAP þjóni"
+
+#, fuzzy
+msgid "Could not delete script from server "
+msgstr "Gat ekki nálgast SIEVE síusafn af IMAP þjóni"
+
+msgid "Could not log on to timsieved daemon on your IMAP server"
+msgstr "Gat ekki tengst timsieved þjónustunni á IMAP þjóninum"
+
+msgid "Server responded with:"
+msgstr ""
+
+msgid "Disable"
+msgstr ""
+
+msgid "The rule will have no effect for as long as it is disabled."
+msgstr ""
+
+#, fuzzy
+msgid "Discard"
+msgstr "passar við segð"
+
+msgid "Silently discards the message; use with caution."
+msgstr ""
+
+#, fuzzy
+msgid "Move to Folder"
+msgstr "Fara áfram á skref"
+
+#, php-format
+msgid "Or specify a new folder: %s to be created under %s"
+msgstr ""
+
+msgid "Flag"
+msgstr ""
+
+msgid "Set message flags"
+msgstr ""
+
+msgid "Standard Flags"
+msgstr ""
+
+#, fuzzy
+msgid "Message Labels"
+msgstr "Skeytasíur"
+
+msgid "Custom Flags"
+msgstr ""
+
+msgid "Seen"
+msgstr ""
+
+msgid "Answered"
+msgstr ""
+
+msgid "Flagged"
+msgstr ""
+
+#, fuzzy
+msgid "Deleted"
+msgstr "Eyða"
+
+msgid "Draft"
+msgstr ""
+
+msgid "Important"
+msgstr ""
+
+msgid "Work"
+msgstr ""
+
+msgid "Personal"
+msgstr ""
+
+msgid "To Do"
+msgstr ""
+
+#, fuzzy
+msgid "Later"
+msgstr "stuttar lýsingar"
+
+msgid "Junk"
+msgstr ""
+
+#, fuzzy
+msgid "Not Junk"
+msgstr "Fara áfram á skref"
+
+#, php-format
+msgid "Also, set message flag %s"
+msgstr ""
+
+#, php-format
+msgid "Also, set message flags: %s"
+msgstr ""
+
+#, php-format
+msgid "Flags: %s"
+msgstr ""
+
+#, php-format
+msgid "Set (replace) flags as the current set: %s"
+msgstr ""
+
+#, php-format
+msgid "Set (replace) flags: %s"
+msgstr ""
+
+#, php-format
+msgid "Add flags to current set: %s"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Add flags: %s"
+msgstr "Bæta við reglu"
+
+#, php-format
+msgid "Remove flags from current set: %s"
+msgstr ""
+
+#, php-format
+msgid "Remove flags: %s"
+msgstr ""
+
+msgid ""
+"Enter here a list of flags separated by spaces. Example: <tt>$MyFlag "
+"$Special</tt>"
+msgstr ""
+
+#, fuzzy
+msgid "Move to Junk"
+msgstr "Fara áfram á skref"
+
+#, php-format
+msgid ""
+"Store message in your Junk Folder. Messages older than %s days will be "
+"deleted automatically."
+msgstr ""
+
+msgid "Note that you can set the number of days in Folder Preferences."
+msgstr ""
+
+#, fuzzy
+msgid "Keep Message"
+msgstr "Skilaboð"
+
+msgid "Save the message in your INBOX."
+msgstr ""
+
+msgid "Also keep copy in INBOX, marked as deleted."
+msgstr "Geymum einnig afrit í INBOX, merkt sem eytt."
+
+msgid "Notify"
+msgstr ""
+
+#, fuzzy
+msgid "Send a notification "
+msgstr "Tilkynning í tölvupósti"
+
+msgid "Mobile Phone Message (SMS)"
+msgstr "SmáSkilaboð ( SMS )"
+
+msgid "Email notification"
+msgstr "Tilkynning í tölvupósti"
+
+msgid "Notification via Zephyr"
+msgstr "Tilkynning með Zephyr"
+
+msgid "Notification via ICQ"
+msgstr "Tilkynning með ICQ"
+
+msgid "Method"
+msgstr ""
+
+msgid "Notification ID"
+msgstr "Tilkynningarauðkenni"
+
+msgid "Destination"
+msgstr ""
+
+msgid "Priority"
+msgstr ""
+
+msgid "Help: Valid variables are:"
+msgstr "Hjálp: Gildi mega vera:"
+
+msgid "Redirect"
+msgstr ""
+
+msgid "Automatically redirect the message to a different email address"
+msgstr ""
+
+msgid "someone@example.org"
+msgstr "einhver@einhversstadar.is"
+
+msgid "Keep a local copy as well."
+msgstr ""
+
+msgid ""
+"Incorrect email address(es). You must enter one or more valid email "
+"addresses, separated by comma."
+msgstr ""
+
+msgid "Reject"
+msgstr ""
+
+msgid "Send the message back to the sender, along with an excuse"
+msgstr ""
+
+msgid "Please do not send me large attachments."
+msgstr "Vinsamlegast ekki senda mér stór viðhengi."
+
+msgid "If this rule matches, do not check any rules after it."
+msgstr "Ef þessi regla virkjast, ekki skoða aðrar reglur þegar henni er lokið."
+
+msgid "STOP"
+msgstr "STOPPA"
+
+#, fuzzy
+msgid "Move to Trash"
+msgstr "Fara áfram á skref"
+
+msgid ""
+"Store message in your Trash Folder. You will have to purge the folder "
+"yourself."
+msgstr ""
+
+#, fuzzy
+msgid "Vacation / Autoresponder"
+msgstr "Í leyfi"
+
+msgid ""
+"This is an automated reply; I am away and will not be able to reply to you "
+"immediately."
+msgstr ""
+"Þetta eru sjálfvirk skilaboð; Ég er í leyfi og hef ekki möguleika á að svara "
+"þér strax."
+
+msgid "I will get back to you as soon as I return."
+msgstr "Ég hef samband þegar ég kem aftur."
+
+msgid ""
+"The notice will be sent only once to each person that sends you mail, and "
+"will not be sent to a mailing list address."
+msgstr ""
+"Tilkynningin verður send aðeins einusinni til hvers aðila sem sendir þér "
+"skeyti, og verður ekki send til póstlistapóstfanga."
+
+msgid "Subject:"
+msgstr ""
+
+#, fuzzy
+msgid "Optional subject of the vacation message."
+msgstr "svara með þessum &quot;Í leyfi&quot; skilboðum: "
+
+#, fuzzy
+msgid "Your Addresses:"
+msgstr "Passar við tölvupóstfang"
+
+msgid ""
+"A vacation / autorespond message will be sent only if an email is sent "
+"explicitly to one of these addresses."
+msgstr ""
+
+#, fuzzy
+msgid "Days:"
+msgstr "daga"
+
+msgid "days"
+msgstr "daga"
+
+msgid ""
+"A vacation / autorespond message will not be resent to the same address, "
+"within this number of days."
+msgstr ""
+
+#, fuzzy
+msgid "Message:"
+msgstr "Skilaboð"
+
+msgid "The number of days between vacation messages must be a positive number."
+msgstr ""
+
+#, fuzzy
+msgid "Date"
+msgstr "Afrita"
+
+msgid "Received"
+msgstr ""
+
+#, fuzzy
+msgid "Year"
+msgstr "Passar við haus"
+
+msgid "Month"
+msgstr ""
+
+#, fuzzy
+msgid "Day"
+msgstr "daga"
+
+msgid "Weekday"
+msgstr ""
+
+msgid "Hour"
+msgstr ""
+
+msgid "Minute"
+msgstr ""
+
+msgid "Second"
+msgstr ""
+
+#, fuzzy
+msgid "Sunday"
+msgstr "daga"
+
+#, fuzzy
+msgid "Monday"
+msgstr "daga"
+
+msgid "Tuesday"
+msgstr ""
+
+msgid "Wednesday"
+msgstr ""
+
+msgid "Thursday"
+msgstr ""
+
+#, fuzzy
+msgid "Friday"
+msgstr "daga"
+
+msgid "Saturday"
+msgstr ""
+
+msgid "Is"
+msgstr ""
+
+msgid "Before (&lt;=)"
+msgstr ""
+
+msgid "After (=&gt;)"
+msgstr ""
+
+msgid "Before (&lt;)"
+msgstr ""
+
+msgid "After (&gt;)"
+msgstr ""
+
+msgid "January"
+msgstr ""
+
+msgid "February"
+msgstr ""
+
+msgid "March"
+msgstr ""
+
+msgid "April"
+msgstr ""
+
+msgid "May"
+msgstr ""
+
+msgid "June"
+msgstr ""
+
+msgid "July"
+msgstr ""
+
+msgid "August"
+msgstr ""
+
+msgid "September"
+msgstr ""
+
+msgid "October"
+msgstr ""
+
+msgid "November"
+msgstr ""
+
+msgid "December"
+msgstr ""
+
+msgid "Occurence"
+msgstr ""
+
+msgid "Specific Date"
+msgstr ""
+
+msgid "Specific Time"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "of header %s"
+msgstr "hausinn"
+
+msgid "Current date / time:"
+msgstr ""
+
+msgid "Current date:"
+msgstr ""
+
+#, fuzzy
+msgid "message header"
+msgstr "Skilaboð"
+
+#, fuzzy
+msgid "Message header"
+msgstr "Skeytasíur"
+
+#, fuzzy, php-format
+msgid "is %s"
+msgstr "Breyta"
+
+msgid "is"
+msgstr "er"
+
+#, php-format
+msgid "is before than %s (inclusive)"
+msgstr ""
+
+#, php-format
+msgid "is after than %s (inclusive)"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "is before than %s"
+msgstr "er minni en"
+
+#, fuzzy, php-format
+msgid "is after than %s"
+msgstr "er stærri en"
+
+#, php-format
+msgid "&quot;%s&quot;"
+msgstr ""
+
+#, php-format
+msgid "&quot;<tt>%s:</tt>&quot;"
+msgstr ""
+
+msgid "AND (Every item must match)"
+msgstr "OG ( Öll skilyrði verða að passa )"
+
+msgid "OR (Either item will match)"
+msgstr "EÐA ( Annað skilyrðið verður að passa )"
+
+#, fuzzy
+msgid "Rule"
+msgstr "Tegund Reglu"
+
+#, fuzzy, php-format
+msgid "Add a new %s"
+msgstr "Bæta við reglu"
+
+#, fuzzy
+msgid "SPAM Rule"
+msgstr "Bæta við reglu"
+
+msgid "Junk Mail Rule"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Edit %s"
+msgstr "Breyta"
+
+msgid "Whitelist"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Add new %s"
+msgstr "Passar við tölvupóstfang"
+
+msgid "Sieve Code"
+msgstr ""
+
+#, fuzzy
+msgid "Address"
+msgstr "Passar við tölvupóstfang"
+
+#, fuzzy
+msgid ""
+"Perform an action depending on email addresses appearing in message headers."
+msgstr "Framkvæma aðgerð á skeyti eftir stærð þeirra."
+
+#, fuzzy
+msgid "Header"
+msgstr "Passar við haus"
+
+msgid ""
+"Perform an action on messages matching a specified header (From, To etc.)."
+msgstr ""
+"Framkvæma aðgerð á skeyti þar sem ákveðinn haus passar ( Frá, Til osfrv. )."
+
+msgid "Envelope"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Perform an action on messages matching a specified envelope header (Envelope "
+"FROM, TO)."
+msgstr ""
+"Framkvæma aðgerð á skeyti þar sem ákveðinn haus passar ( Frá, Til osfrv. )."
+
+msgid "Size"
+msgstr "Stærð"
+
+msgid "Perform an action on messages depending on their size."
+msgstr "Framkvæma aðgerð á skeyti eftir stærð þeirra."
+
+msgid "Body"
+msgstr ""
+
+msgid "Perform an action on messages depending on their content (body text)."
+msgstr "Framkvæma aðgerð á skeyti eftir innihaldi þeirra ( meginmáli )."
+
+#, fuzzy
+msgid ""
+"Perform an action on messages depending on date or time related to the "
+"message."
+msgstr "Framkvæma aðgerð á skeyti eftir stærð þeirra."
+
+msgid "All"
+msgstr ""
+
+msgid "Perform an action on <strong>all</strong> incoming messages."
+msgstr "Framkvæma aðgerð á <strong>öll</strong> viðtekin skeyti."
+
+msgid "contains"
+msgstr "inniheldur"
+
+msgid "does not contain"
+msgstr "inniheldur ekki"
+
+msgid "is not"
+msgstr "er ekki"
+
+msgid "matches"
+msgstr "passar við"
+
+#, fuzzy
+msgid "wildcard"
+msgstr "passar við segð"
+
+msgid "does not match"
+msgstr "passar ekki við"
+
+#, fuzzy
+msgid "regexp"
+msgstr "passar við reglulega segð"
+
+msgid "is greater than"
+msgstr "er stærri en"
+
+msgid "is greater or equal to"
+msgstr "er stærri en eða jafn og"
+
+msgid "is lower than"
+msgstr "er minni en"
+
+msgid "is lower or equal to"
+msgstr "er minni en eða jafn og"
+
+msgid "is equal to"
+msgstr "er jafn og"
+
+msgid "is not equal to"
+msgstr "er ekki jafn og"
+
+msgid "verbose"
+msgstr "nákvæmar lýsingar"
+
+#, fuzzy
+msgid "Textual descriptions of the rules"
+msgstr "Lýsing á reglu"
+
+msgid "terse"
+msgstr "stuttar lýsingar"
+
+msgid "More suitable for viewing the table of rules at once"
+msgstr ""
+
+msgid "source"
+msgstr ""
+
+msgid "Display SIEVE source"
+msgstr ""
+
+msgid "Low"
+msgstr "Lágur"
+
+msgid "Normal"
+msgstr "Venjulegur"
+
+msgid "High"
+msgstr "Hár"
+
+msgid "Delete"
+msgstr "Eyða"
+
+msgid "Edit"
+msgstr "Breyta"
+
+msgid "Duplicate"
+msgstr "Afrita"
+
+msgid "Move Up"
+msgstr "Færa Upp"
+
+#, fuzzy
+msgid "Move to Top"
+msgstr "Fara áfram á skref"
+
+msgid "Move Down"
+msgstr "Færa Niður"
+
+#, fuzzy
+msgid "Move to Bottom"
+msgstr "Fara áfram á skref"
+
+msgid "Junk Folder"
+msgstr ""
+
+#, php-format
+msgid ""
+"Store SPAM message in your Junk Folder. Messages older than %s days will be "
+"deleted automatically."
+msgstr ""
+
+msgid "Trash Folder"
+msgstr ""
+
+msgid ""
+"Store SPAM message in your Trash Folder. You will have to purge the folder "
+"yourself."
+msgstr ""
+
+msgid ""
+"Discard SPAM message. You will get no indication that the message ever "
+"arrived."
+msgstr ""
+
+msgid "Server-Side Mail Filtering"
+msgstr "Tölvupóst síun á þjóni"
+
+msgid "Successfully added new rule."
+msgstr "Það tókst að bæta við nýrri reglu."
+
+#, fuzzy, php-format
+msgid "Successfully updated rule #%s"
+msgstr "Það tókst að uppfæra reglu númer "
+
+#, fuzzy, php-format
+msgid "Successfully deleted rules #%s"
+msgstr "Það tókst að eyða reglum númer "
+
+#, fuzzy, php-format
+msgid "Successfully deleted rule #%s"
+msgstr "Það tókst að eyða reglu númer "
+
+msgid "You must correct the above errors before continuing."
+msgstr ""
+
+msgid "No check"
+msgstr ""
+
+#, php-format
+msgid "Editing %s"
+msgstr ""
+
+#, php-format
+msgid "(Rule #%s)"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Add a new %s "
+msgstr "Bæta við reglu"
+
+msgid "Configure Anti-SPAM Protection"
+msgstr ""
+
+msgid ""
+"All incoming mail is checked for unsolicited commercial content (SPAM) and "
+"marked accordingly. This special rule allows you to configure what to do "
+"with such messages once they arrive to your Inbox."
+msgstr ""
+
+#, php-format
+msgid ""
+"Select %s to add the predefined rule, or select the advanced SPAM filter to "
+"customize the rule."
+msgstr ""
+
+#, fuzzy
+msgid "Add Spam Rule"
+msgstr "Bæta við reglu"
+
+msgid "Advanced Spam Filter..."
+msgstr ""
+
+msgid "Target Score"
+msgstr ""
+
+#, php-format
+msgid ""
+"Messages with SPAM-Score higher than the target value, the maximum value "
+"being %s, will be considered SPAM."
+msgstr ""
+
+msgid "SPAM Lists to check against"
+msgstr ""
+
+msgid ""
+"Messages that match any of these header rules will never end up in Junk "
+"Folders or regarded as SPAM."
+msgstr ""
+
+msgid "Apply Changes"
+msgstr "Virkja breytingar"
+
+msgid "Cancel"
+msgstr "Hætta við"
+
+#, fuzzy
+msgid "Information..."
+msgstr "Staðfesting"
+
+#, php-format
+msgid ""
+"There is currently no Junk Mail Filter, so we are suggesting the following "
+"default settings. To add the Junk Mail Filter, simply choose <em>&quot;%"
+"s&quot;</em>."
+msgstr ""
+
+#, fuzzy
+msgid "Enable Junk Mail Filtering"
+msgstr "Núverandi Síur Tölvupóstskeyta"
+
+msgid "Automatically delete Junk Messages"
+msgstr ""
+
+#, php-format
+msgid "when they are older than %s days"
+msgstr ""
+
+msgid "Enable Whitelist"
+msgstr ""
+
+msgid ""
+"Messages sent from the addresses in your Whitelist will never end up in your "
+"Junk Mail folder, or considered as SPAM."
+msgstr ""
+
+msgid "Edit Whitelist...."
+msgstr ""
+
+msgid "Automatically add all your Address Book Contacts in the Whitelist"
+msgstr ""
+
+msgid "Configure Advanced Junk Mail Tests"
+msgstr ""
+
+#, fuzzy
+msgid "You have to enable at least one Junk Mail Test."
+msgstr "Þú þarft að skilgreina að minnsta kosti eina reglu fyrir hausa skeytis"
+
+msgid "Junk Mail Options have been saved."
+msgstr ""
+
+msgid "Editing Whitelist"
+msgstr ""
+
+msgid ""
+"Messages coming from the email addresses that you enter here will never end "
+"up in your Junk folder or be considered as SPAM."
+msgstr ""
+
+msgid ""
+"Enter <strong>one (1) email address per line</strong>. Note that you can "
+"also enter an incomplete address or a mail domain."
+msgstr ""
+
+msgid "Example:"
+msgstr ""
+
+msgid "Whitelist has been updated."
+msgstr ""
+
+#, php-format
+msgid "Editing Sieve Code (Rule #%s)"
+msgstr ""
+
+#, fuzzy
+msgid "Create New Custom Sieve Rule"
+msgstr "Núverandi Síur Tölvupóstskeyta"
+
+msgid "Custom Rule"
+msgstr ""
+
+msgid "Please enter valid Sieve code in the textbox below."
+msgstr ""
+
+msgid ""
+"Note: The <tt>require</tt> command is not needed; it will be added "
+"automatically at the start of the script."
+msgstr ""
+
+#, php-format
+msgid "Sieve Capabilities supported: %s"
+msgstr ""
+
+msgid "Please enter a valid Sieve code snippet."
+msgstr ""
+
+msgid "To: or Cc"
+msgstr ""
+
+msgid "The condition for the following rules is:"
+msgstr "Skilyrðin fyrir eftirfarandi reglur eru:"
+
+msgid "Less..."
+msgstr "Minna..."
+
+msgid "More..."
+msgstr "Meira..."
+
+msgid "bigger"
+msgstr "stærra"
+
+msgid "smaller"
+msgstr "minna"
+
+msgid "than"
+msgstr "en"
+
+msgid "KB (kilobytes)"
+msgstr "KB ( kílóbæti )"
+
+msgid "MB (megabytes)"
+msgstr "MB ( megabæti )"
+
+msgid "All Messages"
+msgstr "Öll skeyti"
+
+msgid ""
+"The following action will be applied to <strong>all</strong> incoming "
+"messages that do not match any of the previous rules."
+msgstr ""
+"Eftirfarandi regla gildir um <strong>öll</strong> viðtekin skeyti sem ekki "
+"passa við fyrri reglur."
+
+msgid "1st"
+msgstr ""
+
+msgid "2nd"
+msgstr ""
+
+msgid "3rd"
+msgstr ""
+
+msgid "4th"
+msgstr ""
+
+msgid "5th"
+msgstr ""
+
+msgid "6th"
+msgstr ""
+
+msgid "7th"
+msgstr ""
+
+msgid "8th"
+msgstr ""
+
+msgid "9th"
+msgstr ""
+
+msgid "from the end"
+msgstr ""
+
+msgid "Choose what to do when this rule triggers, from one of the following:"
+msgstr ""
+"Veldu hvað á að gera þegar þessi regla virkjast, frá einu af eftirfarandi:"
+
+#, fuzzy
+msgid "Add SPAM Rule"
+msgstr "Bæta við reglu"
+
+msgid "Editing Mail Filtering Rule"
+msgstr "Breyti síun tölvupóstskeyta"
+
+#, fuzzy
+msgid "Create New Mail Filtering Rule"
+msgstr "Núverandi Síur Tölvupóstskeyta"
+
+msgid "Additional Actions"
+msgstr "Viðbótar aðgerðir"
+
+#, fuzzy
+msgid "You have to define at least one condition."
+msgstr "Þú þarft að skilgreina að minnsta kosti eina reglu fyrir hausa skeytis"
+
+msgid "Clear this Form"
+msgstr "Hreinsa þetta form"
+
+msgid "Start Over"
+msgstr "Byrja upp á nýtt"
+
+msgid "Move back to step"
+msgstr "Fara aftur á skref"
+
+msgid "Finished"
+msgstr "Búið"
+
+msgid "Move on to step"
+msgstr "Fara áfram á skref"
+
+msgid "Your new rule states:"
+msgstr "Nýja reglan þín skilgreinir:"
+
+msgid ""
+"If this is what you wanted, select Finished. You can also start over or "
+"cancel adding a rule altogether."
+msgstr ""
+"Ef þetta er það sem þú vildir, veldu Búið. Þú getur einnig byrjað upp á "
+"nýtt, eða hætt við að bæta við reglu."
+
+msgid ""
+"Here you can add or delete filtering rules for your email account. These "
+"filters will always apply to your incoming mail, wherever you check your "
+"email."
+msgstr ""
+"Hér getur þú sett inn og fjarlægt reglur fyrir þitt póstfang. Þessar reglur "
+"munu alltaf eiga við um þinn viðtekna póst, hvar sem þú lest póstinn þinn."
+
+msgid ""
+"You don't have any rules yet. Feel free to add any with the button &quot;Add "
+"a New Rule&quot;. When you are done, please select &quot;Save Changes&quot; "
+"to get back to the main options screen."
+msgstr ""
+"Þú hefur engar reglur ennþá. Bættu við reglum með &quot;Bæta við nýrri "
+"reglu&quot; takkanum. Þegar þú ert búin(n), vinsamlegast notaðu &quot;Vista "
+"breytingum&quot; takkann til að fara aftur á valmyndaskjáinn."
+
+msgid ""
+"When you are done with editing, <strong>remember to select &quot;Save "
+"Changes&quot;</strong> to activate your changes!"
+msgstr ""
+"Þegar þú ert búin(n) að breyta, <strong>mundu að nota &quot;Vista "
+"breytingum&quot; takkann til að virkja breytingarnar!"
+
+msgid "The following table summarizes your current mail filtering rules."
+msgstr "Eftirfarandi tafla er yfirlit yfir núverandi síunarreglur."
+
+msgid ""
+"Warning: In your rules, you have defined an action that refers to a folder "
+"that does not exist or a folder where you do not have permission to append "
+"to."
+msgstr ""
+
+#, php-format
+msgid ""
+"Note: A <a href=\"%s\">Vacation Autoresponder</a> is active (<a href=\"%s"
+"\">Rule #%s</a> in your current Mail Filtering Rules).<br/>Don't forget to "
+"disable it or delete it when you are back."
+msgstr ""
+
+msgid "No"
+msgstr "Nei"
+
+msgid "Options"
+msgstr "Valkostir"
+
+msgid "Description of Rule"
+msgstr "Lýsing á reglu"
+
+msgid "Display as:"
+msgstr "Sýna sem:"
+
+#, fuzzy
+msgid "Position"
+msgstr "Skilyrði"
+
+#, fuzzy
+msgid "Add a new Rule"
+msgstr "Bæta við reglu"
+
+#, fuzzy
+msgid "Really delete selected rules?"
+msgstr "Það tókst að eyða reglu númer "
+
+msgid "Enable"
+msgstr ""
+
+msgid ""
+"When you are done, please click the button below to return to your webmail."
+msgstr ""
+"Þegar þú ert búin(n), vinsamlegast notaðu takkann að neðan til að fara aftur "
+"yfir í vefpóstinn þinn."
+
+msgid "Save Changes"
+msgstr "Vista breytingum"
+
+msgid "Created:"
+msgstr ""
+
+msgid "Last modified:"
+msgstr ""
+
+msgid "Current Mail Filtering Rules"
+msgstr "Núverandi Síur Tölvupóstskeyta"
+
+msgid "Close"
+msgstr ""
+
+msgid "No Filtering Rules Defined Yet"
+msgstr "Engar síur hafa verið skilgreindar ennþá."
+
+#, fuzzy
+msgid "Really delete this rule?"
+msgstr "Það tókst að eyða reglu númer "
+
+#, fuzzy
+msgid "More Options..."
+msgstr "Meira..."
+
+#, fuzzy
+msgid "Move to Position..."
+msgstr "Fara áfram á skref"
+
+msgid "--------"
+msgstr ""
+
+#, fuzzy
+msgid "Duplicate this Rule"
+msgstr "Það tókst að eyða reglu númer "
+
+#, fuzzy
+msgid "Insert a New Rule here"
+msgstr "Bæta við reglu"
+
+msgid "Send this Rule by Email"
+msgstr ""
+
+msgid "Go"
+msgstr ""
+
+msgid "Action for Selected Rules:"
+msgstr ""
+
+msgid "Junk Folder Information"
+msgstr ""
+
+msgid "Messages in this folder have been identified as SPAM / Junk."
+msgstr ""
+
+#, php-format
+msgid ""
+"Note: Junk Mail is currently not enabled. Select &quot;%s&quot; to enable it."
+msgstr ""
+
+msgid "Edit Junk Mail Options..."
+msgstr ""
+
+#, php-format
+msgid "Any messages older than %s days are automatically deleted."
+msgstr ""
+
+msgid "Test for Forged Header"
+msgstr ""
+
+msgid "Automatically"
+msgstr ""
+
+msgid "Sender"
+msgstr ""
+
+msgid "From"
+msgstr ""
+
+msgid "To"
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+#, fuzzy
+msgid "Create Filter"
+msgstr "Skeytasíur"
+
+msgid "Vacation Filter Reminder"
+msgstr ""
+
+msgid "(Creates a new server-side filtering rule, based on the above criteria)"
+msgstr ""
+
+msgid ""
+"Notice: The following criteria cannot be expressed as server-side filtering "
+"rules:"
+msgstr ""
+
+msgid "Reason:"
+msgstr ""
+
+msgid "The Body extension is not supported in this server."
+msgstr ""
+
+msgid ""
+"Note that Only From:, To:, Cc: and Subject: headers will be checked in the "
+"server filter."
+msgstr ""
+
+msgid "These search expressions are not applicable during message delivery."
+msgstr ""
+
+msgid ""
+"All messages considered as <strong>SPAM</strong> (unsolicited commercial "
+"messages)"
+msgstr ""
+
+msgid "SPAM"
+msgstr ""
+
+msgid "unless"
+msgstr ""
+
+msgid "Whitelist:"
+msgstr ""
+
+msgid "or"
+msgstr ""
+
+msgid "matching the Spam List(s):"
+msgstr ""
+
+msgid "Spam List(s):"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "and with score greater than %s"
+msgstr "er stærri en"
+
+#, php-format
+msgid "Score > %s"
+msgstr ""
+
+msgid "will be"
+msgstr ""
+
+msgid "stored in the Junk Folder."
+msgstr ""
+
+msgid "stored in the Trash Folder."
+msgstr ""
+
+msgid "Trash"
+msgstr ""
+
+#, fuzzy
+msgid "discarded."
+msgstr "<em>henda</em> því."
+
+msgid "Junk Mail Rule is Disabled"
+msgstr ""
+
+msgid "<s></s>"
+msgstr ""
+
+msgid "Junk Mail"
+msgstr ""
+
+msgid "matching any one of the Spam tests as follows:"
+msgstr ""
+
+msgid "Spam Tests:"
+msgstr ""
+
+msgid ""
+"and where the sender does <em>not</em> match any of the addresses / "
+"expressions in your <strong>Whitelist</strong>"
+msgstr ""
+
+msgid ""
+"The messages that match the system's default <strong>SPAM</strong> checks"
+msgstr ""
+
+msgid "stored in the <strong>Junk</strong> Folder."
+msgstr ""
+
+msgid "stored in the <strong>Trash</strong> Folder."
+msgstr ""
+
+msgid ""
+"<strong>Whitelist</strong> - The following email addresses are whitelisted "
+"and will not end up in Junk folders or considered as SPAM:"
+msgstr ""
+
+#, php-format
+msgid "and %s more email addresses / expressions."
+msgstr ""
+
+#, php-format
+msgid "%s more entries..."
+msgstr ""
+
+#, fuzzy
+msgid "Custom Sieve Code"
+msgstr "Núverandi Síur Tölvupóstskeyta"
+
+msgid "View Source"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "the header %s"
+msgstr "hausinn"
+
+#, fuzzy, php-format
+msgid "Header %s"
+msgstr "Passar við haus"
+
+msgid "To or Cc"
+msgstr ""
+
+#, php-format
+msgid "the envelope %s"
+msgstr ""
+
+#, php-format
+msgid "Envelope %s"
+msgstr ""
+
+#, php-format
+msgid "the address %s"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Address %s"
+msgstr "Passar við tölvupóstfang"
+
+#, fuzzy
+msgid "message body"
+msgstr "Skilaboð"
+
+#, php-format
+msgid "index number %s"
+msgstr ""
+
+#, php-format
+msgid "index #%s"
+msgstr ""
+
+msgid "(counting from last header)"
+msgstr ""
+
+msgid "(from end)"
+msgstr ""
+
+#, fuzzy
+msgid "matches the regular expression"
+msgstr "passar við reglulega segð"
+
+#, fuzzy
+msgid "does not match the regular expression"
+msgstr "passar ekki við reglulega segð"
+
+msgid "exists"
+msgstr "er til"
+
+msgid "does not exist"
+msgstr "er ekki til"
+
+msgid "This rule is currently <strong>DISABLED</strong>:"
+msgstr ""
+
+msgid "DISABLED"
+msgstr ""
+
+msgid "If"
+msgstr "Ef"
+
+msgid "<em>any</em> of the following mail headers match: "
+msgstr "<em>einhver</em> af eftirfarandi hausum passar:"
+
+msgid "<em>all</em> of the following mail headers match: "
+msgstr "<em>allir</em> eftirfarandi hausa passa:"
+
+msgid "the size of the message is"
+msgstr "stærð skeytis er"
+
+msgid " bigger"
+msgstr "stærri en"
+
+msgid " smaller"
+msgstr "minni en"
+
+msgid "For <strong>ALL</strong> incoming messages; "
+msgstr "Fyrir <strong>ÖLL</strong> viðtekin skeyti;"
+
+msgid "ALL"
+msgstr ""
+
+#, fuzzy
+msgid "always"
+msgstr "daga"
+
+msgid "and"
+msgstr ""
+
+msgid "then"
+msgstr "þá á að"
+
+#, fuzzy
+msgid "<em>keep</em> the message."
+msgstr "<em>geyma</em> það."
+
+#, fuzzy
+msgid "Keep"
+msgstr "passar við reglulega segð"
+
+#, fuzzy
+msgid "<em>discard</em> the message."
+msgstr "<em>henda</em> því."
+
+msgid "<em>reject</em> it, sending this excuse back to the sender:"
+msgstr "<em>neita viðtöku</em> á því, með eftirfarandi boðum til sendanda:"
+
+msgid "Redirect to"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "<em>redirect</em> it to the email addresses: %s."
+msgstr "<em>áframsenda</em> það á tölvupóstfangið"
+
+msgid "<em>redirect</em> it to the email address"
+msgstr "<em>áframsenda</em> það á tölvupóstfangið"
+
+#, fuzzy, php-format
+msgid "<em>file</em> it into the folder %s"
+msgstr "<em>vista</em> það í möppuna <strong>"
+
+#, php-format
+msgid "File into %s"
+msgstr ""
+
+msgid "(Warning: Folder not available)"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "reply with a vacation / autoresponder message: "
+msgstr "svara með þessum &quot;Í leyfi&quot; skilboðum: "
+
+msgid "Also keep a local copy."
+msgstr ""
+
+msgid " Also keep a copy in INBOX, marked as deleted."
+msgstr " Geymdu einnig afrit í INBOX, merkt sem eytt."
+
+#, fuzzy
+msgid "Keep Deleted"
+msgstr "Eyða völdum"
+
+msgid " Also notify using the method"
+msgstr " Tilkynntu einnig með aðferðinni"
+
+msgid "with"
+msgstr "með"
+
+msgid "priority and the message"
+msgstr "mikilvægi og skilaboðum"
+
+#, php-format
+msgid "Notify %s"
+msgstr ""
+
+#, fuzzy
+msgid "Then <strong>STOP</strong> processing rules."
+msgstr " <strong>HÆTTU</strong> svo að fara í gegnum reglurnar."
+
+msgid "Stop"
+msgstr ""
+
+#, fuzzy
+msgid "You have not defined the name for the new folder."
+msgstr "Þú þarft að skilgreina að minnsta kosti eina reglu fyrir hausa skeytis"
+
+msgid "Please try again."
+msgstr ""
+
+msgid "Illegal folder name.  Please select a different name"
+msgstr ""
+
+#, fuzzy
+msgid "None"
+msgstr "Nei"
+
+#~ msgid "Vacation"
+#~ msgstr "Í leyfi"
+
+#~ msgid "Addresses: Only reply if sent to these addresses:"
+#~ msgstr "Tölvupóstföng: Aðeins svara ef skeytið er sent á þessi póstföng:"
+
+#~ msgid "Days: Reply message will be resent after"
+#~ msgstr "Dagar: Svarskeyti verður sent aftur eftir"
+
+#~ msgid "Use the following message:"
+#~ msgstr "Nota eftirfarandi skeyti:"
+
+#~ msgid "Keep (Default action)"
+#~ msgstr "Geyma ( Sjálfgefið )"
+
+#~ msgid "Discard Silently"
+#~ msgstr "Henda, þegjandi og hljóðalaust"
+
+#~ msgid "Reject, sending this excuse to the sender:"
+#~ msgstr "Neita viðtöku, með eftirfarandi boðum til sendanda:"
+
+#~ msgid "Redirect to the following email address:"
+#~ msgstr "Áframsenda til eftirfarandi tölvupóstfangs:"
+
+#~ msgid "Move message into"
+#~ msgstr "Færa skeyti í"
+
+#~ msgid "the existing folder"
+#~ msgstr "möppu sem þegar er til"
+
+#~ msgid "a new folder, named"
+#~ msgstr "nýja möppu, nefnda"
+
+#~ msgid "created as a subfolder of"
+#~ msgstr "búna til sem undirmöppu af"
+
+#~ msgid "Notify me, using the following method:"
+#~ msgstr "Tilkynntu mér með eftirfarandi aðferð:"
+
+#~ msgid "(Probably the script is size null)."
+#~ msgstr "(Trúlega er síusafnið tómt )."
+
+#~ msgid "Body Match"
+#~ msgstr "Meginmál passar"
+
+#~ msgid "What kind of rule would you like to add?"
+#~ msgstr "Hverslags reglu viltu bæta við?"
+
+#, fuzzy
+#~ msgid "Change Type"
+#~ msgstr "Tegund Reglu"
+
+#~ msgid ""
+#~ "The rule will trigger if the following addresses appear anywhere in the "
+#~ "message's headers:"
+#~ msgstr ""
+#~ "Reglan mun virkja aðgerðina ef eftirfarandi tölvupóstföng koma fyrir "
+#~ "einhversstaðar í hausum skeytisins:"
+
+#~ msgid "The header "
+#~ msgstr "Hausinn"
+
+#~ msgid "This rule will trigger if message is"
+#~ msgstr "Þessi regla virkjast ef skeytið er"
+
+#~ msgid ""
+#~ "This rule will trigger upon the occurrence of one or more strings in the "
+#~ "body of an e-mail message. "
+#~ msgstr ""
+#~ "Þessi regla virkast ef einn eða fleiri textastrengir koma fyrir í "
+#~ "meginmáli skeytis. "
+
+#~ msgid "All your rules have been deleted"
+#~ msgstr "Öllum þínum reglum hefur verið eytt"
+
+#~ msgid "in order to save your rules."
+#~ msgstr "til að vista reglunum þínum."
+
+#~ msgid "Parameters"
+#~ msgstr "Gildi"
+
+#, fuzzy
+#~ msgid "does not match regexp"
+#~ msgstr "passar ekki við"
+
+#~ msgid "does not match wildcard"
+#~ msgstr "passar ekki við segð"

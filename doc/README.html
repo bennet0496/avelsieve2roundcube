@@ -1,0 +1,182 @@
+
+<h3><a id="introduction">Introduction</a></h3>
+
+<p><em>Avelsieve</em> or, verbosely, &quot;Sieve Mail Filters Plugin for
+Squirrelmail&quot; is a <a href="http://www.squirrelmail.org">Squirrelmail</a>
+<a href="http://www.squirrelmail.org/plugins.php">plugin</a> for creating <a
+        href="http://sieve.info">Sieve</a> scripts on a Sieve-compliant mail server.</li>
+
+<p>Sieve is a mail filtering language, intended for server-side filtering of
+emails.  For more information, please visit <a
+        href="http://sieve.info">http://sieve.info</a> or read <a
+        href="http://www.ietf.org/rfc/rfc3028.txt">RFC 3028</a>.</p>
+
+<p>Avelsieve can either run using different backends, with regard to the
+storage of the Sieve scripts. Currently, three backends are available:</p>
+
+<ol>
+        <li><strong>ManageSieve</strong>: This is the transport protocol for
+        uploading, editing, deleting and verifying Sieve scripts on a mail
+        server. A daemon usually listens to port 2000, where clients such as
+        avelsieve can connect and manage the scripts.<br/>
+        Examples of server implementations that support ManageSieve:
+        <ul>
+                <li><a href="http://cyrusimap.web.cmu.edu">Cyrus IMAPd</a> running <tt>timsieved</tt></li>
+                <li><a href="http://www.dbmail.org">DBMail</a></li>
+                <li><a href="http://www.isode.com/products/m-box.html">Isode M-Box</a></li>
+        </ul>
+        </li>
+
+        <li><strong>File Backend</strong>: For simple storage of scripts in the
+        filesystem. (For instance, the Exim MTA supports such scripts).</li>
+
+        <li><strong>LDAP Backend</strong>: This is a specialized, contributed
+        backend for users of Sun Messaging Server.</li>
+</ol>
+
+<p>More implementations can be found at <a
+        href="http://sieve.info/implementations">http://sieve.info/implementations</a>.</p>
+
+
+
+<p>In the future, <em>Avelsieve</em> will also be a part of <a
+href="http://email.uoa.gr/projects/cyrusmaster/">Cyrusmaster</a>, a web-based Cyrus
+administration tool. It should provide the same interface of the user's filters
+to administrators and/or helpdesk staff.</p>
+
+
+<h3><a id="about">About this implementation</a></h3>
+
+<p>The web interface provides a wizard-like interface that, in the end,
+creates part of a Sieve script, a so called <em>rule</em>. It then assembles
+all the rules to form a Sieve script.</p>
+
+<p>For the sake of user-friendliness, it provides only a subset of Sieve's
+functionality; the main goal was to provide a simple interface for Joe User to
+create server-side filters without knowing anything about the language
+itself.</p>
+
+<p>The plugin does not provide a parser; instead, it saves PHP meta-data in the
+script itself, in order to continue editing and manipulation of the filters.
+The only thing that is supported is a script called &quot;phpscript&quot; on
+the Cyrus server. Multiple scripts are not supported yet.  I've tried to make
+it sane enough that it won't break a lot. Some more testing is needed - hence
+the beta status.</p>
+
+
+
+<h3><a id="status">Status</a></h3>
+
+<ul>
+<li>
+Devel Branch (1.9): Considered beta quality.<br./>
+
+This release should be considered 'beta quality'. At the moment it works
+for me without any major glitches, but who knows, there might be a bug that
+DoS'es the Apache Server by eating all of its memory in there.
+</li>
+
+<li>Stable Branch (1.0):<br/>
+
+This plugin has been out for a while and is known to work pretty well.  You'll
+have to check for yourselves if it is for a production environment. Insert
+standard GPL_Disclaimer(); here.
+</li>
+
+</ul>
+
+
+<h3><a id="features">Features</a></h3>
+
+<p>This plugin provides:</p>
+
+<ul>
+<li>Simple HTML interface.</li>
+<li>Javascript functionality that enhances the user interaction, however there
+is HTML-only fallback for accessibility.</li>
+<li>Match messages based on email headers, size, or apply to all messages.</li>
+<li>Configurable number of header matches.</li>
+<li>Support of keeping a message, move to an existing or new folder, email redirection.</li>
+<li>Supports Sieve Vacation.</li>
+<li>Supports Sieve Notification action.</li>
+<li>Create a rule on-the-fly, while reading a message in Squirrelmail. This
+function will auto-detect List-Id: headers for mailing lists.</li>
+<li>Runs through all the rules, but supports a <em>stop</em> command when a rule matches.</li>
+<li>Change the order of rules - or delete them altogether.</li>
+<li>Enable / Disable rules on the fly, without deleting them.</li>
+<li>Make a textual description of the rule.</li>
+<li>Localizable.</li>
+<li>Automatic adaption to the capabilities of each site's Sieve.</li>
+</ul>
+
+<p>..but does <strong>not</strong> provide:</p>
+
+<ul>
+<li>A Sieve parser. Yet.</li>
+</ul>
+
+
+<h3><a id="screenshots">Screenshots</a></h3>
+
+<p>If you'd like to take some quick look before installing, you can check out
+some <a href="avelsieve_screenshots.php">screenshots of avelsieve in
+action</a>.</p>
+
+
+
+<h3><a id="demo">Demo</a></h3>
+
+<p id="6.5">You can see the plugin in action, if you wish. Check the <a
+href="demo.php">Live Demo</a> page for more information.  </p>
+
+
+<h3><a id="requirements">Requirements</a></h3>
+
+<ul>
+
+<li>A Sieve management daemon (ManageSieve-compatible). It has been tested with
+<a href="http://asg.web.cmu.edu/cyrus/">Cyrus IMAP server</a> and its
+<em>timsieved</em> Sieve parser. There have been reports about it working with
+<a href="http://www.dbmail.org">DBMail</a>, too.</li>
+
+<li><a href="http://www.squirrelmail.org">Squirrelmail</a> version 1.4.9 or
+greater.</li>
+
+<li>The <a href="http://www.php.net/manual/en/ref.mbstring.php">multibyte
+string (mbstring) PHP extension</a> is very much recommended. It provides very
+robust conversion between character sets. Otherwise, recode or iconv will also
+do the job.</li>
+
+<li><a href="http://sieve-php.sourceforge.net/">sieve-php.lib</a>, a PHP class
+for transporting Sieve scripts, originally by <a
+href="mailto:danellis__&#64;.com">Dan Ellis</a>. Included.</li>
+
+</ul>
+
+
+<h3><a id="license">License</a></h3>
+
+<small>
+<p>This program is free software; you can redistribute it and/or
+modify it under the terms of the <a
+href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a> as
+published by the <a href="http://www.fsf.org">Free Software Foundation</a>;
+either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but
+<em>WITHOUT ANY WARRANTY</em>; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  <a
+href="http://www.gnu.org/licenses/gpl.html">See the GNU General Public
+License</a> for more details.</p>
+</small>
+
+
+<h3><a id="author">Author</a></h3>
+
+<address>
+<a href="mailto: avel &#64; users.sourceforge.net">Alexandros Vellis</a>,
+<a href="http://www.noc.uoa.gr">Network Operations Centre</a>, <a
+href="http://www.uoa.gr">University of Athens</a><br /> (<a
+href="http://users.uoa.gr/~avel/">Personal home page</a>).<br /> </address>
+
+

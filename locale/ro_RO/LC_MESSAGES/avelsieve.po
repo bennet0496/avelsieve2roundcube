@@ -1,0 +1,1684 @@
+# translation of avelsieve.po to Romanian
+# translation of avelsieve.po to romanian.
+# AvelSieve Romanian Strings
+# Copyright (c) 2002 Marius Onica.
+# FIRST AUTHOR <omar@uoradea.ro>, 2002.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: avelsieve\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-05-29 11:16+0300\n"
+"PO-Revision-Date: 2003-06-13 15:20+0200\n"
+"Last-Translator: Marius Onica <omar@uoradea.ro>\n"
+"Language-Team: Romanian \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-2\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "You have to define at least one header match text."
+msgstr "Trebuie sa definiti cel putin un header match text."
+
+msgid "Add New Rule"
+msgstr "Adauga regula noua"
+
+msgid "New Rule Wizard - Step"
+msgstr "Vrajitor pentru creare de noi reguli - Pasul"
+
+msgid "of"
+msgstr "din"
+
+msgid "Rule Type"
+msgstr "Tipul regulii de filtrare"
+
+msgid "Condition"
+msgstr "Conditia"
+
+msgid "Action"
+msgstr "Actiune"
+
+msgid "Confirmation"
+msgstr "Confirmare"
+
+msgid ""
+"<p>You have chosen to keep every mail. This is the default action anyway, so "
+"you might want to start over with a rule that makes more sense. Select &quot;"
+"finished&quot; to save this rule nonetheless.</p>"
+msgstr ""
+"<p>Dumneavoastra ati ales sa pastrati toate mesajele. Aceasta este ,oricum, "
+"actiunea implicita, asa ca, poate doriti sa incercati sa creati o regula "
+"noua, care are mai mult sens. Selectati &quot;Terminare&quot; pentru a salva "
+"totusi aceasta regula.</p>"
+
+msgid ""
+"Please use the buttons on the bottom instead of your browser's reload, back "
+"and forward buttons, to build a rule."
+msgstr ""
+"Pentru a construi o regula, va rugam sa folositi butoanele amplasate la "
+"sfarsitul paginii in loc de butoanele reload, back sau forward din cadrul "
+"browser-ului."
+
+#, fuzzy
+msgid "Display and Edit"
+msgstr "Afiseaza ca"
+
+msgid ""
+"Shows a table of the mail filtering rules of this script and allows editing "
+"of them."
+msgstr ""
+
+msgid "Save Locally / Backup"
+msgstr ""
+
+msgid ""
+"Retrieve the mail filtering script from the Sieve server to your computer."
+msgstr ""
+
+msgid "Set as Filtering script for a Shared Folder"
+msgstr ""
+
+msgid ""
+"Activates this script, for all email received directly to a shared folder."
+msgstr ""
+
+#, fuzzy
+msgid "Mail Filtering Scripts"
+msgstr "Filtrele definite pana in acest moment"
+
+msgid "Script Name"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+#, fuzzy
+msgid "Actions"
+msgstr "Actiune"
+
+msgid "Initial / Predefined script"
+msgstr ""
+
+msgid "Message Filters"
+msgstr "Filtru de Mesaje"
+
+msgid ""
+"Server-Side mail filtering enables you to add criteria in order to "
+"automatically forward, delete or place a given message into a folder."
+msgstr ""
+"Filtrul de mesaje utilizand serverul de e-mail, va da posibilitatea de a "
+"adaugareguli (criterii) in scopul stergerii, forward-arii sau amplasarii "
+"unui mesaj intr-un anumit catalog."
+
+msgid "Junk Mail Options"
+msgstr ""
+
+msgid ""
+"The Junk Mail Filter gathers all unwanted SPAM / Junk messages in your Junk "
+"folder."
+msgstr ""
+
+msgid "Filters"
+msgstr "Filtru"
+
+msgid "Could not set active script on your IMAP server"
+msgstr "Nu pot instala script-ul activ pe serverul de IMAP"
+
+msgid "Please contact your administrator."
+msgstr "Va rog contactati Administratorul Dvs.."
+
+#, php-format
+msgid "Could not delete rule #%s: This type of rule cannot be deleted."
+msgstr ""
+
+#, php-format
+msgid "Could not delete rules #%s: This type of rule cannot be deleted."
+msgstr ""
+
+#, php-format
+msgid "The entered position, %s, is not valid."
+msgstr ""
+
+#, php-format
+msgid "The entered position, %s, is greater than the current number of rules."
+msgstr ""
+
+msgid "Message"
+msgstr "Mesaj"
+
+msgid "Current Date / Time"
+msgstr ""
+
+#, fuzzy
+msgid "Always"
+msgstr "zile"
+
+msgid "Could not get SIEVE script from your IMAP server"
+msgstr "Nu pot citi script-ul SIEVE de pe serverul de IMAP"
+
+#, fuzzy
+msgid "Error Encountered:"
+msgstr "Am intampinat o eroare"
+
+msgid "Unable to load script to server."
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Could not delete script from server %s."
+msgstr "Nu pot citi script-ul SIEVE de pe serverul de IMAP"
+
+#, fuzzy
+msgid "Could not set active script on your IMAP server "
+msgstr "Nu pot instala script-ul activ pe serverul de IMAP"
+
+#, fuzzy
+msgid "Could not delete script from server "
+msgstr "Nu pot citi script-ul SIEVE de pe serverul de IMAP"
+
+msgid "Could not log on to timsieved daemon on your IMAP server"
+msgstr "Nu ma pot loga la daemon-ul de timsieve pe serverul Dvs. de IMAP"
+
+msgid "Server responded with:"
+msgstr ""
+
+msgid "Disable"
+msgstr ""
+
+msgid "The rule will have no effect for as long as it is disabled."
+msgstr ""
+
+#, fuzzy
+msgid "Discard"
+msgstr "coincide cu wildcard-uri"
+
+msgid "Silently discards the message; use with caution."
+msgstr ""
+
+#, fuzzy
+msgid "Move to Folder"
+msgstr "Muta la pasul"
+
+#, php-format
+msgid "Or specify a new folder: %s to be created under %s"
+msgstr ""
+
+msgid "Flag"
+msgstr ""
+
+msgid "Set message flags"
+msgstr ""
+
+msgid "Standard Flags"
+msgstr ""
+
+#, fuzzy
+msgid "Message Labels"
+msgstr "Filtru de Mesaje"
+
+msgid "Custom Flags"
+msgstr ""
+
+msgid "Seen"
+msgstr ""
+
+msgid "Answered"
+msgstr ""
+
+msgid "Flagged"
+msgstr ""
+
+#, fuzzy
+msgid "Deleted"
+msgstr "Sterge"
+
+msgid "Draft"
+msgstr ""
+
+msgid "Important"
+msgstr ""
+
+msgid "Work"
+msgstr ""
+
+msgid "Personal"
+msgstr ""
+
+msgid "To Do"
+msgstr ""
+
+#, fuzzy
+msgid "Later"
+msgstr "scurt"
+
+msgid "Junk"
+msgstr ""
+
+#, fuzzy
+msgid "Not Junk"
+msgstr "Muta la pasul"
+
+#, php-format
+msgid "Also, set message flag %s"
+msgstr ""
+
+#, php-format
+msgid "Also, set message flags: %s"
+msgstr ""
+
+#, php-format
+msgid "Flags: %s"
+msgstr ""
+
+#, php-format
+msgid "Set (replace) flags as the current set: %s"
+msgstr ""
+
+#, php-format
+msgid "Set (replace) flags: %s"
+msgstr ""
+
+#, php-format
+msgid "Add flags to current set: %s"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Add flags: %s"
+msgstr "Adaugati o noua regula"
+
+#, php-format
+msgid "Remove flags from current set: %s"
+msgstr ""
+
+#, php-format
+msgid "Remove flags: %s"
+msgstr ""
+
+msgid ""
+"Enter here a list of flags separated by spaces. Example: <tt>$MyFlag "
+"$Special</tt>"
+msgstr ""
+
+#, fuzzy
+msgid "Move to Junk"
+msgstr "Muta la pasul"
+
+#, php-format
+msgid ""
+"Store message in your Junk Folder. Messages older than %s days will be "
+"deleted automatically."
+msgstr ""
+
+msgid "Note that you can set the number of days in Folder Preferences."
+msgstr ""
+
+#, fuzzy
+msgid "Keep Message"
+msgstr "Mesaj"
+
+msgid "Save the message in your INBOX."
+msgstr ""
+
+msgid "Also keep copy in INBOX, marked as deleted."
+msgstr "De asemenea pastreaza o copie in INBOX, marcate ca sterse ."
+
+msgid "Notify"
+msgstr ""
+
+#, fuzzy
+msgid "Send a notification "
+msgstr "Notificare prin E-Mail"
+
+msgid "Mobile Phone Message (SMS)"
+msgstr "Notificare prin SMS"
+
+msgid "Email notification"
+msgstr "Notificare prin E-Mail"
+
+msgid "Notification via Zephyr"
+msgstr "Notificare prin Zephyr"
+
+msgid "Notification via ICQ"
+msgstr "Notificare prin ICQ"
+
+msgid "Method"
+msgstr ""
+
+msgid "Notification ID"
+msgstr "ID al Notificarii"
+
+msgid "Destination"
+msgstr ""
+
+msgid "Priority"
+msgstr ""
+
+msgid "Help: Valid variables are:"
+msgstr "Help: Variabilele valide sunt:"
+
+msgid "Redirect"
+msgstr ""
+
+msgid "Automatically redirect the message to a different email address"
+msgstr ""
+
+msgid "someone@example.org"
+msgstr "cineva@exemplu.ro"
+
+msgid "Keep a local copy as well."
+msgstr ""
+
+msgid ""
+"Incorrect email address(es). You must enter one or more valid email "
+"addresses, separated by comma."
+msgstr ""
+
+msgid "Reject"
+msgstr ""
+
+msgid "Send the message back to the sender, along with an excuse"
+msgstr ""
+
+msgid "Please do not send me large attachments."
+msgstr "Va rog sa nu-mi trimiteti fisiere atasate de mari dimensiuni"
+
+msgid "If this rule matches, do not check any rules after it."
+msgstr ""
+"Daca aceasta regula se aplica (match), nu verifica nici o alta regula dupa "
+"aceasta."
+
+msgid "STOP"
+msgstr "STOP"
+
+#, fuzzy
+msgid "Move to Trash"
+msgstr "Muta la pasul"
+
+msgid ""
+"Store message in your Trash Folder. You will have to purge the folder "
+"yourself."
+msgstr ""
+
+#, fuzzy
+msgid "Vacation / Autoresponder"
+msgstr "Vacanta"
+
+msgid ""
+"This is an automated reply; I am away and will not be able to reply to you "
+"immediately."
+msgstr ""
+"Acesta este un raspuns automat . Sunt plecat din localitate si nu va pot "
+"raspunde imediat la mesajul Dumneavoastra."
+
+msgid "I will get back to you as soon as I return."
+msgstr "Va voi raspunde de indata ce ma intorc in localitate."
+
+msgid ""
+"The notice will be sent only once to each person that sends you mail, and "
+"will not be sent to a mailing list address."
+msgstr ""
+"Aceasta nota va fi trimisa doar o singura data fiecarei persoane care va "
+"trimite un E-mail,  si nu va fi trimisa adreselor gen: liste de discutii"
+
+msgid "Subject:"
+msgstr ""
+
+#, fuzzy
+msgid "Optional subject of the vacation message."
+msgstr "trimite raspuns continand urmatorul mesaj de \"vacanta\": "
+
+#, fuzzy
+msgid "Your Addresses:"
+msgstr "Coincide cu Adresa"
+
+msgid ""
+"A vacation / autorespond message will be sent only if an email is sent "
+"explicitly to one of these addresses."
+msgstr ""
+
+#, fuzzy
+msgid "Days:"
+msgstr "zile"
+
+msgid "days"
+msgstr "zile"
+
+msgid ""
+"A vacation / autorespond message will not be resent to the same address, "
+"within this number of days."
+msgstr ""
+
+#, fuzzy
+msgid "Message:"
+msgstr "Mesaj"
+
+msgid "The number of days between vacation messages must be a positive number."
+msgstr ""
+
+#, fuzzy
+msgid "Date"
+msgstr "Copiaza"
+
+msgid "Received"
+msgstr ""
+
+#, fuzzy
+msgid "Year"
+msgstr "Coincide cu Mail-Header-ul"
+
+msgid "Month"
+msgstr ""
+
+#, fuzzy
+msgid "Day"
+msgstr "zile"
+
+msgid "Weekday"
+msgstr ""
+
+msgid "Hour"
+msgstr ""
+
+msgid "Minute"
+msgstr ""
+
+msgid "Second"
+msgstr ""
+
+#, fuzzy
+msgid "Sunday"
+msgstr "zile"
+
+#, fuzzy
+msgid "Monday"
+msgstr "zile"
+
+msgid "Tuesday"
+msgstr ""
+
+msgid "Wednesday"
+msgstr ""
+
+msgid "Thursday"
+msgstr ""
+
+#, fuzzy
+msgid "Friday"
+msgstr "zile"
+
+msgid "Saturday"
+msgstr ""
+
+msgid "Is"
+msgstr ""
+
+msgid "Before (&lt;=)"
+msgstr ""
+
+msgid "After (=&gt;)"
+msgstr ""
+
+msgid "Before (&lt;)"
+msgstr ""
+
+msgid "After (&gt;)"
+msgstr ""
+
+msgid "January"
+msgstr ""
+
+msgid "February"
+msgstr ""
+
+msgid "March"
+msgstr ""
+
+msgid "April"
+msgstr ""
+
+msgid "May"
+msgstr ""
+
+msgid "June"
+msgstr ""
+
+msgid "July"
+msgstr ""
+
+msgid "August"
+msgstr ""
+
+msgid "September"
+msgstr ""
+
+msgid "October"
+msgstr ""
+
+msgid "November"
+msgstr ""
+
+msgid "December"
+msgstr ""
+
+msgid "Occurence"
+msgstr ""
+
+msgid "Specific Date"
+msgstr ""
+
+msgid "Specific Time"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "of header %s"
+msgstr "Header-ul"
+
+msgid "Current date / time:"
+msgstr ""
+
+msgid "Current date:"
+msgstr ""
+
+#, fuzzy
+msgid "message header"
+msgstr "Mesaj"
+
+#, fuzzy
+msgid "Message header"
+msgstr "Filtru de Mesaje"
+
+#, fuzzy, php-format
+msgid "is %s"
+msgstr "Editeaza"
+
+msgid "is"
+msgstr "este"
+
+#, php-format
+msgid "is before than %s (inclusive)"
+msgstr ""
+
+#, php-format
+msgid "is after than %s (inclusive)"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "is before than %s"
+msgstr "este mai mic decat"
+
+#, fuzzy, php-format
+msgid "is after than %s"
+msgstr "este mai mare decat"
+
+#, php-format
+msgid "&quot;%s&quot;"
+msgstr ""
+
+#, php-format
+msgid "&quot;<tt>%s:</tt>&quot;"
+msgstr ""
+
+msgid "AND (Every item must match)"
+msgstr "AND (Fiecare declaratie trebuie sa coincida"
+
+msgid "OR (Either item will match)"
+msgstr "SAU (Oricare dintre declaratii trebuie sa coincida)"
+
+#, fuzzy
+msgid "Rule"
+msgstr "Tipul regulii de filtrare"
+
+#, fuzzy, php-format
+msgid "Add a new %s"
+msgstr "Adaugati o noua regula"
+
+#, fuzzy
+msgid "SPAM Rule"
+msgstr "Adauga regula noua"
+
+msgid "Junk Mail Rule"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Edit %s"
+msgstr "Editeaza"
+
+msgid "Whitelist"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Add new %s"
+msgstr "Coincide cu Adresa"
+
+msgid "Sieve Code"
+msgstr ""
+
+#, fuzzy
+msgid "Address"
+msgstr "Coincide cu Adresa"
+
+#, fuzzy
+msgid ""
+"Perform an action depending on email addresses appearing in message headers."
+msgstr ""
+"Executa o actiune asupra mesajelor functie de marimea lor (spatiul ocupat de "
+"ele)."
+
+#, fuzzy
+msgid "Header"
+msgstr "Coincide cu Mail-Header-ul"
+
+msgid ""
+"Perform an action on messages matching a specified header (From, To etc.)."
+msgstr ""
+"Executa o actiune asupra mesajelor care au un anume Mail-Header de exemplu "
+"(From, To, etc.)"
+
+msgid "Envelope"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Perform an action on messages matching a specified envelope header (Envelope "
+"FROM, TO)."
+msgstr ""
+"Executa o actiune asupra mesajelor care au un anume Mail-Header de exemplu "
+"(From, To, etc.)"
+
+msgid "Size"
+msgstr "Spatiul Ocupat"
+
+msgid "Perform an action on messages depending on their size."
+msgstr ""
+"Executa o actiune asupra mesajelor functie de marimea lor (spatiul ocupat de "
+"ele)."
+
+msgid "Body"
+msgstr ""
+
+msgid "Perform an action on messages depending on their content (body text)."
+msgstr ""
+"Executa o actiune asupra mesajelor in functie de continutul lor (body text)."
+
+#, fuzzy
+msgid ""
+"Perform an action on messages depending on date or time related to the "
+"message."
+msgstr ""
+"Executa o actiune asupra mesajelor functie de marimea lor (spatiul ocupat de "
+"ele)."
+
+msgid "All"
+msgstr ""
+
+msgid "Perform an action on <strong>all</strong> incoming messages."
+msgstr "Executa o actiune asupra <strong>tuturor</strong> mesajelor sosite"
+
+msgid "contains"
+msgstr "contine"
+
+msgid "does not contain"
+msgstr "nu contine"
+
+msgid "is not"
+msgstr "nu este"
+
+msgid "matches"
+msgstr "coincide cu"
+
+#, fuzzy
+msgid "wildcard"
+msgstr "coincide cu wildcard-uri"
+
+msgid "does not match"
+msgstr "nu coincide cu"
+
+#, fuzzy
+msgid "regexp"
+msgstr "coincide cu o expresie regulara"
+
+msgid "is greater than"
+msgstr "este mai mare decat"
+
+msgid "is greater or equal to"
+msgstr "este mai mare sau egal cu"
+
+msgid "is lower than"
+msgstr "este mai mic decat"
+
+msgid "is lower or equal to"
+msgstr "este mai mic sau egal cu"
+
+msgid "is equal to"
+msgstr "este egal cu"
+
+msgid "is not equal to"
+msgstr "nu este egal cu"
+
+msgid "verbose"
+msgstr "amanunt"
+
+#, fuzzy
+msgid "Textual descriptions of the rules"
+msgstr "Descrierea regulii"
+
+msgid "terse"
+msgstr "scurt"
+
+msgid "More suitable for viewing the table of rules at once"
+msgstr ""
+
+msgid "source"
+msgstr ""
+
+msgid "Display SIEVE source"
+msgstr ""
+
+msgid "Low"
+msgstr "Scazut"
+
+msgid "Normal"
+msgstr "Normal"
+
+msgid "High"
+msgstr "Mare"
+
+msgid "Delete"
+msgstr "Sterge"
+
+msgid "Edit"
+msgstr "Editeaza"
+
+msgid "Duplicate"
+msgstr "Copiaza"
+
+msgid "Move Up"
+msgstr "Muta in sus"
+
+#, fuzzy
+msgid "Move to Top"
+msgstr "Muta la pasul"
+
+msgid "Move Down"
+msgstr "Muta in jos"
+
+#, fuzzy
+msgid "Move to Bottom"
+msgstr "Muta la pasul"
+
+msgid "Junk Folder"
+msgstr ""
+
+#, php-format
+msgid ""
+"Store SPAM message in your Junk Folder. Messages older than %s days will be "
+"deleted automatically."
+msgstr ""
+
+msgid "Trash Folder"
+msgstr ""
+
+msgid ""
+"Store SPAM message in your Trash Folder. You will have to purge the folder "
+"yourself."
+msgstr ""
+
+msgid ""
+"Discard SPAM message. You will get no indication that the message ever "
+"arrived."
+msgstr ""
+
+msgid "Server-Side Mail Filtering"
+msgstr "Filtru de mesaje utilizand serverul de e-mail"
+
+msgid "Successfully added new rule."
+msgstr "Am adaugat cu succes a regula noua"
+
+#, fuzzy, php-format
+msgid "Successfully updated rule #%s"
+msgstr "Am modificat cu succes regula #"
+
+#, fuzzy, php-format
+msgid "Successfully deleted rules #%s"
+msgstr "Am sters cu succes regulile #"
+
+#, fuzzy, php-format
+msgid "Successfully deleted rule #%s"
+msgstr "Am sters cu succes regula #"
+
+msgid "You must correct the above errors before continuing."
+msgstr ""
+
+msgid "No check"
+msgstr ""
+
+#, php-format
+msgid "Editing %s"
+msgstr ""
+
+#, php-format
+msgid "(Rule #%s)"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Add a new %s "
+msgstr "Adaugati o noua regula"
+
+msgid "Configure Anti-SPAM Protection"
+msgstr ""
+
+msgid ""
+"All incoming mail is checked for unsolicited commercial content (SPAM) and "
+"marked accordingly. This special rule allows you to configure what to do "
+"with such messages once they arrive to your Inbox."
+msgstr ""
+
+#, php-format
+msgid ""
+"Select %s to add the predefined rule, or select the advanced SPAM filter to "
+"customize the rule."
+msgstr ""
+
+#, fuzzy
+msgid "Add Spam Rule"
+msgstr "Adaugati o noua regula"
+
+msgid "Advanced Spam Filter..."
+msgstr ""
+
+msgid "Target Score"
+msgstr ""
+
+#, php-format
+msgid ""
+"Messages with SPAM-Score higher than the target value, the maximum value "
+"being %s, will be considered SPAM."
+msgstr ""
+
+msgid "SPAM Lists to check against"
+msgstr ""
+
+msgid ""
+"Messages that match any of these header rules will never end up in Junk "
+"Folders or regarded as SPAM."
+msgstr ""
+
+msgid "Apply Changes"
+msgstr "Salveaza Modificarile"
+
+msgid "Cancel"
+msgstr "Cancel"
+
+#, fuzzy
+msgid "Information..."
+msgstr "Confirmare"
+
+#, php-format
+msgid ""
+"There is currently no Junk Mail Filter, so we are suggesting the following "
+"default settings. To add the Junk Mail Filter, simply choose <em>&quot;%"
+"s&quot;</em>."
+msgstr ""
+
+#, fuzzy
+msgid "Enable Junk Mail Filtering"
+msgstr "Filtrele definite pana in acest moment"
+
+msgid "Automatically delete Junk Messages"
+msgstr ""
+
+#, php-format
+msgid "when they are older than %s days"
+msgstr ""
+
+msgid "Enable Whitelist"
+msgstr ""
+
+msgid ""
+"Messages sent from the addresses in your Whitelist will never end up in your "
+"Junk Mail folder, or considered as SPAM."
+msgstr ""
+
+msgid "Edit Whitelist...."
+msgstr ""
+
+msgid "Automatically add all your Address Book Contacts in the Whitelist"
+msgstr ""
+
+msgid "Configure Advanced Junk Mail Tests"
+msgstr ""
+
+#, fuzzy
+msgid "You have to enable at least one Junk Mail Test."
+msgstr "Trebuie sa definiti cel putin un header match text."
+
+msgid "Junk Mail Options have been saved."
+msgstr ""
+
+msgid "Editing Whitelist"
+msgstr ""
+
+msgid ""
+"Messages coming from the email addresses that you enter here will never end "
+"up in your Junk folder or be considered as SPAM."
+msgstr ""
+
+msgid ""
+"Enter <strong>one (1) email address per line</strong>. Note that you can "
+"also enter an incomplete address or a mail domain."
+msgstr ""
+
+msgid "Example:"
+msgstr ""
+
+msgid "Whitelist has been updated."
+msgstr ""
+
+#, php-format
+msgid "Editing Sieve Code (Rule #%s)"
+msgstr ""
+
+#, fuzzy
+msgid "Create New Custom Sieve Rule"
+msgstr "Filtrele definite pana in acest moment"
+
+msgid "Custom Rule"
+msgstr ""
+
+msgid "Please enter valid Sieve code in the textbox below."
+msgstr ""
+
+msgid ""
+"Note: The <tt>require</tt> command is not needed; it will be added "
+"automatically at the start of the script."
+msgstr ""
+
+#, php-format
+msgid "Sieve Capabilities supported: %s"
+msgstr ""
+
+msgid "Please enter a valid Sieve code snippet."
+msgstr ""
+
+msgid "To: or Cc"
+msgstr ""
+
+msgid "The condition for the following rules is:"
+msgstr "Conditia pentru urmatoarele reguli este: "
+
+msgid "Less..."
+msgstr "Mai putin ..."
+
+msgid "More..."
+msgstr "Mai mult ..."
+
+msgid "bigger"
+msgstr "mai mare"
+
+msgid "smaller"
+msgstr "mai mic"
+
+msgid "than"
+msgstr " decat "
+
+msgid "KB (kilobytes)"
+msgstr "KB (Kilobyte)"
+
+msgid "MB (megabytes)"
+msgstr "MB (Megabyte)"
+
+msgid "All Messages"
+msgstr "Toate Mesajele"
+
+msgid ""
+"The following action will be applied to <strong>all</strong> incoming "
+"messages that do not match any of the previous rules."
+msgstr ""
+"Urmatoarea actiune se va aplica <strong>tuturor</strong> mesajelor sosite "
+"care, nu indeplinesc conditiile regulilor precedente."
+
+msgid "1st"
+msgstr ""
+
+msgid "2nd"
+msgstr ""
+
+msgid "3rd"
+msgstr ""
+
+msgid "4th"
+msgstr ""
+
+msgid "5th"
+msgstr ""
+
+msgid "6th"
+msgstr ""
+
+msgid "7th"
+msgstr ""
+
+msgid "8th"
+msgstr ""
+
+msgid "9th"
+msgstr ""
+
+msgid "from the end"
+msgstr ""
+
+msgid "Choose what to do when this rule triggers, from one of the following:"
+msgstr ""
+"Alege ce sa faci cand aceasta regula va intra in actiune, din urmatoarele "
+"posibilitati:"
+
+#, fuzzy
+msgid "Add SPAM Rule"
+msgstr "Adauga regula noua"
+
+msgid "Editing Mail Filtering Rule"
+msgstr "Editare Regula de Filtrare"
+
+#, fuzzy
+msgid "Create New Mail Filtering Rule"
+msgstr "Filtrele definite pana in acest moment"
+
+msgid "Additional Actions"
+msgstr "Actiuni Aditionale"
+
+#, fuzzy
+msgid "You have to define at least one condition."
+msgstr "Trebuie sa definiti cel putin un header match text."
+
+msgid "Clear this Form"
+msgstr "Sterge Formularul"
+
+msgid "Start Over"
+msgstr "Incepe din Nou"
+
+msgid "Move back to step"
+msgstr "Muta inapoi la pasul"
+
+msgid "Finished"
+msgstr "Terminat"
+
+msgid "Move on to step"
+msgstr "Muta la pasul"
+
+msgid "Your new rule states:"
+msgstr "Noua Dvs. regula afirma:"
+
+msgid ""
+"If this is what you wanted, select Finished. You can also start over or "
+"cancel adding a rule altogether."
+msgstr ""
+"Daca acesta este ceea ce ati dorit sa obtineti, selectati Terminare. De "
+"asemenea puteti saReluati construirea regulii sau sa Anulati actiunea "
+"inceputa."
+
+msgid ""
+"Here you can add or delete filtering rules for your email account. These "
+"filters will always apply to your incoming mail, wherever you check your "
+"email."
+msgstr ""
+"Aici Dvs. puteti adauga sau sterge reguli de filtrare referitoare la contul "
+"Dvs. de e-mail.Aceste filtre se vor aplica intotdeauna mesajelor de e-mail "
+"primite, indiferent de faptulca Dvs. va verificati e-mail-ul sau nu."
+
+msgid ""
+"You don't have any rules yet. Feel free to add any with the button &quot;Add "
+"a New Rule&quot;. When you are done, please select &quot;Save Changes&quot; "
+"to get back to the main options screen."
+msgstr ""
+"Dumneavoastra nu aveti nici o relgula definita. Aveti posibilitatea de a "
+"adauga o regula noua apasand butonul  &quot;Regula Noua &quot;. Cand ati "
+"terminat, va rugam selectati &quot;Salvare Modificari&quot; pentru a va "
+"reintoarce la ecranul cu optiunile principale"
+
+msgid ""
+"When you are done with editing, <strong>remember to select &quot;Save "
+"Changes&quot;</strong> to activate your changes!"
+msgstr ""
+"Cand ati terminat de editat, <strong>nu uitati sa selectati butonul &quot;"
+"Salveaza Modificarile&quot; </strong> in scopul activarii lor!"
+
+msgid "The following table summarizes your current mail filtering rules."
+msgstr "Tabelul urmator afiseaza regulile Dvs. de filtrare curente."
+
+msgid ""
+"Warning: In your rules, you have defined an action that refers to a folder "
+"that does not exist or a folder where you do not have permission to append "
+"to."
+msgstr ""
+
+#, php-format
+msgid ""
+"Note: A <a href=\"%s\">Vacation Autoresponder</a> is active (<a href=\"%s"
+"\">Rule #%s</a> in your current Mail Filtering Rules).<br/>Don't forget to "
+"disable it or delete it when you are back."
+msgstr ""
+
+msgid "No"
+msgstr "Nu"
+
+msgid "Options"
+msgstr "Optiuni"
+
+msgid "Description of Rule"
+msgstr "Descrierea regulii"
+
+msgid "Display as:"
+msgstr "Afiseaza ca"
+
+#, fuzzy
+msgid "Position"
+msgstr "Conditia"
+
+#, fuzzy
+msgid "Add a new Rule"
+msgstr "Adaugati o noua regula"
+
+#, fuzzy
+msgid "Really delete selected rules?"
+msgstr "Am sters cu succes regula #"
+
+msgid "Enable"
+msgstr ""
+
+msgid ""
+"When you are done, please click the button below to return to your webmail."
+msgstr ""
+"Cand ati terminat va rugam sa apasati pe butonul de dedesupt pentru a reveni "
+"la programul de webmail."
+
+msgid "Save Changes"
+msgstr "Salveaza Modificarile"
+
+msgid "Created:"
+msgstr ""
+
+msgid "Last modified:"
+msgstr ""
+
+msgid "Current Mail Filtering Rules"
+msgstr "Filtrele definite pana in acest moment"
+
+msgid "Close"
+msgstr ""
+
+msgid "No Filtering Rules Defined Yet"
+msgstr "Nu s-au definit regulile de filtrare deocamdata"
+
+#, fuzzy
+msgid "Really delete this rule?"
+msgstr "Am sters cu succes regula #"
+
+#, fuzzy
+msgid "More Options..."
+msgstr "Mai mult ..."
+
+#, fuzzy
+msgid "Move to Position..."
+msgstr "Muta la pasul"
+
+msgid "--------"
+msgstr ""
+
+#, fuzzy
+msgid "Duplicate this Rule"
+msgstr "Am sters cu succes regula #"
+
+#, fuzzy
+msgid "Insert a New Rule here"
+msgstr "Adaugati o noua regula"
+
+msgid "Send this Rule by Email"
+msgstr ""
+
+msgid "Go"
+msgstr ""
+
+msgid "Action for Selected Rules:"
+msgstr ""
+
+msgid "Junk Folder Information"
+msgstr ""
+
+msgid "Messages in this folder have been identified as SPAM / Junk."
+msgstr ""
+
+#, php-format
+msgid ""
+"Note: Junk Mail is currently not enabled. Select &quot;%s&quot; to enable it."
+msgstr ""
+
+msgid "Edit Junk Mail Options..."
+msgstr ""
+
+#, php-format
+msgid "Any messages older than %s days are automatically deleted."
+msgstr ""
+
+msgid "Test for Forged Header"
+msgstr ""
+
+msgid "Automatically"
+msgstr ""
+
+msgid "Sender"
+msgstr ""
+
+msgid "From"
+msgstr ""
+
+msgid "To"
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+#, fuzzy
+msgid "Create Filter"
+msgstr "Filtru de Mesaje"
+
+msgid "Vacation Filter Reminder"
+msgstr ""
+
+msgid "(Creates a new server-side filtering rule, based on the above criteria)"
+msgstr ""
+
+msgid ""
+"Notice: The following criteria cannot be expressed as server-side filtering "
+"rules:"
+msgstr ""
+
+msgid "Reason:"
+msgstr ""
+
+msgid "The Body extension is not supported in this server."
+msgstr ""
+
+msgid ""
+"Note that Only From:, To:, Cc: and Subject: headers will be checked in the "
+"server filter."
+msgstr ""
+
+msgid "These search expressions are not applicable during message delivery."
+msgstr ""
+
+msgid ""
+"All messages considered as <strong>SPAM</strong> (unsolicited commercial "
+"messages)"
+msgstr ""
+
+msgid "SPAM"
+msgstr ""
+
+msgid "unless"
+msgstr ""
+
+msgid "Whitelist:"
+msgstr ""
+
+msgid "or"
+msgstr ""
+
+msgid "matching the Spam List(s):"
+msgstr ""
+
+msgid "Spam List(s):"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "and with score greater than %s"
+msgstr "este mai mare decat"
+
+#, php-format
+msgid "Score > %s"
+msgstr ""
+
+msgid "will be"
+msgstr ""
+
+msgid "stored in the Junk Folder."
+msgstr ""
+
+msgid "stored in the Trash Folder."
+msgstr ""
+
+msgid "Trash"
+msgstr ""
+
+#, fuzzy
+msgid "discarded."
+msgstr "<em>ignora</em>."
+
+msgid "Junk Mail Rule is Disabled"
+msgstr ""
+
+msgid "<s></s>"
+msgstr ""
+
+msgid "Junk Mail"
+msgstr ""
+
+msgid "matching any one of the Spam tests as follows:"
+msgstr ""
+
+msgid "Spam Tests:"
+msgstr ""
+
+msgid ""
+"and where the sender does <em>not</em> match any of the addresses / "
+"expressions in your <strong>Whitelist</strong>"
+msgstr ""
+
+msgid ""
+"The messages that match the system's default <strong>SPAM</strong> checks"
+msgstr ""
+
+msgid "stored in the <strong>Junk</strong> Folder."
+msgstr ""
+
+msgid "stored in the <strong>Trash</strong> Folder."
+msgstr ""
+
+msgid ""
+"<strong>Whitelist</strong> - The following email addresses are whitelisted "
+"and will not end up in Junk folders or considered as SPAM:"
+msgstr ""
+
+#, php-format
+msgid "and %s more email addresses / expressions."
+msgstr ""
+
+#, php-format
+msgid "%s more entries..."
+msgstr ""
+
+#, fuzzy
+msgid "Custom Sieve Code"
+msgstr "Filtrele definite pana in acest moment"
+
+msgid "View Source"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "the header %s"
+msgstr "Header-ul"
+
+#, fuzzy, php-format
+msgid "Header %s"
+msgstr "Coincide cu Mail-Header-ul"
+
+msgid "To or Cc"
+msgstr ""
+
+#, php-format
+msgid "the envelope %s"
+msgstr ""
+
+#, php-format
+msgid "Envelope %s"
+msgstr ""
+
+#, php-format
+msgid "the address %s"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Address %s"
+msgstr "Coincide cu Adresa"
+
+#, fuzzy
+msgid "message body"
+msgstr "Mesaj"
+
+#, php-format
+msgid "index number %s"
+msgstr ""
+
+#, php-format
+msgid "index #%s"
+msgstr ""
+
+msgid "(counting from last header)"
+msgstr ""
+
+msgid "(from end)"
+msgstr ""
+
+#, fuzzy
+msgid "matches the regular expression"
+msgstr "coincide cu expresia regulara"
+
+#, fuzzy
+msgid "does not match the regular expression"
+msgstr "nu coincide cu expresia regulara"
+
+msgid "exists"
+msgstr "exista"
+
+msgid "does not exist"
+msgstr "nu exista"
+
+msgid "This rule is currently <strong>DISABLED</strong>:"
+msgstr ""
+
+msgid "DISABLED"
+msgstr ""
+
+msgid "If"
+msgstr "Daca"
+
+msgid "<em>any</em> of the following mail headers match: "
+msgstr "<em>oricare</em> din urmatoarele Mail-Header-uri coincid: "
+
+msgid "<em>all</em> of the following mail headers match: "
+msgstr "<em>toate</em> urmatoarele Mail-Header-uri coincid: "
+
+msgid "the size of the message is"
+msgstr "spatiul ocupat de mesaj este"
+
+msgid " bigger"
+msgstr " mai mare"
+
+msgid " smaller"
+msgstr " mai mic"
+
+msgid "For <strong>ALL</strong> incoming messages; "
+msgstr "Pentru <strong>toate</strong> mesajele primite; "
+
+msgid "ALL"
+msgstr ""
+
+#, fuzzy
+msgid "always"
+msgstr "zile"
+
+msgid "and"
+msgstr ""
+
+msgid "then"
+msgstr "apoi"
+
+#, fuzzy
+msgid "<em>keep</em> the message."
+msgstr "<em>pastreaza-l</em>."
+
+#, fuzzy
+msgid "Keep"
+msgstr "coincide cu o expresie regulara"
+
+#, fuzzy
+msgid "<em>discard</em> the message."
+msgstr "<em>ignora</em>."
+
+msgid "<em>reject</em> it, sending this excuse back to the sender:"
+msgstr ""
+"<em>respinge-l</em> si transmite urmatorul mesaj (cu explicatii) inapoi la "
+"expeditor:"
+
+msgid "Redirect to"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "<em>redirect</em> it to the email addresses: %s."
+msgstr "<em>redirecteaza-l</em> la urmatoarea adresa de e-mail"
+
+msgid "<em>redirect</em> it to the email address"
+msgstr "<em>redirecteaza-l</em> la urmatoarea adresa de e-mail"
+
+#, fuzzy, php-format
+msgid "<em>file</em> it into the folder %s"
+msgstr "<em>salveaza-l</em> in dosarul <strong>"
+
+#, php-format
+msgid "File into %s"
+msgstr ""
+
+msgid "(Warning: Folder not available)"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "reply with a vacation / autoresponder message: "
+msgstr "trimite raspuns continand urmatorul mesaj de \"vacanta\": "
+
+msgid "Also keep a local copy."
+msgstr ""
+
+msgid " Also keep a copy in INBOX, marked as deleted."
+msgstr " De asemenea pastreaza o copie in INBOX, marcat pentru stergere."
+
+#, fuzzy
+msgid "Keep Deleted"
+msgstr "Sterge pozitiile selectate"
+
+msgid " Also notify using the method"
+msgstr " De asemenea, notifica utilizand aceasta metoda"
+
+msgid "with"
+msgstr "cu"
+
+msgid "priority and the message"
+msgstr "prioritatea si mesajul"
+
+#, php-format
+msgid "Notify %s"
+msgstr ""
+
+#, fuzzy
+msgid "Then <strong>STOP</strong> processing rules."
+msgstr " Apoi <strong>OPRESTE</strong> procesarea altor reguli."
+
+msgid "Stop"
+msgstr ""
+
+msgid "You have not defined the name for the new folder."
+msgstr "Nu ati definit numele pentru noul director."
+
+msgid "Please try again."
+msgstr "Va rog incercati din nou."
+
+msgid "Illegal folder name.  Please select a different name"
+msgstr "Numele directorului este ilegal.  Va rugam alegeti o alta denumire."
+
+#, fuzzy
+msgid "None"
+msgstr "Nu"
+
+#~ msgid "Vacation"
+#~ msgstr "Vacanta"
+
+#~ msgid "Addresses: Only reply if sent to these addresses:"
+#~ msgstr ""
+#~ "Adresa: Trimite un raspuns doar daca primesti mesajul la aceasta adresa: "
+
+#~ msgid "Days: Reply message will be resent after"
+#~ msgstr "Zile: Mesajul de raspuns va fi retransmis dupa "
+
+#~ msgid "Use the following message:"
+#~ msgstr "Foloseste urmatorul mesaj:"
+
+#~ msgid "Keep (Default action)"
+#~ msgstr "Pastreaza (Actiune implicita)"
+
+#~ msgid "Discard Silently"
+#~ msgstr "Ignora fara a actiona in vreun fel"
+
+#~ msgid "Reject, sending this excuse to the sender:"
+#~ msgstr "Refuza, trimitand acest mesaj de explicatii (scuze) expeditorului:"
+
+#~ msgid "Redirect to the following email address:"
+#~ msgstr "Redirectare catre urmatoarea adresa de E-mail:"
+
+#~ msgid "Move message into"
+#~ msgstr "Muta mesajele in"
+
+#~ msgid "the existing folder"
+#~ msgstr "dosarul existent "
+
+#~ msgid "a new folder, named"
+#~ msgstr "un dosar nou, cu denumirea "
+
+#~ msgid "created as a subfolder of"
+#~ msgstr " creat ca un sub-dosar a "
+
+#~ msgid "Notify me, using the following method:"
+#~ msgstr "Notifica-ma, folosind urmatoarea metoda:"
+
+#~ msgid "(Probably the script is size null)."
+#~ msgstr "Probabil script-ul este de lungime zero"
+
+#~ msgid "Body Match"
+#~ msgstr "Coincide cu Corpul Mesajului"
+
+#~ msgid "What kind of rule would you like to add?"
+#~ msgstr "Ce fel de regula doriti sa adaugati ?"
+
+#, fuzzy
+#~ msgid "Change Type"
+#~ msgstr "Tipul regulii de filtrare"
+
+#~ msgid ""
+#~ "The rule will trigger if the following addresses appear anywhere in the "
+#~ "message's headers:"
+#~ msgstr ""
+#~ "Regula se va declansa daca adresele urmatoare vor aprea undeva in Header-"
+#~ "ul mesajului"
+
+#~ msgid "The header "
+#~ msgstr "Header-ul "
+
+#~ msgid "This rule will trigger if message is"
+#~ msgstr "Aceasta regula se va declansa dca mesajul este"
+
+#~ msgid ""
+#~ "This rule will trigger upon the occurrence of one or more strings in the "
+#~ "body of an e-mail message. "
+#~ msgstr ""
+#~ "Aceasta regula se va activa cand va detecta existenta a unuia sau mai "
+#~ "multe portiuni de text (strings) in continutul (body) mesajului. "
+
+#~ msgid "All your rules have been deleted"
+#~ msgstr "Toate regulile Dvs. au fost sterse"
+
+#~ msgid "in order to save your rules."
+#~ msgstr "pentru ca sa putem salva regulile Dumneavoastra."
+
+#~ msgid "Parameters"
+#~ msgstr "Parametrii"
+
+#, fuzzy
+#~ msgid "does not match regexp"
+#~ msgstr "nu coincide cu"
+
+#~ msgid "does not match wildcard"
+#~ msgstr "nu coincide cu wildcard-uri"
+
+#~ msgid "Size Match"
+#~ msgstr "Gr&ouml;ssenvergleich"
+
+#~ msgid "Action to Take"
+#~ msgstr "Aktion beim Zutreffen der Regel"
+
+#~ msgid "Here is your script."
+#~ msgstr "Aici este script-ul Dumneavoastra."

@@ -1,0 +1,43 @@
+  Translators
+
+     * Brazilian Portuguese: Gleydson Mazioli da Silva (gleydson.mazioli @
+       ima.sp.gov.br)
+     * Bulgarian: Ognyan Kulev (ogi at fmi.uni-sofia dot bg)
+     * Chinese (simplified): Jack Gao (jack @ gaofamily org)
+     * Dutch: Maxim Baars (maxim @ bccs nl)
+     * French: Juan-Francisco Diez (jfdiez @ sitejf com)
+     * French: John Cotter of Sierre-Energie S.A. (john.cotter @ siesa ch)
+     * French:Bachelier Vincent (vincent @ solintech fr)
+     * Finnish: Veli Pirttila (titus @ iki.fi)
+     * German: Torsten Westermann (torsten.westermann @ addcom de)
+     * German: Karsten Behrens (mail @ karsten-behrens de)
+     * Greek (Hellenic): Alexandros Vellis (avel @ users.sourceforge.net)
+     * Icelandic: THor Sigurässon (tosi @ hi.is)
+     * Italian: Lorenzo Luconi Trombacchi
+     * Italian: Alessandro Dalvit
+     * Lithuanian: Tomas Kuliavas (tokul @ users.sourceforge.net)
+     * Norwegian: Alexander Brill (iowa @ project23.no)
+     * Polish: Martin Przybylek (smithpl @ softnet waw pl)
+     * Romanian: Marius Onica (omar @ uoradea.ro)
+     * Russian: Vadim Kozlov (vad @ tomsknet ru)
+     * Russian: Igor Karpov (jc @ minjust.gov.ua)
+     * Spanish: Eduardo Mayoral (emayoral @ arsys es)
+     * Spanish: Jacobo Tarrio Barreiro (jtarrio @ alfa21.com)
+
+  Thanks & Credits
+
+     * David Mendenhall (david at digitalfountain com), for a lot of code
+       contributions and good ideas (just check the changelog for 0.4).
+       Many thanks!
+     * Dan Ellis (danellis at rushmore dot com), for developing the
+       [1]sieve-php class, since this plugin was originally based on his
+       class and test scripts.
+     * Our translators!
+     * Nikos Voutsinas (nvoutsin at noc uoa gr), for all the ideas,
+       suggestions and constructive criticism. And for patching Cyrus
+       imapd to work better with Squirrelmail.
+     * Maria Nassiakou for bringing us ice cream.
+
+References
+
+   1. http://sieve-php.sourceforge.net/

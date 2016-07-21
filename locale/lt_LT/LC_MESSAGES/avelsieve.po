@@ -1,0 +1,1674 @@
+# avelsieve - SIEVE Mail Filters for Squirrelmail - Translation file
+# Lithuanian Translation
+# Copyright (C) 2003 Alexandros Vellis
+# This file is distributed under the same license as the PACKAGE package.
+# Tomas Kuliavas <tokul@users.sourceforge.net>, 2003.
+# $Id: avelsieve.po,v 1.14 2007/05/04 13:16:07 avel Exp $
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: (avelsieve 0.9.7)\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-05-29 11:16+0300\n"
+"PO-Revision-Date: 2003-10-09 19:56+0200\n"
+"Last-Translator: Tomas Kuliavas <tokul@users.sourceforge.net>\n"
+"Language-Team: SquirrelMail I18N Team <squirrelmail-i18n@lists.sourceforge."
+"net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "You have to define at least one header match text."
+msgstr "Jūs turite nurodyti bent vieną antraštę atitinkančią teksto eilutę."
+
+msgid "Add New Rule"
+msgstr "Pridėti naują taisyklę"
+
+msgid "New Rule Wizard - Step"
+msgstr "Naujos taisyklės kūrimo pagalbininkas - Žingsnis"
+
+msgid "of"
+msgstr "iš"
+
+msgid "Rule Type"
+msgstr "Taisyklės tipas"
+
+msgid "Condition"
+msgstr "Sąlyga"
+
+msgid "Action"
+msgstr "Veiksmas"
+
+msgid "Confirmation"
+msgstr "Patvirtinimas"
+
+msgid ""
+"<p>You have chosen to keep every mail. This is the default action anyway, so "
+"you might want to start over with a rule that makes more sense. Select &quot;"
+"finished&quot; to save this rule nonetheless.</p>"
+msgstr ""
+"<p>Jūs pasirinkote išsaugoti visas žinutes nepakeistas. Kadangi tai yra "
+"standartinis veiksmas pagal nutylėjimą, jis yra beprasmis. Gal vertėtų "
+"suformuoti taisyklę iš naujo? Pasirinkite &quot;Baigti&quot;, jei vis tik "
+"norite išsaugoti šią taisyklę.</p>"
+
+msgid ""
+"Please use the buttons on the bottom instead of your browser's reload, back "
+"and forward buttons, to build a rule."
+msgstr ""
+"Norėdami sukurti taisyklę naudokitės žemiau esančiais navigacijos "
+"mytgtukais, o ne naršyklės puslapio perkrovimo mygtuku ar komanda."
+
+#, fuzzy
+msgid "Display and Edit"
+msgstr "Parodyti kaip:"
+
+msgid ""
+"Shows a table of the mail filtering rules of this script and allows editing "
+"of them."
+msgstr ""
+
+msgid "Save Locally / Backup"
+msgstr ""
+
+msgid ""
+"Retrieve the mail filtering script from the Sieve server to your computer."
+msgstr ""
+
+msgid "Set as Filtering script for a Shared Folder"
+msgstr ""
+
+msgid ""
+"Activates this script, for all email received directly to a shared folder."
+msgstr ""
+
+#, fuzzy
+msgid "Mail Filtering Scripts"
+msgstr "Esamos pašto filtravimo taisyklės"
+
+msgid "Script Name"
+msgstr ""
+
+msgid "Status"
+msgstr ""
+
+#, fuzzy
+msgid "Actions"
+msgstr "Veiksmas"
+
+msgid "Initial / Predefined script"
+msgstr ""
+
+msgid "Message Filters"
+msgstr "Žinučių filtrai"
+
+msgid ""
+"Server-Side mail filtering enables you to add criteria in order to "
+"automatically forward, delete or place a given message into a folder."
+msgstr ""
+"Serverio pusės filtrai leidžia jums nustatyti kriterijus, kurias remiantis "
+"pašto sistema automatiškai persiųs, ištrins ar patalpins gautas žinutes į "
+"nurodytą aplanką."
+
+msgid "Junk Mail Options"
+msgstr ""
+
+msgid ""
+"The Junk Mail Filter gathers all unwanted SPAM / Junk messages in your Junk "
+"folder."
+msgstr ""
+
+msgid "Filters"
+msgstr "Filtrai"
+
+msgid "Could not set active script on your IMAP server"
+msgstr "Nepavyko nustatyti aktyvaus skripto jūsų IMAP serveryje"
+
+msgid "Please contact your administrator."
+msgstr "Susisiekite su jūsų pašto administratoriumi."
+
+#, php-format
+msgid "Could not delete rule #%s: This type of rule cannot be deleted."
+msgstr ""
+
+#, php-format
+msgid "Could not delete rules #%s: This type of rule cannot be deleted."
+msgstr ""
+
+#, php-format
+msgid "The entered position, %s, is not valid."
+msgstr ""
+
+#, php-format
+msgid "The entered position, %s, is greater than the current number of rules."
+msgstr ""
+
+msgid "Message"
+msgstr "žinutė"
+
+msgid "Current Date / Time"
+msgstr ""
+
+#, fuzzy
+msgid "Always"
+msgstr "dienos(ų)"
+
+msgid "Could not get SIEVE script from your IMAP server"
+msgstr "Nepavyko gauti SIEVE skripto iš jūsų IMAP serverio"
+
+#, fuzzy
+msgid "Error Encountered:"
+msgstr "Įvyko klaida"
+
+msgid "Unable to load script to server."
+msgstr "Nepavyko patalpinti programos serveryje."
+
+#, fuzzy, php-format
+msgid "Could not delete script from server %s."
+msgstr "Nepavyko gauti SIEVE skripto iš jūsų IMAP serverio"
+
+#, fuzzy
+msgid "Could not set active script on your IMAP server "
+msgstr "Nepavyko nustatyti aktyvaus skripto jūsų IMAP serveryje"
+
+#, fuzzy
+msgid "Could not delete script from server "
+msgstr "Nepavyko gauti SIEVE skripto iš jūsų IMAP serverio"
+
+msgid "Could not log on to timsieved daemon on your IMAP server"
+msgstr "Nepavyko prisijungti prie jūsų IMAP serverio timsieved posistemės"
+
+msgid "Server responded with:"
+msgstr "Serveris atsakė"
+
+msgid "Disable"
+msgstr ""
+
+msgid "The rule will have no effect for as long as it is disabled."
+msgstr ""
+
+msgid "Discard"
+msgstr "Tyliai ištrinti"
+
+msgid "Silently discards the message; use with caution."
+msgstr ""
+
+#, fuzzy
+msgid "Move to Folder"
+msgstr "Peršokti į viršų"
+
+#, php-format
+msgid "Or specify a new folder: %s to be created under %s"
+msgstr ""
+
+msgid "Flag"
+msgstr ""
+
+msgid "Set message flags"
+msgstr ""
+
+msgid "Standard Flags"
+msgstr ""
+
+#, fuzzy
+msgid "Message Labels"
+msgstr "Žinučių filtrai"
+
+msgid "Custom Flags"
+msgstr ""
+
+msgid "Seen"
+msgstr ""
+
+msgid "Answered"
+msgstr ""
+
+msgid "Flagged"
+msgstr ""
+
+#, fuzzy
+msgid "Deleted"
+msgstr "Ištrinti"
+
+msgid "Draft"
+msgstr ""
+
+msgid "Important"
+msgstr ""
+
+msgid "Work"
+msgstr ""
+
+msgid "Personal"
+msgstr ""
+
+msgid "To Do"
+msgstr ""
+
+#, fuzzy
+msgid "Later"
+msgstr "trumpas"
+
+msgid "Junk"
+msgstr ""
+
+#, fuzzy
+msgid "Not Junk"
+msgstr "Peršokti į viršų"
+
+#, php-format
+msgid "Also, set message flag %s"
+msgstr ""
+
+#, php-format
+msgid "Also, set message flags: %s"
+msgstr ""
+
+#, php-format
+msgid "Flags: %s"
+msgstr ""
+
+#, php-format
+msgid "Set (replace) flags as the current set: %s"
+msgstr ""
+
+#, php-format
+msgid "Set (replace) flags: %s"
+msgstr ""
+
+#, php-format
+msgid "Add flags to current set: %s"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Add flags: %s"
+msgstr "Pridėti naują taisyklę"
+
+#, php-format
+msgid "Remove flags from current set: %s"
+msgstr ""
+
+#, php-format
+msgid "Remove flags: %s"
+msgstr ""
+
+msgid ""
+"Enter here a list of flags separated by spaces. Example: <tt>$MyFlag "
+"$Special</tt>"
+msgstr ""
+
+#, fuzzy
+msgid "Move to Junk"
+msgstr "Peršokti į viršų"
+
+#, fuzzy, php-format
+msgid ""
+"Store message in your Junk Folder. Messages older than %s days will be "
+"deleted automatically."
+msgstr ""
+"Išsaugoti įtartiną žinutę šlamšto aplanke. Žinutės senesnės nei %s diena(ų) "
+"bus trinamos automatiškai."
+
+msgid "Note that you can set the number of days in Folder Preferences."
+msgstr ""
+
+#, fuzzy
+msgid "Keep Message"
+msgstr "žinutė"
+
+msgid "Save the message in your INBOX."
+msgstr ""
+
+msgid "Also keep copy in INBOX, marked as deleted."
+msgstr "Kartu išsaugoti kopiją tarp INBOX, pažymėtą kaip ištrintą."
+
+msgid "Notify"
+msgstr ""
+
+#, fuzzy
+msgid "Send a notification "
+msgstr "Pranešimas į paštą"
+
+msgid "Mobile Phone Message (SMS)"
+msgstr "Pranešimas į mobilų (SMS)"
+
+msgid "Email notification"
+msgstr "Pranešimas į paštą"
+
+msgid "Notification via Zephyr"
+msgstr "Pranešimas per Zephyr sistemą"
+
+msgid "Notification via ICQ"
+msgstr "Pranešimas per ICQ sistemą"
+
+msgid "Method"
+msgstr ""
+
+msgid "Notification ID"
+msgstr "Pranešimo ID"
+
+msgid "Destination"
+msgstr "Adresatas"
+
+msgid "Priority"
+msgstr ""
+
+msgid "Help: Valid variables are:"
+msgstr "Pagalba: Tinkami kintamieji yra:"
+
+msgid "Redirect"
+msgstr ""
+
+msgid "Automatically redirect the message to a different email address"
+msgstr ""
+
+msgid "someone@example.org"
+msgstr "kazkas@example.org"
+
+msgid "Keep a local copy as well."
+msgstr ""
+
+msgid ""
+"Incorrect email address(es). You must enter one or more valid email "
+"addresses, separated by comma."
+msgstr ""
+
+msgid "Reject"
+msgstr ""
+
+msgid "Send the message back to the sender, along with an excuse"
+msgstr ""
+
+msgid "Please do not send me large attachments."
+msgstr "Prašau nesiųsti man didelių priedų."
+
+msgid "If this rule matches, do not check any rules after it."
+msgstr "Jei taisyklė sutampa, nebetikrinti kitų taisyklių."
+
+msgid "STOP"
+msgstr "Sustoti"
+
+#, fuzzy
+msgid "Move to Trash"
+msgstr "Peršokti į viršų"
+
+#, fuzzy
+msgid ""
+"Store message in your Trash Folder. You will have to purge the folder "
+"yourself."
+msgstr ""
+"Išsaugoti įtartiną žinutę šiukšlių aplanke. Jūs turėsite patys ją galutinai "
+"ištrinti."
+
+#, fuzzy
+msgid "Vacation / Autoresponder"
+msgstr "Atostogos"
+
+msgid ""
+"This is an automated reply; I am away and will not be able to reply to you "
+"immediately."
+msgstr ""
+"Tai yra autoatsakiklis. Aš šiuo metu esu toli ir negaliu tuoj pat atsakyti į "
+"jūsų žinutę."
+
+msgid "I will get back to you as soon as I return."
+msgstr "Atsakysiu jums kai tik galėsiu."
+
+msgid ""
+"The notice will be sent only once to each person that sends you mail, and "
+"will not be sent to a mailing list address."
+msgstr ""
+"Perspėjimas bus nusiųstas vieną kartą kiekvienam asmeniui, kuris bandys jums "
+"atsiųsti laišką, bet nebus siunčiamas į susirašinėjimo sąrašus."
+
+msgid "Subject:"
+msgstr ""
+
+#, fuzzy
+msgid "Optional subject of the vacation message."
+msgstr "atsakyti su atostogų žinute: "
+
+#, fuzzy
+msgid "Your Addresses:"
+msgstr "Adreso sutapimas"
+
+msgid ""
+"A vacation / autorespond message will be sent only if an email is sent "
+"explicitly to one of these addresses."
+msgstr ""
+
+#, fuzzy
+msgid "Days:"
+msgstr "dienos(ų)"
+
+msgid "days"
+msgstr "dienos(ų)"
+
+msgid ""
+"A vacation / autorespond message will not be resent to the same address, "
+"within this number of days."
+msgstr ""
+
+#, fuzzy
+msgid "Message:"
+msgstr "žinutė"
+
+msgid "The number of days between vacation messages must be a positive number."
+msgstr ""
+
+#, fuzzy
+msgid "Date"
+msgstr "Dubliuoti"
+
+msgid "Received"
+msgstr ""
+
+#, fuzzy
+msgid "Year"
+msgstr "Antraštės sutapimas"
+
+msgid "Month"
+msgstr ""
+
+#, fuzzy
+msgid "Day"
+msgstr "dienos(ų)"
+
+msgid "Weekday"
+msgstr ""
+
+msgid "Hour"
+msgstr ""
+
+msgid "Minute"
+msgstr ""
+
+msgid "Second"
+msgstr ""
+
+#, fuzzy
+msgid "Sunday"
+msgstr "dienos(ų)"
+
+#, fuzzy
+msgid "Monday"
+msgstr "dienos(ų)"
+
+msgid "Tuesday"
+msgstr ""
+
+msgid "Wednesday"
+msgstr ""
+
+msgid "Thursday"
+msgstr ""
+
+#, fuzzy
+msgid "Friday"
+msgstr "dienos(ų)"
+
+msgid "Saturday"
+msgstr ""
+
+msgid "Is"
+msgstr ""
+
+msgid "Before (&lt;=)"
+msgstr ""
+
+msgid "After (=&gt;)"
+msgstr ""
+
+msgid "Before (&lt;)"
+msgstr ""
+
+msgid "After (&gt;)"
+msgstr ""
+
+msgid "January"
+msgstr ""
+
+msgid "February"
+msgstr ""
+
+msgid "March"
+msgstr ""
+
+msgid "April"
+msgstr ""
+
+msgid "May"
+msgstr ""
+
+msgid "June"
+msgstr ""
+
+msgid "July"
+msgstr ""
+
+msgid "August"
+msgstr ""
+
+msgid "September"
+msgstr ""
+
+msgid "October"
+msgstr ""
+
+msgid "November"
+msgstr ""
+
+msgid "December"
+msgstr ""
+
+msgid "Occurence"
+msgstr ""
+
+msgid "Specific Date"
+msgstr ""
+
+msgid "Specific Time"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "of header %s"
+msgstr "antraštė"
+
+msgid "Current date / time:"
+msgstr ""
+
+#, fuzzy
+msgid "Current date:"
+msgstr "Sukurta:"
+
+#, fuzzy
+msgid "message header"
+msgstr "žinutė"
+
+#, fuzzy
+msgid "Message header"
+msgstr "Žinučių filtrai"
+
+#, fuzzy, php-format
+msgid "is %s"
+msgstr "Taisyti"
+
+msgid "is"
+msgstr "yra"
+
+#, php-format
+msgid "is before than %s (inclusive)"
+msgstr ""
+
+#, php-format
+msgid "is after than %s (inclusive)"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "is before than %s"
+msgstr "yra mažesnė nei"
+
+#, fuzzy, php-format
+msgid "is after than %s"
+msgstr "yra didesnė nei"
+
+#, php-format
+msgid "&quot;%s&quot;"
+msgstr ""
+
+#, php-format
+msgid "&quot;<tt>%s:</tt>&quot;"
+msgstr ""
+
+msgid "AND (Every item must match)"
+msgstr "IR (Turi sutapti visi požymiai)"
+
+msgid "OR (Either item will match)"
+msgstr "ARBA (Turi sutapti bent vienas požymis)"
+
+#, fuzzy
+msgid "Rule"
+msgstr "Taisyklės tipas"
+
+#, fuzzy, php-format
+msgid "Add a new %s"
+msgstr "Pridėti naują taisyklę"
+
+#, fuzzy
+msgid "SPAM Rule"
+msgstr "Pridėti naują SPAM'o taisyklę"
+
+msgid "Junk Mail Rule"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Edit %s"
+msgstr "Taisyti"
+
+msgid "Whitelist"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Add new %s"
+msgstr "Adreso sutapimas"
+
+msgid "Sieve Code"
+msgstr ""
+
+#, fuzzy
+msgid "Address"
+msgstr "Adreso sutapimas"
+
+msgid ""
+"Perform an action depending on email addresses appearing in message headers."
+msgstr ""
+"Atlikti veiksmus su žinutėmis priklausomai nuo elektroninio pašto adresų, "
+"esančių antraštėse."
+
+#, fuzzy
+msgid "Header"
+msgstr "Antraštės sutapimas"
+
+msgid ""
+"Perform an action on messages matching a specified header (From, To etc.)."
+msgstr ""
+"Atlikti veiksmus su žinutėmis turinčiomis atitinkamas antraštes (Nuo, Kam ir "
+"kt.)."
+
+msgid "Envelope"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Perform an action on messages matching a specified envelope header (Envelope "
+"FROM, TO)."
+msgstr ""
+"Atlikti veiksmus su žinutėmis turinčiomis atitinkamas antraštes (Nuo, Kam ir "
+"kt.)."
+
+msgid "Size"
+msgstr "Dydis"
+
+msgid "Perform an action on messages depending on their size."
+msgstr "Atlikti veiksmus su žinutėmis priklausomai nuo jų dydžio."
+
+msgid "Body"
+msgstr ""
+
+msgid "Perform an action on messages depending on their content (body text)."
+msgstr ""
+"Atlikti veiksmus su žinutėmis priklausomai nuo jų turinio (viso žinutės "
+"teksto)."
+
+#, fuzzy
+msgid ""
+"Perform an action on messages depending on date or time related to the "
+"message."
+msgstr "Atlikti veiksmus su žinutėmis priklausomai nuo jų dydžio."
+
+msgid "All"
+msgstr ""
+
+msgid "Perform an action on <strong>all</strong> incoming messages."
+msgstr "Apdoroti <strong>visas</strong> ateinančias žinutes."
+
+msgid "contains"
+msgstr "turi"
+
+msgid "does not contain"
+msgstr "neturi"
+
+msgid "is not"
+msgstr "nėra"
+
+msgid "matches"
+msgstr "atitinka"
+
+msgid "wildcard"
+msgstr "apytikslis apibrėžimas"
+
+msgid "does not match"
+msgstr "neatitinka"
+
+msgid "regexp"
+msgstr "speciali išraiška"
+
+msgid "is greater than"
+msgstr "yra didesnė nei"
+
+msgid "is greater or equal to"
+msgstr "yra didesnė arba lygi"
+
+msgid "is lower than"
+msgstr "yra mažesnė nei"
+
+msgid "is lower or equal to"
+msgstr "yra mažesnė arba lygi"
+
+msgid "is equal to"
+msgstr "yra lygi"
+
+msgid "is not equal to"
+msgstr "yra nelygi"
+
+msgid "verbose"
+msgstr "išsamus"
+
+#, fuzzy
+msgid "Textual descriptions of the rules"
+msgstr "Taisyklės aprašymas"
+
+msgid "terse"
+msgstr "trumpas"
+
+msgid "More suitable for viewing the table of rules at once"
+msgstr ""
+
+msgid "source"
+msgstr ""
+
+msgid "Display SIEVE source"
+msgstr ""
+
+msgid "Low"
+msgstr "Žemas"
+
+msgid "Normal"
+msgstr "Normalus"
+
+msgid "High"
+msgstr "Aukštas"
+
+msgid "Delete"
+msgstr "Ištrinti"
+
+msgid "Edit"
+msgstr "Taisyti"
+
+msgid "Duplicate"
+msgstr "Dubliuoti"
+
+msgid "Move Up"
+msgstr "Perkelti aukštyn"
+
+msgid "Move to Top"
+msgstr "Peršokti į viršų"
+
+msgid "Move Down"
+msgstr "Perkelti žemyn"
+
+msgid "Move to Bottom"
+msgstr "Peršokti į apačią"
+
+msgid "Junk Folder"
+msgstr "Šlamšto aplankas"
+
+#, php-format
+msgid ""
+"Store SPAM message in your Junk Folder. Messages older than %s days will be "
+"deleted automatically."
+msgstr ""
+"Išsaugoti įtartiną žinutę šlamšto aplanke. Žinutės senesnės nei %s diena(ų) "
+"bus trinamos automatiškai."
+
+msgid "Trash Folder"
+msgstr "Šiukšlių aplankas"
+
+msgid ""
+"Store SPAM message in your Trash Folder. You will have to purge the folder "
+"yourself."
+msgstr ""
+"Išsaugoti įtartiną žinutę šiukšlių aplanke. Jūs turėsite patys ją galutinai "
+"ištrinti."
+
+msgid ""
+"Discard SPAM message. You will get no indication that the message ever "
+"arrived."
+msgstr ""
+"Atsikratyti SPAM primenančios žinutės. Jūs negausite jokio perspėjimo, kad "
+"tokia žinutė buvo atėjusi."
+
+msgid "Server-Side Mail Filtering"
+msgstr "Serverio pusės pašto filtravimas"
+
+msgid "Successfully added new rule."
+msgstr "Sėkmingai pridėta nauja taisyklė."
+
+#, fuzzy, php-format
+msgid "Successfully updated rule #%s"
+msgstr "Sėkmingai atnaujinta taisyklė Nr."
+
+#, fuzzy, php-format
+msgid "Successfully deleted rules #%s"
+msgstr "Sėkmingai ištrintos taisyklės Nr."
+
+#, fuzzy, php-format
+msgid "Successfully deleted rule #%s"
+msgstr "Sėkmingai ištrinta taisyklė Nr."
+
+msgid "You must correct the above errors before continuing."
+msgstr ""
+
+msgid "No check"
+msgstr ""
+
+#, php-format
+msgid "Editing %s"
+msgstr ""
+
+#, php-format
+msgid "(Rule #%s)"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Add a new %s "
+msgstr "Pridėti naują taisyklę"
+
+msgid "Configure Anti-SPAM Protection"
+msgstr "Nustatyti priešspaminę apsaugą"
+
+msgid ""
+"All incoming mail is checked for unsolicited commercial content (SPAM) and "
+"marked accordingly. This special rule allows you to configure what to do "
+"with such messages once they arrive to your Inbox."
+msgstr ""
+"Visos gaunamos žinutės yra tikrinamos dėl galimų nesankcionuotų komercinių "
+"pranešimų (SPAM) požymių ir atitinkamai sužymimos. Ši speciali taisyklė "
+"leidžia nustatyti tai, ką sistema turėtų daryti su tokiomis žinutėmis "
+"pasiekiančiomis Jūsų pašto dėžę."
+
+#, php-format
+msgid ""
+"Select %s to add the predefined rule, or select the advanced SPAM filter to "
+"customize the rule."
+msgstr ""
+"Pasirinkite %s tam, kad pridėti standartinę taisyklę arba specialų spamo "
+"filtrą, jei norite nustatyti specialias spamo apdorojimo taisykles."
+
+msgid "Add Spam Rule"
+msgstr "Pridėti SPAM'o taisyklę"
+
+msgid "Advanced Spam Filter..."
+msgstr "Specialus spamo filtras..."
+
+msgid "Target Score"
+msgstr "Nustatytas įvertinimas"
+
+#, php-format
+msgid ""
+"Messages with SPAM-Score higher than the target value, the maximum value "
+"being %s, will be considered SPAM."
+msgstr ""
+"Žinutės su spamo įvertinimu didesniu nei nurodyta reikšmė bus laikomos "
+"spamu. Didžiausia nustatymo reikšmė yra %s."
+
+msgid "SPAM Lists to check against"
+msgstr "SPAM sąrašai naudojami tikrinant"
+
+msgid ""
+"Messages that match any of these header rules will never end up in Junk "
+"Folders or regarded as SPAM."
+msgstr ""
+
+msgid "Apply Changes"
+msgstr "Išsaugoti pakeitimus"
+
+msgid "Cancel"
+msgstr "Atšaukti"
+
+#, fuzzy
+msgid "Information..."
+msgstr "Patvirtinimas"
+
+#, php-format
+msgid ""
+"There is currently no Junk Mail Filter, so we are suggesting the following "
+"default settings. To add the Junk Mail Filter, simply choose <em>&quot;%"
+"s&quot;</em>."
+msgstr ""
+
+#, fuzzy
+msgid "Enable Junk Mail Filtering"
+msgstr "Esamos pašto filtravimo taisyklės"
+
+msgid "Automatically delete Junk Messages"
+msgstr ""
+
+#, php-format
+msgid "when they are older than %s days"
+msgstr ""
+
+msgid "Enable Whitelist"
+msgstr ""
+
+msgid ""
+"Messages sent from the addresses in your Whitelist will never end up in your "
+"Junk Mail folder, or considered as SPAM."
+msgstr ""
+
+msgid "Edit Whitelist...."
+msgstr ""
+
+msgid "Automatically add all your Address Book Contacts in the Whitelist"
+msgstr ""
+
+msgid "Configure Advanced Junk Mail Tests"
+msgstr ""
+
+#, fuzzy
+msgid "You have to enable at least one Junk Mail Test."
+msgstr "Jūs turite nurodyti bent vieną antraštę atitinkančią teksto eilutę."
+
+msgid "Junk Mail Options have been saved."
+msgstr ""
+
+msgid "Editing Whitelist"
+msgstr ""
+
+msgid ""
+"Messages coming from the email addresses that you enter here will never end "
+"up in your Junk folder or be considered as SPAM."
+msgstr ""
+
+msgid ""
+"Enter <strong>one (1) email address per line</strong>. Note that you can "
+"also enter an incomplete address or a mail domain."
+msgstr ""
+
+msgid "Example:"
+msgstr ""
+
+msgid "Whitelist has been updated."
+msgstr ""
+
+#, php-format
+msgid "Editing Sieve Code (Rule #%s)"
+msgstr ""
+
+#, fuzzy
+msgid "Create New Custom Sieve Rule"
+msgstr "Esamos pašto filtravimo taisyklės"
+
+msgid "Custom Rule"
+msgstr ""
+
+msgid "Please enter valid Sieve code in the textbox below."
+msgstr ""
+
+msgid ""
+"Note: The <tt>require</tt> command is not needed; it will be added "
+"automatically at the start of the script."
+msgstr ""
+
+#, php-format
+msgid "Sieve Capabilities supported: %s"
+msgstr ""
+
+msgid "Please enter a valid Sieve code snippet."
+msgstr ""
+
+msgid "To: or Cc"
+msgstr ""
+
+msgid "The condition for the following rules is:"
+msgstr "Šios taisyklės sąlyga yra:"
+
+msgid "Less..."
+msgstr "Mažiau..."
+
+msgid "More..."
+msgstr "Daugiau..."
+
+msgid "bigger"
+msgstr "didesnė"
+
+msgid "smaller"
+msgstr "mažesnė"
+
+msgid "than"
+msgstr "nei"
+
+msgid "KB (kilobytes)"
+msgstr "KB (kilobaitų)"
+
+msgid "MB (megabytes)"
+msgstr "MB (megabaitų)"
+
+msgid "All Messages"
+msgstr "Visos žinutės"
+
+msgid ""
+"The following action will be applied to <strong>all</strong> incoming "
+"messages that do not match any of the previous rules."
+msgstr ""
+"Šis veiksmas bus pritaikytas <strong>visoms</strong> atėjusios žinutėms, "
+"kurios neatitiks nei vienos iš ankstesnių taisyklių."
+
+msgid "1st"
+msgstr ""
+
+msgid "2nd"
+msgstr ""
+
+msgid "3rd"
+msgstr ""
+
+msgid "4th"
+msgstr ""
+
+msgid "5th"
+msgstr ""
+
+msgid "6th"
+msgstr ""
+
+msgid "7th"
+msgstr ""
+
+msgid "8th"
+msgstr ""
+
+msgid "9th"
+msgstr ""
+
+msgid "from the end"
+msgstr ""
+
+msgid "Choose what to do when this rule triggers, from one of the following:"
+msgstr "Pasirinkite ką daryti, kai taisyklė suveikia, iš galimų veiksmų: "
+
+msgid "Add SPAM Rule"
+msgstr "Pridėti naują SPAM'o taisyklę"
+
+msgid "Editing Mail Filtering Rule"
+msgstr "Taisoma pašto filtravimo taisyklė"
+
+#, fuzzy
+msgid "Create New Mail Filtering Rule"
+msgstr "Esamos pašto filtravimo taisyklės"
+
+msgid "Additional Actions"
+msgstr "Papildomi veikmai"
+
+#, fuzzy
+msgid "You have to define at least one condition."
+msgstr "Jūs turite nurodyti bent vieną antraštę atitinkančią teksto eilutę."
+
+msgid "Clear this Form"
+msgstr "Išvalyti šią formą"
+
+msgid "Start Over"
+msgstr "Pradėti iš naujo"
+
+msgid "Move back to step"
+msgstr "Grįžti atgal"
+
+msgid "Finished"
+msgstr "Baigti"
+
+msgid "Move on to step"
+msgstr "Peršokti į žingsnį"
+
+msgid "Your new rule states:"
+msgstr "Jūsų nauja taisyklė teigia:"
+
+msgid ""
+"If this is what you wanted, select Finished. You can also start over or "
+"cancel adding a rule altogether."
+msgstr ""
+"Jei tai yra tai, ko jūs norite, pasirinkite Baigti. Tai pat jūs galite "
+"pradėti iš naujo arba visai atšaukti šią taisyklę."
+
+msgid ""
+"Here you can add or delete filtering rules for your email account. These "
+"filters will always apply to your incoming mail, wherever you check your "
+"email."
+msgstr ""
+"Čia jūs galite pridėti ar pašalinti filtravimo taisykles galiojančias jūsų "
+"paštui. Filtrai suveiks su kiekviena jums atėjusia žinute, kai tik jūs "
+"patikrinsite savo paštą."
+
+msgid ""
+"You don't have any rules yet. Feel free to add any with the button &quot;Add "
+"a New Rule&quot;. When you are done, please select &quot;Save Changes&quot; "
+"to get back to the main options screen."
+msgstr ""
+"Jūs neturite nei vienos taisyklės. Galite jas sukurit pasinaudomi &quot;"
+"Pridėti naują taisyklę&quot; mygtuku. Pabaigę išsaugokite savo pakeitimus, "
+"kad grįžti į pradinį langą."
+
+msgid ""
+"When you are done with editing, <strong>remember to select &quot;Save "
+"Changes&quot;</strong> to activate your changes!"
+msgstr ""
+"Pabaigę taisyklių kūrimą <strong>nepamirškite jų išsaugoti</strong>, kad "
+"pakeitimai suveiktų!"
+
+msgid "The following table summarizes your current mail filtering rules."
+msgstr "Ši lentelė apibendrina jūsų dabartines pašto filtravimo taisykles."
+
+msgid ""
+"Warning: In your rules, you have defined an action that refers to a folder "
+"that does not exist or a folder where you do not have permission to append "
+"to."
+msgstr ""
+
+#, php-format
+msgid ""
+"Note: A <a href=\"%s\">Vacation Autoresponder</a> is active (<a href=\"%s"
+"\">Rule #%s</a> in your current Mail Filtering Rules).<br/>Don't forget to "
+"disable it or delete it when you are back."
+msgstr ""
+
+msgid "No"
+msgstr "Ne"
+
+msgid "Options"
+msgstr "Nustatymai"
+
+msgid "Description of Rule"
+msgstr "Taisyklės aprašymas"
+
+msgid "Display as:"
+msgstr "Parodyti kaip:"
+
+#, fuzzy
+msgid "Position"
+msgstr "Sąlyga"
+
+#, fuzzy
+msgid "Add a new Rule"
+msgstr "Pridėti naują taisyklę"
+
+#, fuzzy
+msgid "Really delete selected rules?"
+msgstr "Sėkmingai ištrinta taisyklė Nr."
+
+msgid "Enable"
+msgstr ""
+
+msgid ""
+"When you are done, please click the button below to return to your webmail."
+msgstr ""
+"Kai baigsite, paspauskite žemiau esantį mygtuką, kad grįžti į savo paštą."
+
+msgid "Save Changes"
+msgstr "Išsaugoti pakeitimus"
+
+msgid "Created:"
+msgstr "Sukurta:"
+
+msgid "Last modified:"
+msgstr "Paskutinį kartą taisyta:"
+
+msgid "Current Mail Filtering Rules"
+msgstr "Esamos pašto filtravimo taisyklės"
+
+msgid "Close"
+msgstr ""
+
+msgid "No Filtering Rules Defined Yet"
+msgstr "Nėra jokių pašto filtravimo taisyklių"
+
+#, fuzzy
+msgid "Really delete this rule?"
+msgstr "Sėkmingai ištrinta taisyklė Nr."
+
+#, fuzzy
+msgid "More Options..."
+msgstr "Daugiau..."
+
+#, fuzzy
+msgid "Move to Position..."
+msgstr "Peršokti į apačią"
+
+msgid "--------"
+msgstr ""
+
+#, fuzzy
+msgid "Duplicate this Rule"
+msgstr "Sėkmingai ištrinta taisyklė Nr."
+
+#, fuzzy
+msgid "Insert a New Rule here"
+msgstr "Pridėti naują taisyklę"
+
+msgid "Send this Rule by Email"
+msgstr ""
+
+msgid "Go"
+msgstr ""
+
+msgid "Action for Selected Rules:"
+msgstr ""
+
+#, fuzzy
+msgid "Junk Folder Information"
+msgstr "Šlamšto aplankas"
+
+msgid "Messages in this folder have been identified as SPAM / Junk."
+msgstr ""
+
+#, php-format
+msgid ""
+"Note: Junk Mail is currently not enabled. Select &quot;%s&quot; to enable it."
+msgstr ""
+
+msgid "Edit Junk Mail Options..."
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Any messages older than %s days are automatically deleted."
+msgstr ""
+"Išsaugoti įtartiną žinutę šlamšto aplanke. Žinutės senesnės nei %s diena(ų) "
+"bus trinamos automatiškai."
+
+msgid "Test for Forged Header"
+msgstr ""
+
+msgid "Automatically"
+msgstr ""
+
+msgid "Sender"
+msgstr ""
+
+msgid "From"
+msgstr ""
+
+msgid "To"
+msgstr ""
+
+msgid "Subject"
+msgstr ""
+
+#, fuzzy
+msgid "Create Filter"
+msgstr "Žinučių filtrai"
+
+msgid "Vacation Filter Reminder"
+msgstr ""
+
+msgid "(Creates a new server-side filtering rule, based on the above criteria)"
+msgstr ""
+
+msgid ""
+"Notice: The following criteria cannot be expressed as server-side filtering "
+"rules:"
+msgstr ""
+
+msgid "Reason:"
+msgstr ""
+
+msgid "The Body extension is not supported in this server."
+msgstr ""
+
+msgid ""
+"Note that Only From:, To:, Cc: and Subject: headers will be checked in the "
+"server filter."
+msgstr ""
+
+msgid "These search expressions are not applicable during message delivery."
+msgstr ""
+
+msgid ""
+"All messages considered as <strong>SPAM</strong> (unsolicited commercial "
+"messages)"
+msgstr ""
+"Visos žinutės turinčios <strong>SPAM</strong> (nesankcionuoti komerciniai "
+"pranešimai) požymius"
+
+msgid "SPAM"
+msgstr ""
+
+msgid "unless"
+msgstr ""
+
+msgid "Whitelist:"
+msgstr ""
+
+msgid "or"
+msgstr ""
+
+msgid "matching the Spam List(s):"
+msgstr "atitinkančios Spamo sąrašą(us):"
+
+#, fuzzy
+msgid "Spam List(s):"
+msgstr "atitinkančios Spamo sąrašą(us):"
+
+#, php-format
+msgid "and with score greater than %s"
+msgstr "ir įvertinimu didesniu nei %s"
+
+#, php-format
+msgid "Score > %s"
+msgstr ""
+
+msgid "will be"
+msgstr "bus"
+
+msgid "stored in the Junk Folder."
+msgstr "patalpinta Šlamšto aplanke."
+
+msgid "stored in the Trash Folder."
+msgstr "patalpinta Šlamšto aplanke."
+
+msgid "Trash"
+msgstr ""
+
+msgid "discarded."
+msgstr "išmesta."
+
+msgid "Junk Mail Rule is Disabled"
+msgstr ""
+
+msgid "<s></s>"
+msgstr ""
+
+#, fuzzy
+msgid "Junk Mail"
+msgstr "Šlamšto aplankas"
+
+#, fuzzy
+msgid "matching any one of the Spam tests as follows:"
+msgstr "atitinkančios Spamo sąrašą(us):"
+
+#, fuzzy
+msgid "Spam Tests:"
+msgstr "atitinkančios Spamo sąrašą(us):"
+
+msgid ""
+"and where the sender does <em>not</em> match any of the addresses / "
+"expressions in your <strong>Whitelist</strong>"
+msgstr ""
+
+msgid ""
+"The messages that match the system's default <strong>SPAM</strong> checks"
+msgstr ""
+
+#, fuzzy
+msgid "stored in the <strong>Junk</strong> Folder."
+msgstr "patalpinta Šlamšto aplanke."
+
+#, fuzzy
+msgid "stored in the <strong>Trash</strong> Folder."
+msgstr "patalpinta Šlamšto aplanke."
+
+msgid ""
+"<strong>Whitelist</strong> - The following email addresses are whitelisted "
+"and will not end up in Junk folders or considered as SPAM:"
+msgstr ""
+
+#, php-format
+msgid "and %s more email addresses / expressions."
+msgstr ""
+
+#, php-format
+msgid "%s more entries..."
+msgstr ""
+
+#, fuzzy
+msgid "Custom Sieve Code"
+msgstr "Esamos pašto filtravimo taisyklės"
+
+msgid "View Source"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "the header %s"
+msgstr "antraštė"
+
+#, fuzzy, php-format
+msgid "Header %s"
+msgstr "Antraštės sutapimas"
+
+msgid "To or Cc"
+msgstr ""
+
+#, php-format
+msgid "the envelope %s"
+msgstr ""
+
+#, php-format
+msgid "Envelope %s"
+msgstr ""
+
+#, php-format
+msgid "the address %s"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "Address %s"
+msgstr "Adreso sutapimas"
+
+#, fuzzy
+msgid "message body"
+msgstr "žinutė"
+
+#, php-format
+msgid "index number %s"
+msgstr ""
+
+#, php-format
+msgid "index #%s"
+msgstr ""
+
+msgid "(counting from last header)"
+msgstr ""
+
+msgid "(from end)"
+msgstr ""
+
+#, fuzzy
+msgid "matches the regular expression"
+msgstr "atitinka išraišką"
+
+#, fuzzy
+msgid "does not match the regular expression"
+msgstr "neatitinka išraiškos"
+
+msgid "exists"
+msgstr "egzistuoja"
+
+msgid "does not exist"
+msgstr "neegzistuoja"
+
+msgid "This rule is currently <strong>DISABLED</strong>:"
+msgstr ""
+
+msgid "DISABLED"
+msgstr ""
+
+msgid "If"
+msgstr "Jei"
+
+msgid "<em>any</em> of the following mail headers match: "
+msgstr "<em>bent viena</em> iš nurodytų antraščių atitinka: "
+
+msgid "<em>all</em> of the following mail headers match: "
+msgstr "<em>visos</em> nurodytos pašto antraštos atitinka: "
+
+msgid "the size of the message is"
+msgstr "žinutės dydis yra"
+
+msgid " bigger"
+msgstr "didesnis"
+
+msgid " smaller"
+msgstr "mažesnis"
+
+msgid "For <strong>ALL</strong> incoming messages; "
+msgstr "<strong>VISOMS</strong> ateinančioms žinutėms; "
+
+msgid "ALL"
+msgstr ""
+
+#, fuzzy
+msgid "always"
+msgstr "dienos(ų)"
+
+msgid "and"
+msgstr ""
+
+msgid "then"
+msgstr "nei"
+
+#, fuzzy
+msgid "<em>keep</em> the message."
+msgstr "<em>išsaugoti</em>"
+
+#, fuzzy
+msgid "Keep"
+msgstr "speciali išraiška"
+
+#, fuzzy
+msgid "<em>discard</em> the message."
+msgstr "<em>atsikratyti</em>"
+
+msgid "<em>reject</em> it, sending this excuse back to the sender:"
+msgstr "<em>atmesti</em> siuntėjui su nurodytu pranešimu:"
+
+msgid "Redirect to"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "<em>redirect</em> it to the email addresses: %s."
+msgstr "<em>persiųsti</em> į nurodytą adresą"
+
+msgid "<em>redirect</em> it to the email address"
+msgstr "<em>persiųsti</em> į nurodytą adresą"
+
+#, fuzzy, php-format
+msgid "<em>file</em> it into the folder %s"
+msgstr "<em>išsaugoti</em> aplanke <strong>"
+
+#, php-format
+msgid "File into %s"
+msgstr ""
+
+msgid "(Warning: Folder not available)"
+msgstr ""
+
+#, fuzzy, php-format
+msgid "reply with a vacation / autoresponder message: "
+msgstr "atsakyti su atostogų žinute: "
+
+msgid "Also keep a local copy."
+msgstr ""
+
+msgid " Also keep a copy in INBOX, marked as deleted."
+msgstr "Išsaugoti kopiją tarp INBOX, pažymėti kaip ištrintą."
+
+#, fuzzy
+msgid "Keep Deleted"
+msgstr "Ištrinti pasirinktą"
+
+msgid " Also notify using the method"
+msgstr "Taip pat informuoti naudojant metodą"
+
+msgid "with"
+msgstr "su"
+
+msgid "priority and the message"
+msgstr "prioritetu ir žinute"
+
+#, php-format
+msgid "Notify %s"
+msgstr ""
+
+#, fuzzy
+msgid "Then <strong>STOP</strong> processing rules."
+msgstr "Tada <strong>LIAUTIS</strong> apdoroti kitas taisykles."
+
+msgid "Stop"
+msgstr ""
+
+msgid "You have not defined the name for the new folder."
+msgstr "Jūs nenurodėte naujo aplanko vardo."
+
+msgid "Please try again."
+msgstr "Pabandykite dar karta."
+
+msgid "Illegal folder name.  Please select a different name"
+msgstr "Netinkamas aplanko vardas. Pasirinkite kita"
+
+#, fuzzy
+msgid "None"
+msgstr "Ne"
+
+#~ msgid "Vacation"
+#~ msgstr "Atostogos"
+
+#~ msgid "Addresses: Only reply if sent to these addresses:"
+#~ msgstr "Adresai: Atsakyti tik nurodytiems adresams:"
+
+#~ msgid "Days: Reply message will be resent after"
+#~ msgstr "Dienos: Pakartotinai perspėjimas bus nusiųstas po"
+
+#~ msgid "Use the following message:"
+#~ msgstr "Naudoti nurodytą pranešimą:"
+
+#~ msgid "Keep (Default action)"
+#~ msgstr "Išsaugoti nepakeista (standartinis veiksmas)"
+
+#~ msgid "Discard Silently"
+#~ msgstr "Tyliai ištrinti"
+
+#~ msgid "Reject, sending this excuse to the sender:"
+#~ msgstr "Atmesti, gražinant siuntėjui nurodytą pranešimą:"
+
+#~ msgid "Redirect to the following email address:"
+#~ msgstr "Persiųsti į nurodytą adresą:"
+
+#~ msgid "Move message into"
+#~ msgstr "Perkelti žinutę į"
+
+#~ msgid "the existing folder"
+#~ msgstr "egzistuojantį aplanką"
+
+#~ msgid "a new folder, named"
+#~ msgstr "naują aplanką, pavadintą"
+
+#~ msgid "created as a subfolder of"
+#~ msgstr "sukurtą aplanke"
+
+#~ msgid "Notify me, using the following method:"
+#~ msgstr "Praneškite man nurodytu metodu:"
+
+#~ msgid "(Probably the script is size null)."
+#~ msgstr "(Greičiausiai skripto dydis yra nulinis)."
+
+#~ msgid "Body Match"
+#~ msgstr "Turinio sutapimas"
+
+#~ msgid "What kind of rule would you like to add?"
+#~ msgstr "Kokio tipo taisyklę jūs norite sukurti?"
+
+#, fuzzy
+#~ msgid "Change Type"
+#~ msgstr "Taisyklės tipas"
+
+#~ msgid ""
+#~ "The rule will trigger if the following addresses appear anywhere in the "
+#~ "message's headers:"
+#~ msgstr ""
+#~ "Taisyklė sureaguos jei taip žinutės antraščių pasirodys nurodyti adresai:"
+
+#~ msgid "The header "
+#~ msgstr "Antraštė"
+
+#~ msgid "This rule will trigger if message is"
+#~ msgstr "Ši taisyklė suveiks jei žinutė yra"
+
+#~ msgid ""
+#~ "This rule will trigger upon the occurrence of one or more strings in the "
+#~ "body of an e-mail message. "
+#~ msgstr ""
+#~ "Ši taisyklė suveiks jei žinutės tekste ar antraštėse bus viena ar kelios "
+#~ "nurodytos simbolių sekos. "
+
+#~ msgid "All your rules have been deleted"
+#~ msgstr "Visos jūsų taisyklės ištrintos"
+
+#~ msgid "in order to save your rules."
+#~ msgstr "norint išsaugoti jūsų taisykles."
