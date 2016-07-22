@@ -394,6 +394,8 @@ function makesinglerule($rule, $mode='rule') {
     } else {
         /* Step one: make the if clause */
         $text .= "<strong>"._("If")."</strong> ";
+
+	//Angepasst für Roundcube Kompatibilität
     	if (isset($rule['disabled']) && $rule['disabled']==1) {
         	if ($mode=='rule') {
 			$out .= "if false # ";
@@ -672,7 +674,8 @@ function makesinglerule($rule, $mode='rule') {
         $text .= sprintf( _("reply with a vacation / autoresponder message: "), htmlspecialchars($rule['vac_message']));
         $terse .= _("Vacation / Autoresponder");
         break;
-    
+   
+    // 2x default ?!!?!?!!!111ELF - Ist der Entwickler Franzose? 
     /*default:
         $args = array($rule, $out, $text, $terse);
         do_hook('avelsieve_buildrule_action', $args); 
