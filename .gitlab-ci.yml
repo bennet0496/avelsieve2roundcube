@@ -1,7 +1,7 @@
 image: php
 
 before_script:
-  - apt-get update -qq && apt-get install -y -qq php7.0 php7.0-imap
+  - apt-get update -qq && apt-get install -y -qq php5 php5-imap
   
 rspec:
   script:
