@@ -2,7 +2,7 @@
 
 Konvertierung von avelsieve Filtern zu Roundcube Sieve Filtern
 
-```
+```sh
 cat phpscript.sieve | php avelsieve2roundcube.php
 ```
 
@@ -11,7 +11,7 @@ cat phpscript.sieve | php avelsieve2roundcube.php
 **Auch Wichtig :exclamation: php5-imap oder php7.0-imap *muss* installiert sein :bangbang:**
 
 Bsp. für Konvertierung aller Nutzer (nicht getestet, ggf. Syntax und Pfade prüfen :exclamation: :sweat_smile: )
-```
+```sh
 for script in $( find /var/vmail/users -type f -name phpscript.sieve )
 do
 	#Falls es "/var/vmail/users/u/user/phpscript.sieve" war...
