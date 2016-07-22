@@ -1,0 +1,5 @@
+before_script:
+  - apt-get update -qq && apt-get install -y -qq php7.0 php7.0-imap
+  
+run:
+  - echo | php avelsieve2roundcube.php
