@@ -18,9 +18,9 @@
  */
 
 /** Includes */
-include_once(SM_PATH . 'plugins/avelsieve/include/managesieve.lib.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/support.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/config/config.php');
+include_once(dirname(__FILE__).'/managesieve.lib.php');
+include_once(dirname(__FILE__).'/support.inc.php');
+include_once(dirname(__FILE__).'/../config/config.php');
 
 /**
  * This function initializes the avelsieve environment. Basically, it makes

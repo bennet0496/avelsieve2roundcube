@@ -15,11 +15,11 @@
 
 /** Includes necessary for configtest */
 include_once(SM_PATH . 'functions/imap.php');
-include_once(SM_PATH . 'plugins/avelsieve/config/config.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/support.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/html_rulestable.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/sieve.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/spamrule.inc.php');
+include_once(dirname(__FILE__).'/../config/config.php');
+include_once(dirname(__FILE__).'/support.inc.php');
+include_once(dirname(__FILE__).'/html_rulestable.inc.php');
+include_once(dirname(__FILE__).'/sieve.inc.php');
+include_once(dirname(__FILE__).'/spamrule.inc.php');
 
 /**
  * Perform configuration test. This is a simple one at the moment and no fatal 

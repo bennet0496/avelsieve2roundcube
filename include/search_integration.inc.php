@@ -14,8 +14,8 @@
  */
 
 /** Includes */
-include_once(SM_PATH . 'plugins/avelsieve/include/managesieve_wrapper.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/html_main.inc.php');
+include_once(dirname(__FILE__).'/managesieve_wrapper.inc.php');
+include_once(dirname(__FILE__).'/html_main.inc.php');
 
 /**
  * The main search-integration routine.

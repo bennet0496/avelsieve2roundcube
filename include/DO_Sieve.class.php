@@ -14,8 +14,8 @@
  */
 
 /** Includes */
-include_once(SM_PATH . 'plugins/avelsieve/include/support.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/config/config.php');
+include_once(dirname(__FILE__).'/support.inc.php');
+include_once(dirname(__FILE__).'/../config/config.php');
     
 class DO_Sieve {
     var $capabilities;
@@ -229,7 +229,7 @@ switch($avelsieve_backend) {
     case 'ManageSieve':
     case 'NetSieve':
     case 'File':
-        include_once(SM_PATH . 'plugins/avelsieve/include/DO_Sieve_'.$avelsieve_backend.'.class.php');
+        include_once(dirname(__FILE__).'/DO_Sieve_'.$avelsieve_backend.'.class.php');
         break;
     default:
         die('You have specified an invalid backend in config/config.php. Please

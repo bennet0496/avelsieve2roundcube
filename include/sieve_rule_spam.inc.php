@@ -11,7 +11,7 @@
  */
 
 /** Includes */
-include_once(SM_PATH . 'plugins/avelsieve/include/html_main.inc.php');
+include_once(dirname(__FILE__).'/html_main.inc.php');
 
 /**
  * This class is to extend the main rule class (avelsieve_html_edit.php), with

@@ -14,5 +14,5 @@
  */
 
 /** Obsolete file, include the new one. */
-include_once(SM_PATH . 'plugins/avelsieve/include/junkmail.inc.php');
+include_once(dirname(__FILE__).'/junkmail.inc.php');
 

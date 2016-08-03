@@ -14,7 +14,7 @@
  */
 
 /** Includes */
-include_once(SM_PATH . 'plugins/avelsieve/include/managesieve.lib.php');
+include_once(dirname(__FILE__).'/managesieve.lib.php');
 
 /**
  * Backend for ManageSieve script management interface.

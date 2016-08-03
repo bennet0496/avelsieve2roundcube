@@ -33,7 +33,7 @@ function avelsieve_right_main_do() {
     global $avelsieve_enable_rules, $mailbox, $color;
 
     if(in_array(11,$avelsieve_enable_rules) && ($mailbox == 'Junk' || $mailbox == 'INBOX.Junk')) {
-        include_once(SM_PATH . 'plugins/avelsieve/include/junkmail.inc.php');
+        include_once(dirname(__FILE__).'/junkmail.inc.php');
         junkmail_right_main_do();
     }
     
@@ -42,13 +42,13 @@ function avelsieve_right_main_do() {
 
     if($mailbox == 'INBOX') {
         if ( sqgetGlobalVar('just_logged_in', $just_logged_in, SQ_SESSION) && $just_logged_in == true) {
-            include_once(SM_PATH . 'plugins/avelsieve/include/sieve_getrule.inc.php');
-            include_once(SM_PATH . 'plugins/avelsieve/include/html_main.inc.php');
+            include_once(dirname(__FILE__).'/sieve_getrule.inc.php');
+            include_once(dirname(__FILE__).'/html_main.inc.php');
             sqgetGlobalVar('rules', $rules, SQ_SESSION);
             if(!isset($rules)) {
                 global $avelsieve_backend;
                 $backend_class_name = 'DO_Sieve_'.$avelsieve_backend;
-                include_once(SM_PATH . 'plugins/avelsieve/include/sieve.inc.php');
+                include_once(dirname(__FILE__).'/sieve.inc.php');
                 $s = new $backend_class_name;
                 $s->init();
                 $s->login();

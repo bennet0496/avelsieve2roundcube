@@ -13,26 +13,26 @@
  */
 
 /** Include Base Avelsieve Action class */
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action.class.php');
 
 /** Include Avelsieve Action classes (Radio-buttons) */
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_keep.class.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_discard.class.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_reject.class.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_redirect.class.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_fileinto.class.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_vacation.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action_keep.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action_discard.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action_reject.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action_redirect.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action_fileinto.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action_vacation.class.php');
 
 /** Include Avelsieve Additional Action classes (Checkboxes) */
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_stop.class.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_notify.class.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_imapflags.class.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_keepdeleted.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action_stop.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action_notify.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action_imapflags.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action_keepdeleted.class.php');
 
 /** Include Custom Avelsieve Action classes */
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_junk.class.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_trash.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action_junk.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action_trash.class.php');
 
 /** Include other Avelsieve Action classes (Checkboxes) */
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_disabled.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action_disabled.class.php');
 

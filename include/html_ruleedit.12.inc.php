@@ -11,8 +11,8 @@
  */
 
 /** Includes */
-include_once(SM_PATH . 'plugins/avelsieve/include/html_main.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/html_ruleedit.inc.php');
+include_once(dirname(__FILE__).'/html_main.inc.php');
+include_once(dirname(__FILE__).'/html_ruleedit.inc.php');
 
 /**
  * Rule #12: A global whitelist.

@@ -11,11 +11,11 @@
  */
 
 /** Includes */
-include_once(SM_PATH . 'plugins/avelsieve/include/html_main.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/html_ruleedit.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/sieve_rule_spam.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/sieve_buildrule.11.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/junkmail.inc.php');
+include_once(dirname(__FILE__).'/html_main.inc.php');
+include_once(dirname(__FILE__).'/html_ruleedit.inc.php');
+include_once(dirname(__FILE__).'/sieve_rule_spam.inc.php');
+include_once(dirname(__FILE__).'/sieve_buildrule.11.inc.php');
+include_once(dirname(__FILE__).'/junkmail.inc.php');
 
 /**
  * Rule #11: Customized Junk Mail rule with features such as RBL

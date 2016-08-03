@@ -18,8 +18,8 @@
  */
 
 /** Includes */
-include_once(SM_PATH . 'plugins/avelsieve/config/config.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/html_main.inc.php');
+include_once(dirname(__FILE__).'/../config/config.php');
+include_once(dirname(__FILE__).'/html_main.inc.php');
 
 /**
  * Informational message and link to Junk Mail options, from Junk Folder 
@@ -33,7 +33,7 @@ function junkmail_right_main_do() {
     bindtextdomain ('avelsieve', SM_PATH . 'plugins/avelsieve/locale');
     textdomain ('avelsieve');
     
-    require_once(SM_PATH . 'plugins/avelsieve/include/constants.inc.php');
+    require_once(dirname(__FILE__).'/constants.inc.php');
 
     sqgetGlobalVar('rules', $rules, SQ_SESSION);
     sqgetGlobalVar('haschanged', $avelsieve_changed, SQ_SESSION);
@@ -43,7 +43,7 @@ function junkmail_right_main_do() {
     if (!isset($rules) || isset($avelsieve_changed)) {
         global $avelsieve_backend;
         $backend_class_name = 'DO_Sieve_'.$avelsieve_backend;
-        include_once(SM_PATH . 'plugins/avelsieve/include/sieve.inc.php');
+        include_once(dirname(__FILE__).'/sieve.inc.php');
         $s = new $backend_class_name;
         $s->init();
         $s->login();

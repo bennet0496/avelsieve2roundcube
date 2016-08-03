@@ -12,7 +12,7 @@
  */
 
 /** Include Base Avelsieve Condition class */
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_condition.class.php');
+include_once(dirname(__FILE__).'/avelsieve_condition.class.php');
 
 /** Include Avelsieve Condition classes */
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_condition_datetime.class.php');
+include_once(dirname(__FILE__).'/avelsieve_condition_datetime.class.php');

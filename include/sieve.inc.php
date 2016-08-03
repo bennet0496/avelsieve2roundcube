@@ -16,7 +16,7 @@
  */
 
 /** Includes */
-include_once(SM_PATH . 'plugins/avelsieve/include/sieve_getrule.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/sieve_buildrule.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/DO_Sieve.class.php');
+include_once(dirname(__FILE__).'/sieve_getrule.inc.php');
+include_once(dirname(__FILE__).'/sieve_buildrule.inc.php');
+include_once(dirname(__FILE__).'/DO_Sieve.class.php');
 

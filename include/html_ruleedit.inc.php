@@ -14,7 +14,7 @@
  */
 
 /** Includes */
-include_once(SM_PATH . 'plugins/avelsieve/include/html_main.inc.php');
+include_once(dirname(__FILE__).'/html_main.inc.php');
 
 /**
  * HTML Output functions for rule editing / adding

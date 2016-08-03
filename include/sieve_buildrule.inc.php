@@ -111,10 +111,10 @@
  */ 
 
 /** Include Base Avelsieve Condition class */
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_condition.class.php');
+include_once(dirname(__FILE__).'/avelsieve_condition.class.php');
 
 /** Include Base Avelsieve Action class */
-include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action.class.php');
+include_once(dirname(__FILE__).'/avelsieve_action.class.php');
 
 /**
  * Build a snippet which is used for header, address, envelope rules as well as
@@ -310,7 +310,7 @@ function build_rule_snippet($name, $header, $matchtype, $headermatch, $index = '
  */
 function makesinglerule($rule, $mode='rule') {
     if($mode == 'debug') {
-        include_once(SM_PATH . 'plugins/avelsieve/include/dumpr.php');
+        include_once(dirname(__FILE__).'/dumpr.php');
         return dumpr($rule, true);
     }
     global $maxitems, $color, $inconsistent_folders;
@@ -321,7 +321,7 @@ function makesinglerule($rule, $mode='rule') {
     // imap4flags extension
     $actions = array();
     if (isset($rule['imapflags']) && isset($rule['imapflags']['flags'])) {
-        include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_imapflags.class.php');
+        include_once(dirname(__FILE__).'/avelsieve_action_imapflags.class.php');
         // $sieve variable ??? FIXME
         $actions['imapflags'] = new avelsieve_action_imapflags($sieve, $rule);
     }
@@ -355,7 +355,7 @@ function makesinglerule($rule, $mode='rule') {
      * this special rule. */
     
     if(is_numeric($rule['type']) && $rule['type'] >= '10' && $rule['type'] < 100 ) {
-        include_once(SM_PATH . 'plugins/avelsieve/include/sieve_buildrule.'.$rule['type'].'.inc.php');
+        include_once(dirname(__FILE__).'/sieve_buildrule.'.$rule['type'].'.inc.php');
         $res = call_user_func('avelsieve_buildrule_'.$rule['type'], $rule);
         // Return value is: array($out, $text, $terse, $params)
         if($res != false) {
@@ -501,7 +501,7 @@ function makesinglerule($rule, $mode='rule') {
                     break;
                 
                 case 'datetime':
-                    include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_condition_datetime.class.php');
+                    include_once(dirname(__FILE__).'/avelsieve_condition_datetime.class.php');
                     $myCondition = new avelsieve_condition_datetime($sieve, $rule, $i, 'date');
                     $aTmp = $myCondition->generate_sieve();
 
@@ -518,7 +518,7 @@ function makesinglerule($rule, $mode='rule') {
                 }
 
             } elseif(isset($rule['cond'][$i]['kind']) && $rule['cond'][$i]['kind'] == 'datetime') {
-                include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_condition_datetime.class.php');
+                include_once(dirname(__FILE__).'/avelsieve_condition_datetime.class.php');
                 $myCondition = new avelsieve_condition_datetime($sieve, $rule, $i, 'currentdate');
                 list($datetimeOut, $datetimeText, $datetimeTerse) = $myCondition->generate_sieve();
                 $out .= $datetimeOut;
@@ -699,7 +699,7 @@ function makesinglerule($rule, $mode='rule') {
     
     if (array_key_exists("notify", $rule) && is_array($rule['notify']) && ($rule['notify']['method'] != '')) {
         global $notifystrings, $prioritystrings;
-        include_once(SM_PATH . 'plugins/avelsieve/include/avelsieve_action_notify.class.php');
+        include_once(dirname(__FILE__).'/avelsieve_action_notify.class.php');
         $temp_action = new avelsieve_action_notify($sieve, $rule); // To retrieve $notifystrings property
         $text .= _(" Also notify using the method")
             . " <em>" . htmlspecialchars($temp_action->notifystrings[$rule['notify']['method']]) . "</em>, ".

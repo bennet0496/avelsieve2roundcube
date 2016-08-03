@@ -11,9 +11,9 @@
  */
 
 /** Includes */
-include_once(SM_PATH . 'plugins/avelsieve/include/html_main.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/html_ruleedit.inc.php');
-include_once(SM_PATH . 'plugins/avelsieve/include/sieve_rule_spam.inc.php');
+include_once(dirname(__FILE__).'/html_main.inc.php');
+include_once(dirname(__FILE__).'/html_ruleedit.inc.php');
+include_once(dirname(__FILE__).'/sieve_rule_spam.inc.php');
 
 /**
  * Rule #10: Customized Anti-SPAM rule (original version)
@@ -251,7 +251,7 @@ class avelsieve_html_edit_10 extends avelsieve_html_edit_spamrule {
             $spamrule_rbls = $_SESSION['spamrule_rbls'];
         } elseif(isset($this->settings['spamrule_tests_ldap']) && $this->settings['spamrule_tests_ldap'] == true &&
         !isset($_SESSION['spamrule_rbls'])) {
-            include_once(SM_PATH . 'plugins/avelsieve/include/spamrule.inc.php');
+            include_once(dirname(__FILE__).'/spamrule.inc.php');
             $spamrule_rbls = avelsieve_askldapforrbls();
             $_SESSION['spamrule_rbls'] = $spamrule_rbls;
         }
