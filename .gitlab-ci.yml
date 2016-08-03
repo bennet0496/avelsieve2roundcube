@@ -1,5 +1,8 @@
 image: php:7.0-cli
 
+before_script:
+  - docker-php-ext-install gettext
+
 run:
   script:
     - cat phpscript.sieve | php avelsieve2roundcube.php
