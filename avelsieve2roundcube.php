@@ -7,6 +7,8 @@ define('HERE', dirname(__FILE__));
 require_once HERE . '/include/sieve_buildrule.inc.php';
 require_once HERE . '/include/support.inc.php';
 
+use function _ as gettext;
+
 //sieve script von STDIN
 $sievescript = file_get_contents("php://stdin");
 
