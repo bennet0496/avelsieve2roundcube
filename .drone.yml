@@ -1,0 +1,6 @@
+pipeline:
+  backend:
+    image: php:7.0-cli
+    commands:
+      - docker-php-ext-install gettext
+      - cat phpscript.sieve | php avelsieve2roundcube.php
